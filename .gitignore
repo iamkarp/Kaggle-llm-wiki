@@ -1,32 +1,4 @@
-# Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/plugins/*/data.json
-
-# macOS
 .DS_Store
-**/.DS_Store
-
-# Python
-__pycache__/
 *.pyc
-.venv/
-*.egg-info/
-
-# Large binary files (use symlinks or references instead)
-*.zip
-*.tar.gz
-*.pkl
-*.model
-*.h5
-
-# Credentials (never commit)
-*.env
-*.oanda.env
-kaggle.json
-*_credentials.json
-
-# Editor
-.vscode/
-*.swp
-*~
+__pycache__/
+.env

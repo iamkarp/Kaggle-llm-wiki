@@ -1,0 +1,59 @@
+---
+title: Per-Class Threshold Optimization
+category: techniques
+tags: [post-processing, macro-f1, classification]
+created: 2026-04-15
+updated: 2026-04-15
+---
+
+# Per-Class Threshold Optimization
+
+Adjust per-class decision boundaries on out-of-fold (OOF) predictions to maximize the target metric. Essential when the metric is macro F1, which weights all classes equally regardless of frequency.
+
+## How It Works
+
+Standard classification uses `argmax(probs)` — equivalent to equal thresholds. But for macro F1, rare classes need lower thresholds (more aggressive recall) and dominant classes need higher thresholds.
+
+```python
+# Add per-class biases to logits/probabilities
+biases = np.zeros(num_classes)
+
+for round in range(3):  # iterative refinement
+    for c in range(num_classes):
+        best_bias, best_f1 = biases[c], current_f1
+        for delta in np.linspace(-2, 2, 201):
+            biases[c] = delta
+            preds = np.argmax(oof_probs + biases, axis=1)
+            f1 = f1_score(oof_labels, preds, average='macro')
+            if f1 > best_f1:
+                best_bias, best_f1 = delta, f1
+        biases[c] = best_bias
+
+# Apply same biases at test time
+test_preds = np.argmax(test_probs + biases, axis=1)
+```
+
+## Impact
+
+In WEAR 2026:
+- PatchTST OOF: 0.5055 → threshold-adjusted: 0.5204 (+0.015)
+- GBM OOF: 0.5617 → threshold-adjusted: 0.5901 (+0.028)
+- Meta-ensemble OOF: 0.6186 → threshold-adjusted: 0.6348 (+0.016)
+
+Typical improvement: +1-3% macro F1. Free at inference time.
+
+## When to Use
+
+- **Always** when the metric is macro F1 (or any class-weighted metric)
+- Especially impactful with class imbalance (e.g., null class at 40%+)
+- Optimize on OOF predictions, apply to test — never optimize on test
+
+## Caveats
+
+- Only helps if the model's probability calibration is imperfect (it always is)
+- Multiple rounds of optimization help because adjusting one class affects others
+- The biases found on OOF may not perfectly transfer if OOF/test distributions differ (see [[patterns/oof-vs-lb-divergence]])
+
+## See Also
+- [[patterns/oof-vs-lb-divergence]]
+- [[competitions/wear-hasca-2026]]
