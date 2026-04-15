@@ -1,0 +1,63 @@
+---
+title: "Probability Calibration — Platt Scaling and Isotonic Regression"
+tags: [calibration, probabilities, platt-scaling, isotonic, logistic-regression, classification]
+date: 2026-04-14
+source_count: 1
+status: active
+---
+
+## What It Is
+Calibration adjusts a model's raw probability outputs so they match actual observed frequencies. A well-calibrated model that outputs 70% win probability should be right ~70% of the time. Uncalibrated models (especially SVMs, gradient boosting on small data) often output probabilities that are too extreme or too conservative.
+
+Two main methods:
+- **Platt Scaling**: Fit a logistic regression on top of raw model scores. Simple, works well with limited data. Default in sklearn's `CalibratedClassifierCV(method='sigmoid')`.
+- **Isotonic Regression**: Non-parametric; fits a monotone step function. Better with more data but can overfit. `CalibratedClassifierCV(method='isotonic')`.
+
+## When To Use It
+- Metric is log-loss or MSE (both heavily penalize confident wrong predictions)
+- Model outputs are used as probabilities in downstream ensembles
+- SVM outputs (not naturally probabilities — must calibrate)
+- Gradient boosting on imbalanced or small datasets
+- When CV calibration curves show consistent over/under-confidence
+
+## Platt Scaling (Practical Recipe)
+```python
+from sklearn.calibration import CalibratedClassifierCV
+from sklearn.linear_model import LogisticRegression
+
+base_model = LogisticRegression()
+calibrated = CalibratedClassifierCV(base_model, method='sigmoid', cv=5)
+calibrated.fit(X_train, y_train)
+probs = calibrated.predict_proba(X_test)[:, 1]
+```
+
+For post-hoc calibration on already-trained models, use `cv='prefit'`:
+```python
+calibrated = CalibratedClassifierCV(trained_model, method='sigmoid', cv='prefit')
+calibrated.fit(X_val, y_val)  # fit on held-out validation set
+```
+
+## Gotchas
+- **Calibration requires a held-out set** — calibrating on training data will overfit
+- **Cross-validated calibration** (cv=5) is safer but slower
+- **Isotonic overfits on small datasets** — use Platt if < 1000 calibration samples
+- **XGBoost probabilities are usually reasonably calibrated** on balanced data — don't over-calibrate
+- **Ensemble calibration**: calibrate components before averaging, not after
+
+## In Jason's Work
+
+### March Mania v6 — v5 Hybrid Component
+The LogReg sub-model within v5 uses Platt scaling (`CalibratedClassifierCV`). This gives the hybrid component well-calibrated probabilities that blend smoothly with the XGBoost outputs. The Elo-only baseline is naturally calibrated (pure historical win rate).
+
+The two deep XGBoost components (v2.8, v2.9) output raw probabilities without post-hoc calibration — they're considered sufficiently calibrated on the balanced tournament prediction task.
+
+### Future Consideration
+For competitions with small imbalanced datasets (or where LB score diverges significantly from CV), add explicit calibration to all components before ensembling.
+
+## Sources
+- [[../../raw/kaggle/v6-ensemble-documentation.md]] — v5 hybrid uses calibrated LogReg
+
+## Related
+- [[../concepts/xgboost-ensembles]] — XGBoost probability calibration notes
+- [[../strategies/march-mania-v6-ensemble]] — where calibration is applied in practice
+- [[../entities/xgboost]] — outputs uncalibrated probabilities (usually ok)

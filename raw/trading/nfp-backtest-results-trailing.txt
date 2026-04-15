@@ -1,0 +1,12 @@
+
+=== EUR_USD (10k Units, ~$400 margin) | 4-Pip Initial Stop ===
+   5 Pip Trail | Net PnL:  2478.4 pips | Win/Loss/Tie: 114/ 65/ 0 | Avg USD Profit/Trade: $13.85
+  10 Pip Trail | Net PnL:  2225.4 pips | Win/Loss/Tie: 105/ 73/ 1 | Avg USD Profit/Trade: $12.43
+
+=== GBP_USD (10k Units, ~$400 margin) | 4-Pip Initial Stop ===
+   5 Pip Trail | Net PnL:  2774.5 pips | Win/Loss/Tie: 122/ 57/ 0 | Avg USD Profit/Trade: $15.50
+  10 Pip Trail | Net PnL:  2491.2 pips | Win/Loss/Tie: 112/ 67/ 0 | Avg USD Profit/Trade: $13.92
+
+=== USD_JPY (10k Units, ~$400 margin) | 4-Pip Initial Stop ===
+   5 Pip Trail | Net PnL:  3387.0 pips | Win/Loss/Tie: 120/ 56/ 3 | Avg USD Profit/Trade: $16.77
+  10 Pip Trail | Net PnL:  3066.9 pips | Win/Loss/Tie: 115/ 62/ 2 | Avg USD Profit/Trade: $15.05

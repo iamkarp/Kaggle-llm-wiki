@@ -1,0 +1,15 @@
+
+=== EUR_USD (10k Units, ~$400 margin) ===
+   5 Pip Stop | Net PnL:  1324.2 pips | Win/Loss/Tie:  61/115/ 3 | Avg USD Profit/Trade: $ 7.40
+  10 Pip Stop | Net PnL:  1234.0 pips | Win/Loss/Tie:  76/ 91/12 | Avg USD Profit/Trade: $ 6.89
+  15 Pip Stop | Net PnL:   761.6 pips | Win/Loss/Tie:  78/ 81/20 | Avg USD Profit/Trade: $ 4.25
+
+=== GBP_USD (10k Units, ~$400 margin) ===
+   5 Pip Stop | Net PnL:  1748.2 pips | Win/Loss/Tie:  69/109/ 1 | Avg USD Profit/Trade: $ 9.77
+  10 Pip Stop | Net PnL:  1226.1 pips | Win/Loss/Tie:  78/ 95/ 6 | Avg USD Profit/Trade: $ 6.85
+  15 Pip Stop | Net PnL:   925.7 pips | Win/Loss/Tie:  84/ 79/16 | Avg USD Profit/Trade: $ 5.17
+
+=== USD_JPY (10k Units, ~$400 margin) ===
+   5 Pip Stop | Net PnL:  2868.9 pips | Win/Loss/Tie:  84/ 93/ 2 | Avg USD Profit/Trade: $13.74
+  10 Pip Stop | Net PnL:  2495.6 pips | Win/Loss/Tie:  87/ 80/12 | Avg USD Profit/Trade: $11.69
+  15 Pip Stop | Net PnL:  2235.7 pips | Win/Loss/Tie:  91/ 65/23 | Avg USD Profit/Trade: $10.46

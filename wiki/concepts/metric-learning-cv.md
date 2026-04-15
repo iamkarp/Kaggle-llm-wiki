@@ -1,0 +1,104 @@
+---
+title: Metric Learning for CV
+tags: [cv, metric-learning, arcface, embedding, retrieval, label-transfer]
+date: 2026-04-14
+source_count: 2
+status: active
+---
+
+# Metric Learning for CV
+
+Metric learning trains models to produce embeddings where similar samples cluster tightly and dissimilar samples are pushed apart. In competition CV, the key payoff is **embedding-based label transfer**: replace softmax predictions with nearest-neighbor retrieval in embedding space.
+
+## When to Use
+
+- Multi-class classification with rare classes (<100 examples): softmax overfits, but embeddings generalize
+- Zero-shot: need predictions for classes never seen in training (see [[image-augmentation]] for synthetic data)
+- Face recognition, person re-identification, fine-grained recognition where identity > category
+
+## ArcFace Loss
+
+ArcFace (Deng et al., 2019) adds an angular margin to cosine similarity, forcing tight intra-class clusters:
+
+```python
+class ArcFaceLoss(nn.Module):
+    def __init__(self, in_features, n_classes, s=64.0, m=0.5):
+        super().__init__()
+        self.weight = nn.Parameter(torch.FloatTensor(n_classes, in_features))
+        nn.init.xavier_uniform_(self.weight)
+        self.s = s      # scale factor (temperature)
+        self.m = m      # angular margin
+
+    def forward(self, features, labels):
+        # Normalize features and class prototypes
+        cos_theta = F.linear(F.normalize(features), F.normalize(self.weight))
+
+        # Add angular margin to the target class logit
+        theta = torch.acos(torch.clamp(cos_theta, -1 + 1e-7, 1 - 1e-7))
+        target_logit = torch.cos(theta + self.m)
+
+        one_hot = torch.zeros_like(cos_theta)
+        one_hot.scatter_(1, labels.view(-1, 1).long(), 1)
+
+        output = (one_hot * target_logit + (1 - one_hot) * cos_theta) * self.s
+        return F.cross_entropy(output, labels)
+```
+
+**Key parameters**:
+- `s=64`: scale factor; compensates for unit-sphere normalization (otherwise logits are too small)
+- `m=0.5`: angular margin in radians; larger margin = tighter clusters but harder to train
+- Standard CE loss after applying margin gives same training stability as cross-entropy
+
+**Multi-label adaptation**: Sum class-specific margins for each positive label rather than using single-label scatter.
+
+## NN Retrieval for Label Transfer
+
+After training an ArcFace model, use embedding space for retrieval rather than the classifier head:
+
+```python
+from sklearn.neighbors import NearestNeighbors
+import numpy as np
+
+# Step 1: Extract embeddings
+train_embeddings = extract_features(model, train_loader)  # (N_train, d)
+test_embeddings  = extract_features(model, test_loader)   # (N_test, d)
+
+# Step 2: Fit NN index on training embeddings
+nn_index = NearestNeighbors(n_neighbors=5, metric='cosine')
+nn_index.fit(train_embeddings)
+
+# Step 3: Retrieve nearest neighbors for each test image
+distances, indices = nn_index.kneighbors(test_embeddings)
+
+# Step 4: Replace softmax prediction if retrieval confidence is high
+RETRIEVAL_THRESHOLD = 0.9  # cosine similarity
+
+final_predictions = base_predictions.copy()
+for i, (dists, nbr_indices) in enumerate(zip(distances, indices)):
+    cosine_sims = 1 - dists
+    if cosine_sims[0] > RETRIEVAL_THRESHOLD:
+        final_predictions[i] = train_labels[nbr_indices[0]]
+```
+
+**Why retrieval beats softmax for rare classes**:
+- The softmax classifier head can overfit rare classes but the encoder still generalizes
+- When cosine similarity > 0.9, the NN prediction is correct >90% of the time
+- Effectively uses ground-truth labels from the training set as a lookup oracle
+
+**Result**: +0.03 on public LB in Human Protein Atlas (bestfitting, 2019).
+
+## Threshold Calibration
+
+The retrieval threshold controls the trade-off:
+- Too low (0.7): many incorrect label replacements
+- Too high (0.99): rarely fires, little benefit
+- Tune on validation set; 0.85-0.95 is typical
+
+## Related
+- [[image-classification-tricks]] — AdaptiveConcatPool, pooling strategies for classifier head
+- [[image-augmentation]] — CycleGAN synthetic data for unseen classes (zero-shot complement)
+- [[loss-functions-cv]] — FocalLoss for class imbalance alongside ArcFace
+
+## Sources
+- `raw/kaggle/solutions/human-protein-atlas-1st-bestfitting.md` — ArcFace implementation, +0.03 result
+- `raw/kaggle/solutions/bengali-grapheme-1st-deoxy.md` — OOD routing to retrieval for zero-shot classes

@@ -1,0 +1,105 @@
+---
+title: "TabPFN & TabM — New SOTA Tabular Foundation Models"
+tags: [tabpfn, tabm, foundation-model, tabular, in-context-learning, deep-learning, 2024, 2025]
+date: 2026-04-15
+source_count: 3
+status: active
+---
+
+## What It Is
+
+Two breakthroughs (2024–2025) that for the first time challenged GBDTs on tabular data:
+
+1. **TabPFN v2 / v2.5**: A pre-trained Transformer using *in-context learning* — no training loop. Drop in training data, get predictions. Published in *Nature* 2024.
+2. **TabM (ICLR 2025)**: A single MLP-like model that efficiently imitates an ensemble of MLPs through weight sharing and parallel predictions.
+
+## TabPFN v2 / v2.5
+
+### What It Is
+Pre-trained Transformer (200M parameters, trained on 100M synthetic datasets) that treats the training set as context: you literally pass the whole (X_train, y_train) as input, and it predicts on X_test — no gradient updates.
+
+### Performance
+| Dataset Size | TabPFN-2.5 win rate vs XGBoost |
+|---|---|
+| ≤10K rows, ≤500 features | **100% win rate** |
+| Up to 100K rows, 2K features | **87% win rate** |
+| >100K rows | XGBoost competitive |
+
+**TabPFN-2.5 (Nov 2025):** Matches AutoGluon tuned for 4 hours in a single forward pass of 2.8 seconds.
+
+### When to Use It
+- Small datasets (<10K rows) — dominant over GBDTs
+- As a diverse predictor in ensembles for medium datasets
+- When you want zero-hyperparameter-tuning overhead as a baseline
+
+### When NOT to Use It
+- Datasets >100K rows (performance degrades)
+- Very wide datasets (>2K features without reduction)
+
+### Usage
+```python
+# pip install tabpfn
+from tabpfn import TabPFNClassifier  # or TabPFNRegressor
+
+clf = TabPFNClassifier(device='cuda')
+clf.fit(X_train, y_train)
+preds = clf.predict_proba(X_test)
+```
+Sklearn API — drop-in replacement for any sklearn estimator.
+
+### Kaggle Strategy
+Include TabPFN OOF predictions in your stacking ensemble. Adds genuine diversity because it captures signal differently from GBDTs (it's a prior-fitted Bayesian model, not a gradient-boosted tree). Even on larger datasets where TabPFN is not the best model, it adds ensemble value.
+
+## TabM (ICLR 2025)
+
+### What It Is
+Single MLP-like model that internally imitates an ensemble of MLPs through parameter-efficient weight sharing. Multiple "prediction heads" share a base but differ in a low-rank adaptation — effectively a single-pass ensemble.
+
+### Performance
+Across 46 datasets: best average rank **1.7** vs 2.9 for nearest competitor. The first MLP-derivative to consistently rival CatBoost, XGBoost, and LightGBM.
+
+### Why It Works
+The parameter-efficient ensembling acts as built-in regularization — outperforms naive ensemble of independently-trained MLPs because the weight sharing prevents overfitting while the head diversity maintains prediction variance reduction.
+
+### Usage
+```python
+# pip install tabm
+# or from: https://github.com/yandex-research/tabm
+```
+
+### Kaggle Usage
+- Use as a diverse ensemble member alongside GBDTs
+- Was used in winning solutions for CIBMTR HCT survival prediction (2024–2025)
+- Lower-overhead alternative to training multiple independent NNs for ensemble diversity
+
+## Hyperparameters
+
+TabPFN: essentially none (it's pre-trained; you pass `device='cuda'` and optionally `N_ensemble_configurations`).
+
+TabM: follows standard MLP conventions:
+- `d_block`: hidden layer width (256–1024)
+- `n_blocks`: number of layers (3–8)
+- `dropout`: 0.0–0.5
+- `k`: number of ensemble components (typically 32)
+
+## Gotchas
+
+- **TabPFN memory**: For larger datasets, the in-context computation is O(n²) in attention. Can OOM on very large training sets.
+- **TabM training time**: Comparable to a single GBDT, not as fast as XGBoost on GPU.
+- **TabPFN calibration**: Probabilities are generally well-calibrated (it's a Bayesian method), but verify on your specific task.
+
+## In Jason's Work
+Not yet applied in Jason's competitions as of 2026-04-15. Candidate for next tabular competition, especially:
+- If dataset is <10K rows → try TabPFN first
+- As ensemble diversity contributor alongside LGB/XGB/CAT in any competition
+
+## Sources
+- [[../../raw/kaggle/modern-tabular-dl-techniques.md]] — comprehensive benchmarks and usage notes
+- [TabPFN Nature 2024](https://www.nature.com/articles/s41586-024-08328-6)
+- [TabM ICLR 2025](https://arxiv.org/abs/2410.24210)
+- [TabM GitHub](https://github.com/yandex-research/tabm)
+
+## Related
+- [[../concepts/deep-learning-tabular]] — broader context of DL for tabular
+- [[../concepts/ensembling-strategies]] — how to incorporate as ensemble member
+- [[../concepts/knowledge-distillation]] — distillation from large models into TabPFN-scale
