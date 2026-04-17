@@ -151,14 +151,14 @@ class OrdinalDecomposition:
 
 ## Sources
 
-- [[../raw/kaggle/multi-target-auxiliary-learning.md]] — full technique reference with code
+- `raw/kaggle/multi-target-auxiliary-learning.md` *(not yet ingested)* — full technique reference with code
 - [MoA 1st place writeup](https://www.kaggle.com/competitions/lish-moa/discussion/201510)
 - [Ventilator 1st place solution](https://www.kaggle.com/competitions/ventilator-pressure-prediction/discussion/285256)
 - [Knowledge distillation (Hinton 2015)](https://arxiv.org/abs/1503.02531)
 
 ## Related
 
-- [[concepts/knowledge-distillation]] — LGBM→NN distillation in detail
-- [[concepts/stacking-deep]] — MoA auxiliary targets in stacking context
-- [[concepts/pseudo-labeling]] — pseudo-labeling as another form of auxiliary signal
-- [[concepts/deep-learning-tabular]] — neural network architectures for multi-task learning
+- [[knowledge-distillation]] — LGBM→NN distillation in detail
+- [[stacking-deep]] — MoA auxiliary targets in stacking context
+- [[pseudo-labeling]] — pseudo-labeling as another form of auxiliary signal
+- [[deep-learning-tabular]] — neural network architectures for multi-task learning

@@ -42,7 +42,7 @@ def scan_for_id_leakage(X, y, threshold=0.52):
     
     for col in X.columns:
         try:
-            col_vals = X[[col]].fillna(-999)
+            col_vals = X`col`.fillna(-999)
             aucs = [roc_auc_score(y.iloc[val_idx], col_vals.iloc[val_idx])
                     for train_idx, val_idx in skf.split(col_vals, y)]
             if np.mean(aucs) > threshold:
@@ -160,7 +160,7 @@ Submission sanity:
 
 ## Sources
 
-- [[../raw/kaggle/external-data-leakage-strategies.md]] — full reference with code
+- `raw/kaggle/external-data-leakage-strategies.md` *(not yet ingested)* — full reference with code
 - [Featexp package](https://github.com/abhayspawar/featexp)
 - [Whitehill & Movellan 2017 oracle probing](https://arxiv.org/abs/1712.01487)
 - [SMOTE leakage arXiv 2412.07437](https://arxiv.org/html/2412.07437v1)
@@ -168,7 +168,7 @@ Submission sanity:
 
 ## Related
 
-- [[concepts/validation-strategy]] — adversarial validation, CV-LB breakdown
-- [[strategies/kaggle-meta-strategy]] — leakage detection in grandmaster playbook
-- [[concepts/imbalanced-data]] — SMOTE placement (pipeline only)
-- [[concepts/feature-selection-advanced]] — adversarial validation for feature selection
+- [[validation-strategy]] — adversarial validation, CV-LB breakdown
+- [[../strategies/kaggle-meta-strategy]] — leakage detection in grandmaster playbook
+- [[imbalanced-data]] — SMOTE placement (pipeline only)
+- [[feature-selection-advanced]] — adversarial validation for feature selection

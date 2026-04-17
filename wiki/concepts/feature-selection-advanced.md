@@ -170,7 +170,7 @@ ShapRFECV and null importance are the recommended methods for tabular competitio
 
 ## Sources
 
-- [[../raw/kaggle/advanced-feature-selection.md]] — complete technique reference with code
+- `raw/kaggle/advanced-feature-selection.md` *(not yet ingested)* — complete technique reference with code
 - [Null importance notebook (ogrellier)](https://www.kaggle.com/code/ogrellier/feature-selection-with-null-importances)
 - [BorutaShap tutorial](https://www.kaggle.com/code/lucamassaron/tutorial-feature-selection-with-boruta-shap)
 - [LOFO importance](https://github.com/aerdem4/lofo-importance)
@@ -178,7 +178,7 @@ ShapRFECV and null importance are the recommended methods for tabular competitio
 
 ## Related
 
-- [[concepts/shap-feature-engineering]] — SHAP as feature engineering discovery tool
-- [[concepts/feature-engineering-tabular]] — generating the features to then select from
-- [[concepts/validation-strategy]] — adversarial validation for distribution shift
-- [[concepts/gradient-boosting-advanced]] — GBDT models used for selection
+- [[shap-feature-engineering]] — SHAP as feature engineering discovery tool
+- [[feature-engineering-tabular]] — generating the features to then select from
+- [[validation-strategy]] — adversarial validation for distribution shift
+- [[gradient-boosting-advanced]] — GBDT models used for selection

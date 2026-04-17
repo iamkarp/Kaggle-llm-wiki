@@ -81,6 +81,26 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | `raw/kaggle/solutions/srk-batch-14.md` | Yelp Photos 1st + Flavours of Physics 1st + ECML Taxi 1st + 13 more | Photo classification CNN; physics-aware ML; taxi route prediction; flight optimization |
 | `raw/kaggle/ndres-past-solutions-catalog.md` | Master catalog (55 competitions) | Full index from ndres.me/kaggle-past-solutions with all solution links and code repos |
 
+### Non-1st-Place Solutions (100+ upvotes)
+
+*SRK Round 2: 137 solutions across 82 competitions, ranked 2nd–40th place. Full writeups in `raw/kaggle/solutions/`.*
+
+| Page | Solutions Covered | Key Techniques |
+|------|------------------|----------------|
+| `raw/kaggle/solutions/srk-r2-batch-1.md` | IEEE Fraud 2nd + Home Credit 2nd + HMS Brain 1st + 22 more | User-ID construction; DAE tabular features; multi-spectrogram EEG; ArcFace retrieval |
+| `raw/kaggle/solutions/srk-r2-batch-2.md` | Toxic Comment 2nd + Avito 3rd + RSNA Hemorrhage 2nd + 22 more | Translation TDA; DPCNN; CNN→LSTM CT pipeline; delta embeddings; video-ID CV |
+| `raw/kaggle/solutions/srk-r2-batch-3.md` | Great Barrier Reef 3rd/5th + DFL Bundesliga 1st + Shopee 6th + 20 more | CenterNet on DeepLabV3+; TSM; ArcFace+DistilBERT; two-stage PE detection; symmetric Lovász |
+| `raw/kaggle/solutions/srk-r2-batch-4.md` | Avito 4th + Home Credit 5th + RSNA Mammography + 20 more | Text-cluster price agg; user image CNN+BiLSTM; landmarks-as-spectrogram; translation TTA |
+| `raw/kaggle/solutions/srk-r2-batch-5.md` | ELL 2nd + BirdCLEF 2021 1st + AIMO Prize 2 2nd + 20 more | Rank loss; WaveNet seq2seq; DPO length reduction; W4KV8 quantization; trainable frontend |
+| `raw/kaggle/solutions/srk-r2-batch-6.md` | NFL Impact 2nd + Jigsaw Multilingual 4th + PLAsTiCC 4th + 19 more | Temporal stacking; progressive language fine-tuning; Bazin curve fitting; deep mutual learning |
+
+### ndres.me Extended Catalog
+
+| Page | Content | Coverage |
+|------|---------|----------|
+| `raw/kaggle/solutions/ndres-catalog.md` | 63 competitions, 227 solution writeups, 49 code repos | Full ndres.me/kaggle-past-solutions catalog with links and tags |
+| `raw/kaggle/solutions/code-repo-solutions-ndres.md` | 49 GitHub repositories from winning solutions | Code repos indexed by competition |
+
 ---
 
 ## Strategies
@@ -172,4 +192,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-16 | Page count: 62 wiki pages + 41 raw solution references indexed above*
+*Last updated: 2026-04-17 | Page count: 62 wiki pages + 49 raw solution files + ndres catalog indexed above*

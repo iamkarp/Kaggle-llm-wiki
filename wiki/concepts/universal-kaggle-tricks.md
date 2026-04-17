@@ -120,7 +120,7 @@ This page is the quick-reference checklist for starting any new competition. Fir
 
 ## Sources
 
-- [[../raw/kaggle/high-vote-notebooks-universal-tricks.md]] — full source document
+- `raw/kaggle/high-vote-notebooks-universal-tricks.md` *(not yet ingested)* — full source document
 - [NVIDIA Grandmasters Playbook](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data/)
 - [Neptune.ai binary classification tips](https://neptune.ai/blog/binary-classification-tips-and-tricks-from-kaggle)
 - [Neptune.ai image segmentation (39 comps)](https://neptune.ai/blog/image-segmentation-tips-and-tricks-from-kaggle-competitions)
@@ -129,7 +129,7 @@ This page is the quick-reference checklist for starting any new competition. Fir
 
 ## Related
 
-- [[concepts/ensembling-strategies]] — detailed ensembling techniques
-- [[concepts/validation-strategy]] — CV design and adversarial validation
-- [[strategies/kaggle-meta-strategy]] — grandmaster meta-principles
-- [[concepts/pseudo-labeling]] — pseudo-labeling implementation
+- [[ensembling-strategies]] — detailed ensembling techniques
+- [[validation-strategy]] — CV design and adversarial validation
+- [[../strategies/kaggle-meta-strategy]] — grandmaster meta-principles
+- [[pseudo-labeling]] — pseudo-labeling implementation

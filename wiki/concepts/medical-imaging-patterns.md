@@ -202,7 +202,7 @@ fp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=2, nBits=2048)
 
 ## Sources
 
-- [[../raw/kaggle/medical-bioinformatics-solutions.md]] — full reference with all code
+- `raw/kaggle/medical-bioinformatics-solutions.md` *(not yet ingested)* — full reference with all code
 - [ISIC 2024 competition](https://www.kaggle.com/competitions/isic-2024-challenge/)
 - [nnU-Net paper](https://www.nature.com/articles/s41592-020-01008-z)
 - [Phikon pathology model](https://huggingface.co/owkin/phikon)
@@ -211,8 +211,8 @@ fp = AllChem.GetMorganFingerprintAsBitVect(mol, radius=2, nBits=2048)
 
 ## Related
 
-- [[concepts/loss-functions-cv]] — Lovász, Focal-Tversky, loss function guide
-- [[concepts/segmentation-architectures]] — UNet, nnU-Net, coarse-to-fine
-- [[concepts/image-augmentation]] — Albumentations, TTA, CycleGAN
-- [[concepts/pseudo-labeling-cv]] — 3-stage segmentation pseudo-labeling
-- [[concepts/metric-learning-cv]] — ArcFace for rare classes
+- [[loss-functions-cv]] — Lovász, Focal-Tversky, loss function guide
+- [[segmentation-architectures]] — UNet, nnU-Net, coarse-to-fine
+- [[image-augmentation]] — Albumentations, TTA, CycleGAN
+- [[pseudo-labeling-cv]] — 3-stage segmentation pseudo-labeling
+- [[metric-learning-cv]] — ArcFace for rare classes

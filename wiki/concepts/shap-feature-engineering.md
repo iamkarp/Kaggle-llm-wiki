@@ -105,7 +105,7 @@ for i, feature in enumerate(X_train.columns):
 
 ### 5. ShapRFECV (Recursive Feature Elimination)
 
-See [[concepts/feature-selection-advanced]] for full implementation.
+See [[feature-selection-advanced]] for full implementation.
 
 Published result: eliminated 60/110 features → slight AUC improvement + significant complexity reduction.
 
@@ -164,7 +164,7 @@ for cluster in range(5):
 
 ## Sources
 
-- [[../raw/kaggle/shap-interpretability-feature-engineering.md]] — full workflow reference
+- `raw/kaggle/shap-interpretability-feature-engineering.md` *(not yet ingested)* — full workflow reference
 - [SHAP feature engineering notebook](https://www.kaggle.com/code/wrosinski/shap-feature-importance-with-feature-engineering)
 - [SHAP interaction values (XGBoost)](https://shap.readthedocs.io/en/latest/)
 - [ShapRFECV (probatus ING)](https://medium.com/ing-blog/open-sourcing-shaprfecv-improved-feature-selection-powered-by-shap-994fe7861560)
@@ -172,7 +172,7 @@ for cluster in range(5):
 
 ## Related
 
-- [[concepts/feature-selection-advanced]] — ShapRFECV, BorutaShap, null importance
-- [[concepts/feature-engineering-tabular]] — what features to engineer
-- [[concepts/validation-strategy]] — adversarial validation for drift
-- [[concepts/gradient-boosting-advanced]] — tree models used with SHAP
+- [[feature-selection-advanced]] — ShapRFECV, BorutaShap, null importance
+- [[feature-engineering-tabular]] — what features to engineer
+- [[validation-strategy]] — adversarial validation for drift
+- [[gradient-boosting-advanced]] — tree models used with SHAP

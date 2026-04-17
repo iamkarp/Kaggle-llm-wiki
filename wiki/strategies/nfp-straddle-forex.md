@@ -88,7 +88,7 @@ Log: `trading/nfp_cron.log`
 
 ## Sources
 - [[../../raw/trading/nfp-backtest-results-trailing.txt]] — trailing stop backtest results
-- [[../../raw/trading/nfp-backtest-results-tighter]] — tighter stop backtest results
+- `raw/trading/nfp-backtest-results-tighter` *(not yet ingested)* — tighter stop backtest results
 
 ## Related
 - [[../entities/oanda]] — broker API details

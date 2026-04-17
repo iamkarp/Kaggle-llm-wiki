@@ -10,7 +10,7 @@ status: active
 
 - [[../../raw/kaggle/kaggle-competition-playbook.md]] — 5-stage FE process
 - [[../../raw/kaggle/2024-2025-winning-solutions-tabular.md]] — recent winning FE patterns
-- [[../../raw/kaggle/march-mania-v6-ensemble-doc.md]] — basketball-specific features
+- `raw/kaggle/march-mania-v6-ensemble-doc.md` *(not yet ingested)* — basketball-specific features
 
 </details>
 

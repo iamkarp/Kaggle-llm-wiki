@@ -147,7 +147,7 @@ from sklearn.preprocessing import OneHotEncoder
 from scipy.sparse import hstack, csr_matrix
 
 enc = OneHotEncoder(sparse_output=True, handle_unknown='ignore', max_categories=50)
-X_cat = enc.fit_transform(df[['city', 'product_type', 'device']])
+X_cat = enc.fit_transform(df['city', 'product_type', 'device'])
 X_num = csr_matrix(df[numeric_cols].values.astype('float32'))
 X_combined = hstack([X_num, X_cat])  # stays sparse
 ```
@@ -181,13 +181,13 @@ Key: pass `dtype=` explicitly — auto-detection is slow. Apply filters inside t
 
 ## Sources
 
-- [[../raw/kaggle/memory-optimization-large-datasets.md]] — full reference with all code
+- `raw/kaggle/memory-optimization-large-datasets.md` *(not yet ingested)* — full reference with all code
 - [reduce_mem_usage origin (Arjan Groen)](https://www.kaggle.com/code/arjanso/reducing-dataframe-memory-size-by-65)
 - [Polars PDS-H benchmark](https://pola.rs/posts/benchmarks/)
 - [RAPIDS cuDF 150x](https://developer.nvidia.com/blog/rapids-cudf-accelerates-pandas-nearly-150x-with-zero-code-changes/)
 
 ## Related
 
-- [[concepts/gradient-boosting-advanced]] — cuDF integration for XGB/LGB/CAT
-- [[concepts/knowledge-distillation]] — RAPIDS cuDF + nested 10-in-10 K-fold from Chris Deotte
-- [[concepts/feature-engineering-tabular]] — the features this infrastructure enables
+- [[gradient-boosting-advanced]] — cuDF integration for XGB/LGB/CAT
+- [[knowledge-distillation]] — RAPIDS cuDF + nested 10-in-10 K-fold from Chris Deotte
+- [[feature-engineering-tabular]] — the features this infrastructure enables

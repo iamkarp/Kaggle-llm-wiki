@@ -198,7 +198,7 @@ def tabmda_augment(X_train, y_train, model, n_synthetic=5000, alpha=0.2):
 
 ## Sources
 
-- [[../raw/kaggle/tabular-data-augmentation.md]] — full reference with code
+- `raw/kaggle/tabular-data-augmentation.md` *(not yet ingested)* — full reference with code
 - [SCARF paper (ICLR 2022)](https://arxiv.org/abs/2106.15147)
 - [SAINT paper](https://arxiv.org/abs/2106.01342)
 - [TabMDA paper (2024)](https://arxiv.org/abs/2404.08434)
@@ -206,7 +206,7 @@ def tabmda_augment(X_train, y_train, model, n_synthetic=5000, alpha=0.2):
 
 ## Related
 
-- [[concepts/deep-learning-tabular]] — neural network tabular architectures
-- [[concepts/pseudo-labeling]] — another semi-supervised approach
-- [[concepts/image-augmentation]] — augmentation for CV competitions
-- [[concepts/tabpfn-tabm]] — TabPFN and TabM as alternative tabular approaches
+- [[deep-learning-tabular]] — neural network tabular architectures
+- [[pseudo-labeling]] — another semi-supervised approach
+- [[image-augmentation]] — augmentation for CV competitions
+- [[tabpfn-tabm]] — TabPFN and TabM as alternative tabular approaches

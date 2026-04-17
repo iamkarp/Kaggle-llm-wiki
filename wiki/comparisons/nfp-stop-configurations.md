@@ -32,9 +32,9 @@ Comparison of different stop-loss and take-profit configurations for the NFP str
 
 ## Sources
 
-- [[../../raw/trading/nfp-backtest-results]] — baseline backtest
-- [[../../raw/trading/nfp-backtest-results-trailing]] — trailing stop variant
-- [[../../raw/trading/nfp-backtest-results-tighter]] — tighter stop variant
+- `raw/trading/nfp-backtest-results` *(not yet ingested)* — baseline backtest
+- `raw/trading/nfp-backtest-results-trailing` *(not yet ingested)* — trailing stop variant
+- `raw/trading/nfp-backtest-results-tighter` *(not yet ingested)* — tighter stop variant
 
 ## Related
 

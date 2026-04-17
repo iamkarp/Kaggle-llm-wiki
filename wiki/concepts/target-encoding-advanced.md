@@ -194,7 +194,7 @@ Standard approach for tabular competitions: use `CatBoostEncoder` or `GLMMEncode
 
 ## Sources
 
-- [[../raw/kaggle/target-encoding-advanced.md]] — full reference with all code
+- `raw/kaggle/target-encoding-advanced.md` *(not yet ingested)* — full reference with all code
 - [Pargent et al. 2022 benchmark](https://arxiv.org/abs/2104.01621)
 - [category_encoders package](https://contrib.scikit-learn.org/category_encoders/)
 - [CatBoost ordered TS paper](https://arxiv.org/abs/1706.09516)
@@ -202,7 +202,7 @@ Standard approach for tabular competitions: use `CatBoostEncoder` or `GLMMEncode
 
 ## Related
 
-- [[concepts/target-encoding]] — basic target encoding (weighted blend formula)
-- [[concepts/feature-engineering-tabular]] — feature engineering context
-- [[concepts/deep-learning-tabular]] — neural network tabular models
-- [[concepts/gradient-boosting-advanced]] — CatBoost native encoding
+- [[target-encoding]] — basic target encoding (weighted blend formula)
+- [[feature-engineering-tabular]] — feature engineering context
+- [[deep-learning-tabular]] — neural network tabular models
+- [[gradient-boosting-advanced]] — CatBoost native encoding

@@ -153,3 +153,14 @@ Chronological audit trail of all wiki operations. Grep-parseable format: `## [YY
 ## [2026-04-16] update | wiki/index.md — added 6 SRK batch files (batches 9-14, 106 competitions); 41 raw solution references indexed; total 226 competitions from SRK notebook
 ## [2026-04-16] update | CLAUDE.md schema — added Mermaid diagram conventions (graph TD only, max 20 nodes, when to add), collapsible <details> source blocks, anti-preamble rules (inspired by DeepWiki-Open patterns)
 ## [2026-04-16] update | 8 wiki pages — added Mermaid diagrams and collapsible source blocks: kaggle-competition-playbook (pipeline), ensembling-strategies (3-level stack), validation-strategy (CV decision tree), kaggle-meta-strategy (workflow), overview (knowledge graph), feature-engineering-tabular (5-stage), stacking-deep (architecture), knowledge-distillation (LGBM→NN), machine-learning-advisor (RAG architecture)
+
+## [2026-04-17] ingest | srk-r2-batch-1.md — 23 non-1st-place solutions (2nd–40th, 100+ upvotes): IEEE Fraud 2nd, Home Credit 2nd, HMS Brain 1st, and 20 more
+## [2026-04-17] ingest | srk-r2-batch-2.md — 23 non-1st-place solutions: Toxic Comment 2nd, Avito 3rd, RSNA Hemorrhage 2nd, TalkingData 2nd, and 19 more
+## [2026-04-17] ingest | srk-r2-batch-3.md — 23 non-1st-place solutions: Great Barrier Reef 3rd/5th, DFL Bundesliga 1st, Shopee 6th, RSNA PE 2nd, and 18 more
+## [2026-04-17] ingest | srk-r2-batch-4.md — 23 non-1st-place solutions: Avito 4th, Home Credit 5th, RSNA Mammography, Sign Language 2nd, and 19 more
+## [2026-04-17] ingest | srk-r2-batch-5.md — 23 non-1st-place solutions: ELL 2nd, BirdCLEF 2021 1st, AIMO Prize 2 2nd, and 20 more
+## [2026-04-17] ingest | srk-r2-batch-6.md — 22 non-1st-place solutions: NFL Impact 2nd, Jigsaw Multilingual 4th, PLAsTiCC 4th, and 19 more
+## [2026-04-17] ingest | ndres-catalog.md — 63 competitions, 227 solution writeups from ndres.me/kaggle-past-solutions
+## [2026-04-17] ingest | code-repo-solutions-ndres.md — 49 GitHub code repositories from winning solutions via ndres.me
+## [2026-04-17] lint | Fixed 70 broken wikilinks: 44 relative path fixes (concepts→concepts prefix removal), 17 missing raw file refs replaced with inline text, 3 false positives in code snippets, 6 cross-dir path fixes
+## [2026-04-17] update | wiki/index.md — added 6 R2 batch entries + 2 ndres catalog entries + updated page count

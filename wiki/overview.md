@@ -80,7 +80,7 @@ Live forex straddle strategy on OANDA, focused on NFP (Non-Farm Payroll) events.
 
 **Adding knowledge**: Follow the INGEST operation in `CLAUDE.md`. Always update `index.md` and `log.md`.
 
-**Cross-referencing**: Follow `[[wikilinks]]` — they connect competition pages to strategy pages to concept pages to entity pages.
+**Cross-referencing**: Follow wikilinks — they connect competition pages to strategy pages to concept pages to entity pages.
 
 ## Related
 - [[index]] — full content catalog

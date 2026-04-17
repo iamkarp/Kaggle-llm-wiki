@@ -140,14 +140,14 @@ def correct_undersampling_proba(p_undersampled, beta):
 
 ## Sources
 
-- [[../raw/kaggle/imbalanced-data-techniques.md]] — comprehensive technique reference
+- `raw/kaggle/imbalanced-data-techniques.md` *(not yet ingested)* — comprehensive technique reference
 - [Imbalance-XGBoost paper](https://arxiv.org/pdf/1908.01672)
 - [LightGBM Focal Loss (Max Halford)](https://maxhalford.github.io/blog/lightgbm-focal-loss/)
 - [SMOTE leakage arXiv 2412.07437](https://arxiv.org/html/2412.07437v1)
 
 ## Related
 
-- [[concepts/negative-downsampling]] — downsampling with prior correction, 5-bag averaging
-- [[concepts/validation-strategy]] — StratifiedKFold, adversarial validation
-- [[concepts/ensembling-strategies]] — ensemble approaches for imbalanced problems
-- [[concepts/post-processing]] — threshold optimization, probability calibration
+- [[negative-downsampling]] — downsampling with prior correction, 5-bag averaging
+- [[validation-strategy]] — StratifiedKFold, adversarial validation
+- [[ensembling-strategies]] — ensemble approaches for imbalanced problems
+- [[post-processing]] — threshold optimization, probability calibration

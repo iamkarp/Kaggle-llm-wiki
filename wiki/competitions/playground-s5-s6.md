@@ -170,14 +170,14 @@ semantic_df = df['text_col'].apply(generate_semantic_features)
 
 ## Sources
 
-- [[../raw/kaggle/playground-s5-s6-winning-solutions.md]] — full solution details
+- `raw/kaggle/playground-s5-s6-winning-solutions.md` *(not yet ingested)* — full solution details
 - [Kaggle Playground Series S5](https://www.kaggle.com/competitions/playground-series-s5e6/writeups/)
 - [SMOTE leakage arXiv](https://arxiv.org/html/2412.07437v1)
 
 ## Related
 
-- [[concepts/ensembling-strategies]] — hill climbing implementation
-- [[concepts/validation-strategy]] — CV-LB breakdown, post-cutoff CV
-- [[concepts/imbalanced-data]] — SMOTE correct usage
-- [[concepts/gradient-boosting-advanced]] — cuML GPU acceleration for seed averaging
-- [[strategies/kaggle-meta-strategy]] — trust CV, CV-LB breakdown threshold
+- [[../concepts/ensembling-strategies]] — hill climbing implementation
+- [[../concepts/validation-strategy]] — CV-LB breakdown, post-cutoff CV
+- [[../concepts/imbalanced-data]] — SMOTE correct usage
+- [[../concepts/gradient-boosting-advanced]] — cuML GPU acceleration for seed averaging
+- [[../strategies/kaggle-meta-strategy]] — trust CV, CV-LB breakdown threshold

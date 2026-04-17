@@ -165,14 +165,14 @@ These patterns apply whenever:
 
 ## Sources
 
-- [[../raw/kaggle/financial-competition-strategies.md]] — full reference with all code
+- `raw/kaggle/financial-competition-strategies.md` *(not yet ingested)* — full reference with all code
 - [Jane Street Market Prediction 2024](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting)
 - [Optiver Realized Volatility Prediction](https://www.kaggle.com/competitions/optiver-realized-volatility-prediction)
 - [Optiver Trading at Close 2023](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
 
 ## Related
 
-- [[concepts/time-series-cv]] — purged CV, walk-forward, embargo gap details
-- [[concepts/time-series-features]] — lag features, rolling stats, Fourier encoding
-- [[concepts/online-learning]] — 12-day retraining, HDF5 incremental loading
-- [[concepts/multi-target-learning]] — multi-responder training
+- [[time-series-cv]] — purged CV, walk-forward, embargo gap details
+- [[time-series-features]] — lag features, rolling stats, Fourier encoding
+- [[online-learning]] — 12-day retraining, HDF5 incremental loading
+- [[multi-target-learning]] — multi-responder training
