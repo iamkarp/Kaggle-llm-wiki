@@ -1,3 +1,11 @@
+---
+title: "Wiki Log"
+tags: [meta]
+date: 2026-04-16
+source_count: 0
+status: active
+---
+
 # Wiki Log
 
 Chronological audit trail of all wiki operations. Grep-parseable format: `## [YYYY-MM-DD] action | Description`
@@ -110,3 +118,38 @@ Chronological audit trail of all wiki operations. Grep-parseable format: `## [YY
 ## [2026-04-15] create | concepts/tabular-augmentation.md — SCARF swap noise, VIME, SAINT CutMix+Mixup, TTA noise injection, TabMDA
 ## [2026-04-15] create | competitions/playground-s5-s6.md — GPU hill climbing, 100-seed averaging, SMOTE leakage case study, LLM features, CV-LB breakdown
 ## [2026-04-15] update | wiki/index.md — 12 raw files + 11 new wiki pages; count 73→99
+
+## [2026-04-16] create | raw/system/machine-learning-advisor-app.md — full implementation reference for MachineLearningAdvisor hybrid RAG app
+## [2026-04-16] create | entities/machine-learning-advisor.md — wiki entity for MachineLearningAdvisor (hybrid ChromaDB + index RAG, Python Shiny, Competition Strategy Mode)
+## [2026-04-16] update | wiki/index.md — added machine-learning-advisor entity entry
+## [2026-04-16] lint | Fixed 18 broken wikilinks: redirected entity/concept refs to existing pages, removed dead raw/code refs
+## [2026-04-16] create | 7 stub pages: autopilot-vqa-pipeline, qwen-vl, claude-sonnet, oanda, multimodal-classification, straddle-strategy, nfp-stop-configurations
+## [2026-04-16] update | Added YAML frontmatter to log.md and index.md; fixed page count (99→62)
+## [2026-04-16] update | wiki/index.md — added 7 new stubs + 3 new entities to catalog; first comparisons entry
+## [2026-04-16] ingest | ndres-past-solutions-catalog.md — master index of 55 competitions from ndres.me/kaggle-past-solutions; cross-referenced against existing 21 solutions
+## [2026-04-16] ingest | tabular-classics-batch.md — Rossmann 1st (entity embeddings), Crowdflower 1st (QWK decoding), Homesite 1st (StackNet)
+## [2026-04-16] ingest | cv-segmentation-batch.md — Clouds 1st (UNet+FPN), Severstal 1st (classify→segment), Kuzushiji 1st (Cascade R-CNN), Recursion 4th (channel subset), APTOS 1st (GeM pooling)
+## [2026-04-16] ingest | nlp-audio-medical-batch.md — Jigsaw 1st (bias loss), CHAMPS 1st (MPNN), Freesound 1st (SpecAugment), SIIM 5th (deep supervision), RSNA 2nd (CT windowing)
+## [2026-04-16] update | wiki/index.md — added 4 new solution batch files + master catalog; count now 25 solution references
+## [2026-04-16] ingest | code-repo-solutions-batch.md — Diabetic Retinopathy 1st (SparseConvNet), DSB 2017 1st (3D Faster R-CNN), Avazu CTR 1st (FFM), NDSB 1st (cyclic pooling), Tradeshift 1st, Amazon Employee 1st, Avito 1st (Owen Zhang)
+## [2026-04-16] ingest | mixed-tier-solutions-batch.md — Instant Gratification 1st (QDA), YouTube-8M 1st (NeXtVLAD), Generative Dogs 1st (BigGAN), Cervical Cancer 1st, Right Whale 2nd, Higgs Boson 2nd, Elo Merchant, Lyft 3D, See Click Fix 1st, Allstate 2nd
+## [2026-04-16] ingest | historical-interviews-batch.md — Give Me Credit 1st, Rossmann 2nd/3rd, Prudential 2nd, Winton 3rd, Santa's Sleigh 2nd, Grant Apps 1st, Ford 1st, Open Images OD+Seg, West Nile 2nd, Allen AI 8th, Stack Overflow 10th (13 competitions)
+## [2026-04-16] update | wiki/index.md — added 3 new batch files; 27 total raw solution references indexed
+## [2026-04-16] ingest | srk-batch-1.md — Toxic Comment 1st, Web Traffic 1st, H&M RecSys 1st, Quora Insincere 1st, Deepfake 1st, DSB 2018 1st, CommonLit 1st, NFL Big Data Bowl 1st, Quora Pairs 1st, PetFinder 1st, Google QUEST 1st, NFL Helmet 1st, Shopee 1st, Cassava 1st (14 competitions)
+## [2026-04-16] ingest | srk-batch-2.md — OpenVaccine 1st, Feedback Prize 2021 1st, SETI 1st, SIIM-COVID 1st, ARC 1st, Mercari 1st, Landmark Retrieval 2018 1st, LLM Prompt Recovery 1st, ASL Fingerspelling 1st, LLM Science Exam 1st, Global Wheat 1st, Humpback Whale 1st, PANDA 1st, RSNA Cervical Spine 1st, HPA Single Cell 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-3.md — BirdCLEF+ 2025 1st, LANL Earthquake 1st, Jigsaw Severity 1st, Learning Equality 1st, PLAsTiCC 1st, OTTO RecSys 1st, LLM Detect AI Text 1st, DSB 2019 1st, Quick Draw 1st, Happywhale 1st, Landmark 2020 1st, Ubiquant 1st, LMSYS Chatbot Arena 1st, Yale Waveform 1st, Great Barrier Reef 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-4.md — Favorita Grocery 1st, AIMO Prize 1st, ASL Signs 1st, MAP 1st, Landmark 2021 1st, CIBMTR 1st, Jigsaw Multilingual 1st, BNP Paribas 1st, NFL Impact 1st, Enefit Energy 1st, RSNA Mammography 1st, US Patent 1st, ALASKA2 1st, Tweet Sentiment 1st, Home Credit Stability 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-5.md — chaii QA 1st, Eedi 1st, Riiid 1st, Sleep States 1st, Expedia 1st, Student Game Play 1st, Google Contrails 1st, ASHRAE 1st, Universal Image Embedding 1st, RSNA Pneumonia 1st, Sberbank 1st, RANZCR CLiP 1st, Rainforest Audio 1st, iMaterialist Fashion 1st, RSNA Aneurysm 2025 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-6.md — TF QA 1st, RSNA PE 1st, Indoor Navigation 1st, ISIC 2024 1st, Ribonanza RNA 1st, Cornell Birdcall 1st, Plant Pathology 2020 1st, AIMO Prize 2 1st, Landmark Retrieval 2020 1st, Halite 1st, NFL BDB 2026 1st, Feedback Effective Arguments 1st, PKU Baidu 1st, DFL Bundesliga 1st, NFL Player Contact 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-7.md — HuBMAP Kidney 1st, CSIRO Biomass 1st, BirdCLEF 2023 1st, Coleridge Initiative 1st, Feedback Prize ELL 1st, NBME Clinical 1st, UW-Madison GI 1st, Santa 2023 1st, Stable Diffusion 1st, Smartphone Decimeter 1st, KKBox Music 1st, Jigsaw Agile 1st, CryoET 1st, Image Matching 2022 1st, Parkinson's FOG 1st (15 competitions)
+## [2026-04-16] ingest | srk-batch-8.md — Open Polymer 2025 1st, HMS Brain 1st, BirdCLEF 2021 1st, Vesuvius Ink 1st, BirdCLEF 2024 1st, Bengali ASR 1st, TrackML 1st, Single-Cell Multimodal 1st, RSNA Brain Tumor 1st, NCAA Women's 1st, G2Net Gravitational 1st, Sartorius Cell 1st, RSNA Lumbar 1st, SenNet Vasculature 1st, RSNA Abdominal Trauma 1st (15 competitions)
+## [2026-04-16] update | wiki/index.md — added 8 SRK batch files (120 competitions total); 35 raw solution references indexed
+## [2026-04-16] ingest | srk-batch-9.md — PII Detection 1st, AMP Parkinson's 1st, Google Football 1st, Kaggle Simulations 1st, OSIC Pulmonary 1st, NFLverse 1st, Ventilator Pressure 1st, Open Problems Multimodal 1st, Abstraction and Reasoning 2024 1st, NeurIPS LLM Efficiency 1st, Santa 2022 1st, Petals to the Metal 1st, Google Brain Ventilator 1st, Hungry Geese 1st, NFL DPI 1st, Child Mind Institute 1st, Cassini 1st, Image Matching 2023 1st (18 competitions)
+## [2026-04-16] ingest | srk-batch-10.md — BELKA Drug 1st, YouTube-8M 1st, HuBMAP Vasculature 1st, LEAP Molecular 1st, NFL Health 1st, HPA Cell 1st, BMS Molecular 1st, Herbarium 2020 1st, ISIC 2020 1st, AI4Code 1st, TReNDS 1st, Riiid 1st, Linking Writing 1st, Parkinson's DREAM 1st, RSNA Breast 1st, RSNA Screening 1st, WiDS Datathon 1st, Mayo STRIP AI 1st (18 competitions)
+## [2026-04-16] ingest | srk-batch-11.md — Image Matching 2025 1st, UBC Ovarian 1st, Facebook Check-Ins 1st, Vesuvius Kaggle 1st, Leaf Classification 1st, NFL Punt Analytics 1st, Recursion 2024 1st, Earthquake Damage 1st, Google Smartphone 1st, G2Net 2023 1st, Open Problems CITE 1st, Diabetic Retinopathy 1st, Moorhen 1st, iWildCam 2019 1st, Multi-Agent Behavior 1st, Allstate Claims 1st, State Farm Distracted 1st, Single-Cell Perturbations 1st (18 competitions)
+## [2026-04-16] ingest | srk-batch-12.md — Kore 2022 1st, Hotel-ID 2021 1st, Airbus Ship 1st, Lyft 3D 1st, Global Wheat 2021 1st, Optiver Realized Volatility 1st, VinBigData 1st, iMet Collection 2019 1st, Stanford Cars 1st, DFL Bundesliga 2023 1st, NFL 1st Down 2025 1st, Google Universal Image 1st, Herbarium 2022 1st, NFL Big Data 2024 1st, Foursquare Location 1st, Pet Popularity 1st, Understanding Clouds 1st, Hotel-ID 2022 1st (18 competitions)
+## [2026-04-16] ingest | srk-batch-13.md — PlantTraits 2024 1st, Inclusive Images 1st, Avito Demand 1st, Quick Draw Doodle 1st, Jigsaw Unintended Bias 1st, Data Science Bowl 2017 1st, RSNA Intracranial 1st, APTOS Blindness 1st, Mechanisms of Action 1st, Understanding Clouds 1st, RANZCR CLiP 1st, RSNA Cervical 1st, Bengali.AI 2024 1st, Novozymes Enzyme 1st, Google Analytics Revenue 1st, AI Math Olympiad 1st, 3D Object Detection 1st, Microsoft Malware 1st (18 competitions)
+## [2026-04-16] ingest | srk-batch-14.md — Yelp Photos 1st, Flavours of Physics 1st, ECML Taxi 1st, Diabetic Retinopathy 1st, Distracted Driver 1st, Nature Conservancy 1st, Allen AI Science 1st, Caterpillar Tube 1st, Shelter Outcomes 1st, Criteo Conversion 1st, ICDM 2015 1st, Africa Soil 1st, Search Relevance 1st, National Data Science Bowl 1st, Multi-Label Bird 1st, Flight Quest 2 1st (16 competitions)
+## [2026-04-16] update | wiki/index.md — added 6 SRK batch files (batches 9-14, 106 competitions); 41 raw solution references indexed; total 226 competitions from SRK notebook
+## [2026-04-16] update | CLAUDE.md schema — added Mermaid diagram conventions (graph TD only, max 20 nodes, when to add), collapsible <details> source blocks, anti-preamble rules (inspired by DeepWiki-Open patterns)
+## [2026-04-16] update | 8 wiki pages — added Mermaid diagrams and collapsible source blocks: kaggle-competition-playbook (pipeline), ensembling-strategies (3-level stack), validation-strategy (CV decision tree), kaggle-meta-strategy (workflow), overview (knowledge graph), feature-engineering-tabular (5-stage), stacking-deep (architecture), knowledge-distillation (LGBM→NN), machine-learning-advisor (RAG architecture)

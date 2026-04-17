@@ -6,10 +6,46 @@ source_count: 6
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/solutions/home-credit-1st-tunguz.md]] — 90+ model, 3-level stack
+- [[../../raw/kaggle/solutions/otto-group-1st-giba-semenov.md]] — 33-model L1, geometric mean L3
+- [[../../raw/kaggle/solutions/moa-1st-mark-peng.md]] — MoA 3-stage with auxiliary targets
+
+</details>
+
 ## What It Is
 Deep stacking extends the standard 2-level stacking architecture (base models → meta-learner) to 3+ levels. Each level trains on the OOF predictions of the previous level. The Home Credit 1st-place solution (Tunguz team) used a 3-level architecture with 90+ base models. At each level, diversity and OOF correctness are paramount.
 
 For the standard 2-level stacking pattern, see [[../concepts/ensembling-strategies]]. This page focuses on when and how to go deeper.
+
+```mermaid
+graph TD
+    subgraph Level 1: Base Models
+        A1[LightGBM x30]
+        A2[XGBoost x20]
+        A3[CatBoost x10]
+        A4[NN / DAE x10]
+        A5[Ridge / LR x15]
+    end
+    subgraph Level 2: Meta-Learners
+        B1[NN Meta-Learner]
+        B2[Ridge Meta-Learner]
+        B3[LightGBM Meta]
+    end
+    subgraph Level 3: Final
+        C1[Geometric Mean]
+    end
+    A1 --> B1
+    A2 --> B1
+    A3 --> B2
+    A4 --> B2
+    A5 --> B3
+    B1 --> C1
+    B2 --> C1
+    B3 --> C1
+    C1 --> D[Submission]
+```
 
 ## Why Go Deeper?
 

@@ -28,7 +28,7 @@ Kaggle Playground tabular 3-class classification: predict final horse colic case
 - `hospital_number`: 239 unique train / ~180 unique test with **124 overlap** → useful for target / frequency encoding
 
 ## Strategy Summary
-Straight play from [[../concepts/kaggle-playbook]]:
+Straight play from [[../strategies/kaggle-competition-playbook]]:
 
 1. **CV**: StratifiedKFold(10) — small + imbalanced → more folds for lower variance on OOF.
 2. **Feature engineering**:
@@ -72,7 +72,7 @@ Straight play from [[../concepts/kaggle-playbook]]:
 - [[../../raw/kaggle/horse-health-pipeline.py]] — full training pipeline
 
 ## Related
-- [[../concepts/kaggle-playbook]] — source workflow this followed
-- [[../concepts/stratified-kfold]] — CV choice rationale for imbalanced multiclass
-- [[../concepts/target-encoding]] — OOF target encoding for `hospital_number`
-- [[../concepts/fourth-root-blending]] — ensemble weighting scheme
+- [[../strategies/kaggle-competition-playbook]] — source workflow this followed
+- [[../concepts/validation-strategy]] — CV choice rationale for imbalanced multiclass
+- [[../concepts/target-encoding-advanced]] — OOF target encoding for `hospital_number`
+- [[../concepts/ensembling-strategies]] — ensemble weighting scheme (fourth-root blending)

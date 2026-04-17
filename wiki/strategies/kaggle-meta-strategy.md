@@ -6,9 +6,35 @@ source_count: 2
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/grandmaster-meta-strategies.md]] — KazAnova, Deotte, Goldbloom interviews
+- [[../../raw/kaggle/modern-tabular-dl-techniques.md]] — 2024-2025 technique landscape
+- [[../../raw/kaggle/solutions/srk-batch-1.md]] through srk-batch-14.md — patterns across 226 1st-place solutions
+
+</details>
+
 ## Summary
 
 Cross-competition principles from KazAnova (#2 globally), Chris Deotte (NVIDIA, 4x GM), Anthony Goldbloom (Kaggle CEO), and ML Contests annual analyses. These apply to every tabular competition regardless of domain.
+
+```mermaid
+graph TD
+    A[Competition Opens] --> B[Setup CV Matching LB]
+    B --> C[Adversarial Validation]
+    C --> D[Baseline Model + Log]
+    D --> E[Feature Engineering Sprint]
+    E --> F{CV-LB Gap Stable?}
+    F -->|Yes| G[Continue FE + Models]
+    F -->|No| H[Fix CV Split]
+    H --> E
+    G --> I{CV Improving?}
+    I -->|Yes| J[Log + Continue]
+    I -->|No| K[Ensemble Existing]
+    J --> I
+    K --> L[Select Final by CV]
+    L --> M[Submit Best CV + Best LB]
+```
 
 ## The Two Winning Approaches (Goldbloom)
 

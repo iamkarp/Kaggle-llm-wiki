@@ -38,6 +38,5 @@ import xgboost as xgb
 
 ## Related
 - [[../concepts/xgboost-ensembles]] — patterns for ensembling XGBoost models
-- [[../entities/lightgbm]] — close competitor; faster, comparable performance
-- [[../entities/catboost]] — better native categorical handling
+- [[../entities/lightgbm-catboost]] — close competitors; LightGBM faster, CatBoost better native categorical handling
 - [[../strategies/march-mania-v6-ensemble]] — primary usage example

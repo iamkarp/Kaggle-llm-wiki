@@ -1,0 +1,69 @@
+---
+title: "MachineLearningAdvisor"
+tags: [system, shiny, rag, chromadb, hybrid-retrieval, embeddings]
+date: 2026-04-16
+source_count: 1
+status: active
+---
+
+## Summary
+
+MachineLearningAdvisor is a Python Shiny app wrapping the llm-wiki knowledge base in a conversational interface. It uses hybrid retrieval (ChromaDB semantic search + keyword index search) synthesized by gpt-5.4-mini. Primary use case: paste a Kaggle competition description, receive a structured ML strategy document.
+
+## What It Is
+
+A local + deployed web app at `/Users/macbook/Documents/MachineLearningAdvisor`, published to shinyapps.io (karpeles account). Built 2026-04-16 as an extension of Karpathy's LLM wiki pattern, adding a RAG layer to overcome the scalability limits of pure index-based navigation at ~100+ documents.
+
+## Architecture
+
+```mermaid
+graph TD
+    A[User Query] --> B[ChromaDB Cosine Search]
+    A --> C[TF-IDF Index Search]
+    B --> D[Top 12 Semantic Chunks]
+    C --> E[Top 5 Full Pages]
+    D --> F[Merge + Deduplicate]
+    E --> F
+    F --> G[gpt-5.4-mini Synthesis]
+    G --> H[Streamed Response]
+    G --> I[Sources Sidebar]
+```
+
+## Key Parameters
+
+| Setting | Value |
+|---------|-------|
+| Embedding model | `text-embedding-3-small` |
+| Synthesis model | `gpt-5.4-mini` (toggle to `gpt-5.4`) |
+| ChromaDB path | `db/chroma/` |
+| Collection name | `ml_wiki` |
+| Semantic top-k | 12 chunks |
+| Index top-k | 5 full pages |
+| Chunk size | 500 tokens, 100 overlap |
+| Initial corpus | 948 chunks, 102 docs |
+
+## Competition Strategy Mode
+
+When a full competition description is pasted, the system prompt activates a structured output:
+- Competition Analysis (task, metric, constraints)
+- Recommended Strategy (phase-by-phase plan)
+- Data & Feature Engineering (specific techniques from knowledge base)
+- Training & Validation (CV strategy, HPO priorities)
+- What NOT To Do (pitfalls from similar competitions)
+- Jason's Relevant Prior Work
+
+## Tabs
+
+- **Advisor** — streaming chat with source attribution sidebar
+- **Ingest** — upload documents → AI auto-updates wiki pages + embeddings
+- **Browse** — searchable index table with in-place document viewer
+
+## Sources
+
+- [[../../raw/system/machine-learning-advisor-app]] — full implementation reference
+
+## Related
+
+- [[../overview]] — wiki this system is built on top of
+- [[../concepts/ensembling-strategies]] — primary content retrieved for ensemble questions
+- [[../strategies/kaggle-meta-strategy]] — primary content retrieved for strategy questions

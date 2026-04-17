@@ -15,6 +15,32 @@ This is Jason's ML and Kaggle knowledge base, maintained by LLM sessions followi
 - Tool and framework notes
 - Cross-cutting analyses and insights
 
+```mermaid
+graph TD
+    subgraph Knowledge Base
+        A[Competitions] --> E[Strategies]
+        A --> F[Concepts]
+        A --> G[Entities / Tools]
+        E --> F
+        F --> G
+    end
+    subgraph Raw Sources
+        H[226 1st-Place Solutions] --> A
+        I[Research Reports] --> F
+        J[Backtest Logs] --> K[Trading]
+    end
+    subgraph App Layer
+        L[MachineLearningAdvisor]
+        A --> L
+        E --> L
+        F --> L
+        K --> L
+    end
+    L --> M[ChromaDB Embeddings]
+    L --> N[Index Search]
+    L --> O[RAG Q&A]
+```
+
 ## Domain Map
 
 ### Competitions

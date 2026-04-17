@@ -6,8 +6,27 @@ source_count: 3
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/kaggle-competition-playbook.md]] — 5-stage FE process
+- [[../../raw/kaggle/2024-2025-winning-solutions-tabular.md]] — recent winning FE patterns
+- [[../../raw/kaggle/march-mania-v6-ensemble-doc.md]] — basketball-specific features
+
+</details>
+
 ## What It Is
 Feature engineering for tabular data transforms raw records into signals that ML models can leverage. For gradient boosting (XGBoost, LightGBM, CatBoost), good features often matter more than model choice.
+
+```mermaid
+graph TD
+    A[Raw Data] --> B[Stage 1: Domain Features]
+    B --> C[Stage 2: Interactions]
+    C --> D[Stage 3: Date/Time]
+    D --> E[Stage 4: Target Transforms]
+    E --> F[Stage 5: Group Aggregations]
+    F --> G[Feature Selection]
+    G --> H[Model Training]
+```
 
 ## Key Feature Categories
 

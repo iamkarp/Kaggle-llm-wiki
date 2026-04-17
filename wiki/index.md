@@ -1,3 +1,11 @@
+---
+title: "Wiki Index"
+tags: [meta]
+date: 2026-04-16
+source_count: 0
+status: active
+---
+
 # Wiki Index
 
 Content catalog — every page listed with link and summary. Updated on every create/update/archive operation.
@@ -51,6 +59,27 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | `raw/kaggle/solutions/tgs-salt-1st-babakhin.md` | TGS Salt Identification (2018) | 3-stage pseudo-labeling; BCE→Lovász; scSE decoder; FPA center block; snapshot ensemble |
 | `raw/kaggle/solutions/rsna-aneurysm-1st-tomoon33.md` | RSNA Aneurysm Detection (2025) | nnU-Net coarse-to-fine 3D; Location-Aware Transformer; SkeletonRecall loss; FocalTversky++ |
 | `raw/kaggle/solutions/siim-isic-melanoma-1st-bo.md` | SIIM-ISIC Melanoma (2020) | 9-class diagnosis CE (+0.01 AUC); rank ensembling; multi-resolution; metadata fusion |
+| `raw/kaggle/solutions/tabular-classics-batch.md` | Rossmann 1st + Crowdflower 1st + Homesite 1st | Entity embeddings (pioneered); distribution-based QWK decoding; StackNet 3-level stacking |
+| `raw/kaggle/solutions/cv-segmentation-batch.md` | Clouds 1st + Severstal 1st + Kuzushiji 1st + Recursion 4th + APTOS 1st | UNet+FPN dual; Cascade R-CNN+HRNet; GeM pooling; channel subset ensembling |
+| `raw/kaggle/solutions/nlp-audio-medical-batch.md` | Jigsaw 1st + CHAMPS 1st + Freesound 1st + SIIM 5th + RSNA 2nd | Bias-aware loss; MPNN molecular graphs; SpecAugment; CT 3-window; deep supervision |
+| `raw/kaggle/solutions/code-repo-solutions-batch.md` | Diabetic Retinopathy 1st + DSB 2017 1st + Avazu CTR 1st + NDSB 1st + Tradeshift 1st + Amazon Employee 1st + Avito 1st | SparseConvNet; 3D Faster R-CNN; FFM; cyclic pooling; Owen Zhang features |
+| `raw/kaggle/solutions/mixed-tier-solutions-batch.md` | Instant Gratification 1st + YouTube-8M 1st + Generative Dogs 1st + 7 more | QDA; NeXtVLAD+MoE; BigGAN truncation; keypoint alignment; PointPillars BEV; multi-level stacking |
+| `raw/kaggle/solutions/historical-interviews-batch.md` | Give Me Credit 1st + Rossmann 2nd/3rd + Prudential 2nd + 10 more | Early ensembling; entity embeddings; feature selection; physics-informed features; zero-shot GAN |
+| `raw/kaggle/solutions/srk-batch-1.md` | Toxic Comment 1st + Web Traffic 1st + H&M RecSys 1st + 11 more | Multi-embedding LSTM; seq2seq RNN; retrieve-then-rank; capsule networks; EfficientNet frame-level |
+| `raw/kaggle/solutions/srk-batch-2.md` | OpenVaccine 1st + Feedback Prize 1st + SETI 1st + 12 more | RNA graph features; ARC program synthesis; Mercari NLP+FM ridge; LLM prompt recovery; PANDA pathology |
+| `raw/kaggle/solutions/srk-batch-3.md` | BirdCLEF+ 2025 1st + LANL Earthquake 1st + PLAsTiCC 1st + 12 more | SpecAugment+Mixup audio; Bayesian LGBM; OTTO multi-stage recsys; LMSYS arena preference |
+| `raw/kaggle/solutions/srk-batch-4.md` | Favorita Grocery 1st + AIMO Prize 1st + ASL Signs 1st + 12 more | Seq2seq demand; symbolic math solvers; landmark DELG retrieval; Enefit weather features |
+| `raw/kaggle/solutions/srk-batch-5.md` | chaii QA 1st + Eedi 1st + Riiid 1st + 12 more | Multilingual QA; knowledge tracing SAKT; sleep event detection; Universal Image Embedding |
+| `raw/kaggle/solutions/srk-batch-6.md` | TF QA 1st + RSNA PE 1st + Indoor Nav 1st + 12 more | Long-context NLP; 3-stage CT; WiFi fingerprinting; RNA ribonanza; RL Halite |
+| `raw/kaggle/solutions/srk-batch-7.md` | HuBMAP Kidney 1st + CSIRO Biomass 1st + BirdCLEF 2023 1st + 12 more | Adaptive tiling; biomass regression; NER entity linking; KKBox survival; CryoET 3D detection |
+| `raw/kaggle/solutions/srk-batch-8.md` | Open Polymer 2025 1st + HMS Brain 1st + Vesuvius Ink 1st + 12 more | GNN SMILES; dual EEG+spectrogram; 3D ink segmentation; TrackML particle tracking; G2Net GW |
+| `raw/kaggle/solutions/srk-batch-9.md` | PII Detection 1st + AMP Parkinson's 1st + Google Football 1st + 15 more | DeBERTa NER ensemble; RL self-play; image matching SuperGlue; whale identification; GAN detection |
+| `raw/kaggle/solutions/srk-batch-10.md` | BELKA Drug 1st + YouTube-8M 1st + HuBMAP Vasculature 1st + 15 more | Molecular GNN; video NetVLAD; HPA cell segmentation; RSNA breast screening; Mayo pathology |
+| `raw/kaggle/solutions/srk-batch-11.md` | Image Matching 2025 1st + UBC Ovarian 1st + Facebook Check-Ins 1st + 15 more | LoFTR/SuperGlue; ovarian pathology MIL; check-in KNN; LEAP force fields; single-cell perturbation |
+| `raw/kaggle/solutions/srk-batch-12.md` | Kore 2022 1st + Hotel-ID 1st + Airbus Ship 1st + 15 more | Halite RL; hotel FGVC retrieval; ship U-Net; Lyft 3D detection; wheat global detection |
+| `raw/kaggle/solutions/srk-batch-13.md` | PlantTraits 2024 1st + Inclusive Images 1st + Avito Demand 1st + 15 more | Plant trait regression; domain adaptation CV; demand FM stacking; malware prediction |
+| `raw/kaggle/solutions/srk-batch-14.md` | Yelp Photos 1st + Flavours of Physics 1st + ECML Taxi 1st + 13 more | Photo classification CNN; physics-aware ML; taxi route prediction; flight optimization |
+| `raw/kaggle/ndres-past-solutions-catalog.md` | Master catalog (55 competitions) | Full index from ndres.me/kaggle-past-solutions with all solution links and code repos |
 
 ---
 
@@ -62,6 +91,7 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | [[strategies/kaggle-meta-strategy]] | kaggle, meta, strategy, cv, shake-up, grandmaster | active | Grandmaster principles: trust CV, CV-LB breakdown threshold, 2-week framework, leakage playbook |
 | [[strategies/march-mania-v6-ensemble]] | ensemble, xgboost, lightgbm, calibration | active | v6 weighted ensemble (35% v2.9 Elite + 35% v2.8 Advanced + 30% v5 Hybrid); best 0.02210 LB |
 | [[strategies/nfp-straddle-forex]] | forex, trading, straddle, oanda | active | NFP straddle on USD_JPY/EUR_USD/GBP_USD; 4-pip stop + 5-pip trail; 25 units; live OANDA |
+| [[strategies/autopilot-vqa-pipeline]] | kaggle, cvpr, vqa, vision, pipeline | draft | 3-stage VLM pipeline: Qwen-VL scene description → Claude Sonnet JSON extraction → post-processing |
 
 ---
 
@@ -109,6 +139,8 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | [[concepts/time-series-features]] | time-series, feature-engineering, lags, rolling-stats, fourier | active | Lag features, EWMA rolling stats, Fourier cyclical encoding, one-model-per-horizon strategy |
 | [[concepts/time-series-cv]] | time-series, cross-validation, walk-forward, purged-cv, embargo | active | Walk-forward CV, sliding window, purged CV (embargo), post-cutoff CV, multiple window validation |
 | [[concepts/llm-fine-tuning-kaggle]] | nlp, llm, deberta, transformer, awp, llrd, lora, 2024, 2025 | active | AWP, LLRD, multisample dropout, two-stage training, LoRA/QLoRA, knowledge distillation |
+| [[concepts/multimodal-classification]] | vision, vlm, multimodal, classification, vqa | draft | VLM pipelines, feature fusion, end-to-end multimodal for image+tabular competitions |
+| [[concepts/straddle-strategy]] | trading, forex, options, straddle, nfp | draft | Simultaneous long/short orders around volatility events; entry distance, trailing stops, whipsaw risks |
 
 ---
 
@@ -117,14 +149,20 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | Page | Tags | Status | Summary |
 |------|------|--------|---------|
 | [[entities/jason-profile]] | person, human, profile | active | Jason — human collaborator; CST; Kaggle + forex trading; approval gate on submissions |
+| [[entities/machine-learning-advisor]] | system, shiny, rag, chromadb, hybrid-retrieval | active | MachineLearningAdvisor — hybrid RAG Shiny app; ChromaDB + index search + gpt-5.4-mini; Competition Strategy Mode |
 | [[entities/xgboost]] | xgboost, framework, tool | active | XGBoost — primary gradient boosting framework; key params used in Jason's work |
 | [[entities/lightgbm-catboost]] | lightgbm, catboost, framework | active | LightGBM (fast, leaf-wise) and CatBoost (categorical native) — comparison and usage notes |
+| [[entities/qwen-vl]] | vlm, vision, qwen, multimodal, tool | draft | Qwen-VL vision-language model; Stage 1 of AUTOPILOT VQA pipeline for scene descriptions |
+| [[entities/claude-sonnet]] | llm, claude, anthropic, json-extraction, tool | draft | Claude Sonnet for structured JSON extraction; Stage 2 of AUTOPILOT VQA pipeline |
+| [[entities/oanda]] | forex, broker, api, trading, tool | draft | OANDA forex broker; v20 REST API; NFP straddle execution across accounts 006/007 |
 
 ---
 
 ## Comparisons
 
-*(empty — add head-to-head analyses here)*
+| Page | Tags | Status | Summary |
+|------|------|--------|---------|
+| [[comparisons/nfp-stop-configurations]] | trading, forex, nfp, straddle, comparison | draft | Fixed vs trailing vs tighter stop configs for NFP straddle; backtest comparison |
 
 ---
 
@@ -134,4 +172,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-15 | Page count: 99 (55 wiki pages + 21 raw solutions indexed above + 12 raw sources batch-2 + 11 extra)*
+*Last updated: 2026-04-16 | Page count: 62 wiki pages + 41 raw solution references indexed above*

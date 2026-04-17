@@ -13,11 +13,14 @@ In Kaggle, this is particularly powerful for **cross-model-family distillation**
 
 ## The Core Pattern: LGBM → NN
 
-```
-Step 1: Train LGBM on tabular features → get OOF soft labels (well-calibrated probabilities)
-Step 2: Train NN on LGBM soft labels   → student learns LGBM's decision surface
-Step 3: Fine-tune NN on hard labels    → student corrects for LGBM's systematic errors
-                                          and adds sequential/deep pattern knowledge
+```mermaid
+graph TD
+    A[Tabular Features] --> B[LGBM Teacher]
+    B --> C[OOF Soft Labels]
+    C --> D[NN Student]
+    A --> D
+    D --> E[Fine-Tune on Hard Labels]
+    E --> F[Final Student Model]
 ```
 
 **Why LGBM makes a good teacher**:

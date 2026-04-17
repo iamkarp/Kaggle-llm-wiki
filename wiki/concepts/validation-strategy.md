@@ -6,8 +6,36 @@ source_count: 4
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/kaggle-competition-playbook.md]] — CV design section
+- [[../../raw/kaggle/grandmaster-meta-strategies.md]] — CV-LB gap tracking principles
+- [[../../raw/kaggle/timeseries-nlp-techniques.md]] — purged CV and walk-forward patterns
+
+</details>
+
 ## What It Is
 Validation strategy determines how you estimate model performance on unseen data. A good CV score that reliably predicts LB score is the foundation of every Kaggle campaign. A broken CV (due to leakage, wrong split, or distribution mismatch) causes bad model selection decisions even if individual models are good.
+
+```mermaid
+graph TD
+    A[New Competition] --> B{Data has time?}
+    B -->|Yes| C[TimeSeriesSplit]
+    B -->|No| D{Data has groups?}
+    D -->|Yes| E[GroupKFold]
+    D -->|No| F{Imbalanced target?}
+    F -->|Yes| G[StratifiedKFold]
+    F -->|No| H[KFold]
+    C --> I[Run Adversarial Val]
+    E --> I
+    G --> I
+    H --> I
+    I --> J{AUC > 0.6?}
+    J -->|Yes| K[Distribution Shift]
+    J -->|No| L[CV is Reliable]
+    K --> M[Drop Drifting Features]
+    M --> L
+```
 
 ## CV Design Principles
 

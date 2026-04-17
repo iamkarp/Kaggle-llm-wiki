@@ -53,11 +53,9 @@ Key finding: deeper trees (9) + lower learning rate (0.01) outperformed shallowe
 
 ## Sources
 - [[../../raw/kaggle/v6-ensemble-documentation.md]] — depth/lr choices for March Mania
-- [[../../raw/code/mega-ensemble.py]] — multi-model ensemble patterns
-
 ## Related
 - [[../strategies/march-mania-v6-ensemble]] — primary usage example
 - [[../entities/xgboost]] — framework entity page
-- [[../entities/lightgbm]] — sister framework
+- [[../entities/lightgbm-catboost]] — sister frameworks
 - [[../concepts/calibration]] — probability calibration for tree models
 - [[../concepts/feature-engineering-tabular]] — features fed into these models

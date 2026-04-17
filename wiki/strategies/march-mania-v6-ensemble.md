@@ -97,4 +97,4 @@ Output: `v6_optimized_stage1_repro.csv`
 - [[../concepts/calibration]] — probability calibration
 - [[../concepts/feature-engineering-tabular]] — feature construction patterns
 - [[../entities/xgboost]] — XGBoost framework
-- [[../entities/lightgbm]] — LightGBM framework
+- [[../entities/lightgbm-catboost]] — LightGBM & CatBoost frameworks

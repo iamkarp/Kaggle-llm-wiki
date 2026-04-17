@@ -80,6 +80,13 @@ status: active | draft | archived          # active = maintained, draft = incomp
 
 ### Body structure
 ```markdown
+<details><summary>Sources</summary>
+
+- [[../raw/category/filename]] — one-line description
+- [External link](url) — description
+
+</details>
+
 ## Summary
 1–3 sentence plain-English summary. What is this? Why does it matter?
 
@@ -89,14 +96,45 @@ Structured content. Use tables, bullet lists.
 ## What Worked / What Didn't
 (for competitions and strategies only)
 
-## Sources
-- [[raw/category/filename]] — one-line description
-- [External link](url) — description
-
 ## Related
 - [[wiki/concepts/topic]] — why it's related
 - [[wiki/entities/tool]] — how it was used
 ```
+
+The collapsible `<details>` sources block goes **first**, before any heading. This keeps provenance visible but not distracting.
+
+### Diagrams (Mermaid)
+
+Add Mermaid diagrams when a page describes a pipeline, architecture, decision flow, or multi-step process. Rules:
+- **Always use `graph TD`** (top-down) for flowcharts. Never `graph LR`.
+- Node labels: max 4 words.
+- Use `sequenceDiagram` for multi-component interactions (declare all `participant` lines first).
+- Use `classDiagram` or `erDiagram` only when showing data relationships.
+- Keep diagrams under 20 nodes — split into multiple diagrams if larger.
+- Place the diagram immediately after the section heading it illustrates.
+
+When to add a diagram:
+- **Competition pages**: pipeline diagram (data → features → models → ensemble → submission)
+- **Strategy pages**: architecture diagram (model composition, data flow)
+- **Concept pages**: decision flowchart (when to use, alternatives) or process diagram (steps)
+- **Entity pages**: only if the tool has a multi-step workflow
+
+Example:
+````markdown
+## Architecture
+
+```mermaid
+graph TD
+    A[Raw Data] --> B[Feature Engineering]
+    B --> C[XGBoost]
+    B --> D[LightGBM]
+    B --> E[Neural Net]
+    C --> F[Weighted Blend]
+    D --> F
+    E --> F
+    F --> G[Submission]
+```
+````
 
 ---
 

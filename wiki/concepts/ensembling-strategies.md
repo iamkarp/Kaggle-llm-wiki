@@ -6,8 +6,35 @@ source_count: 7
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/kaggle-competition-playbook.md]] — ensembling section
+- [[../../raw/kaggle/solutions/srk-batch-1.md]] through srk-batch-14.md — ensemble patterns from 226 winning solutions
+- [[../../raw/kaggle/grandmaster-meta-strategies.md]] — KazAnova stacking principles
+
+</details>
+
 ## What It Is
 Ensembling combines predictions from multiple models to reduce variance and improve generalization. On Kaggle, ensembles consistently outperform single models, often by a meaningful margin (0.001–0.01 depending on metric scale). The key insight: **models that make different errors are more valuable than models that are individually better**.
+
+```mermaid
+graph TD
+    subgraph Level 1: Blending
+        A1[XGBoost OOF] --> B1[Weighted Average]
+        A2[LightGBM OOF] --> B1
+        A3[CatBoost OOF] --> B1
+    end
+    subgraph Level 2: Stacking
+        B1 --> C1[Meta-Learner Ridge]
+        A4[Neural Net OOF] --> C1
+        A5[KNN OOF] --> C1
+    end
+    subgraph Level 3: Final
+        C1 --> D1[Geometric Mean]
+        B2[Separate Stack] --> D1
+    end
+    D1 --> E[Submission]
+```
 
 ## Level 1: Weighted Average Blending
 

@@ -64,8 +64,7 @@ from catboost import CatBoostClassifier
 In practice: **train all three and ensemble** — they make complementary errors.
 
 ## Sources
-- [[../../raw/code/mega-ensemble.py]] — all three used as ensemble components
-- [[../../raw/kaggle/v6-ensemble-documentation.md]] — LightGBM in v5 hybrid
+- [[../../raw/kaggle/v6-ensemble-documentation]] — LightGBM in v5 hybrid
 
 ## Related
 - [[../entities/xgboost]] — primary framework in Jason's work

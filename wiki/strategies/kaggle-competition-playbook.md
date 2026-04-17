@@ -6,10 +6,34 @@ source_count: 1
 status: active
 ---
 
+<details><summary>Sources</summary>
+
+- [[../../raw/kaggle/kaggle-competition-playbook.md]] — full workflow with code examples
+- [[../../raw/kaggle/solutions/srk-batch-1.md]] through srk-batch-14.md — 226 first-place solutions informing this playbook
+
+</details>
+
 ## Summary
-Jason's comprehensive playbook for Kaggle tabular ML competitions, covering the full workflow from problem framing through final submission selection. Read this at the start of every new competition. The raw source is `raw/kaggle/kaggle-competition-playbook.md` — refer to it for full code examples.
+Jason's comprehensive playbook for Kaggle tabular ML competitions, covering the full workflow from problem framing through final submission selection. Read this at the start of every new competition.
 
 This page is the navigation hub. Each major section links to a dedicated concept page for depth.
+
+```mermaid
+graph TD
+    A[Phase 0: Setup] --> B[Phase 1: Problem Framing]
+    B --> C[Phase 2: EDA]
+    C --> D[Phase 3: Variable Typing]
+    D --> E[Phase 4: Feature Engineering]
+    E --> F[Phase 5: Modeling]
+    F --> G[Phase 6: Ensembling]
+    G --> H[Phase 7: Submission Selection]
+    B -.-> I[CV Strategy]
+    C -.-> J[Adversarial Validation]
+    E -.-> K[Target Encoding]
+    F -.-> L[XGBoost / LightGBM]
+    G -.-> M[Stacking / Blending]
+    H -.-> N[Trust CV Rule]
+```
 
 ---
 
