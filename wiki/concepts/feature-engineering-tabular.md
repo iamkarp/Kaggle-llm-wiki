@@ -154,6 +154,7 @@ Primary features: Four Factors (off + def = 8 features), Elo Rating, Pythagorean
 - [[../../raw/kaggle/v6-ensemble-documentation.md]] — feature list for March Mania v6
 - [[../../raw/kaggle/memory-2026-02-22.md]] — v11/v12 feature experiment notes
 - [[../../raw/kaggle/kaggle-competition-playbook.md]] — §5 five-stage process, §4 missing values, §3 variable typing
+- [[../../raw/kaggle/solutions/missing-batch-finance-tabular.md]] — Two Sigma Connect (housing+text+image FE, 546 votes), Airbnb New User Bookings (user behavior features), Home Depot Search Relevance (NLP+tabular FE)
 
 ## Related
 - [[../strategies/march-mania-v6-ensemble]] — how these features are used in the ensemble

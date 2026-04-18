@@ -163,6 +163,8 @@ Not yet applied (March Mania uses season-level sports data, not daily time serie
 ## Sources
 - [[../../raw/kaggle/timeseries-nlp-techniques.md]] — comprehensive time series techniques reference
 - [[../../raw/kaggle/solutions/m5-forecasting-1st-yeonjun.md]] — M5 lag feature blueprint with 220 LightGBM models
+- [[../../raw/kaggle/solutions/missing-batch-timeseries-signals.md]] — Liverpool Ion Switching (481 votes), Winton Stock Market, Grasp & Lift EEG, seizure detection/prediction competitions, GEF wind forecasting
+- [[../../raw/kaggle/solutions/missing-batch-finance-tabular.md]] — Two Sigma Financial News, Zillow Prize (time-ordered tabular)
 
 ## Related
 - [[../concepts/time-series-cv]] — cross-validation strategy for time series

@@ -68,8 +68,8 @@ Straight play from [[../strategies/kaggle-competition-playbook]]:
 - Would stacking with a ridge meta-learner beat the fourth-root blend? On 988 rows, probably noisy.
 
 ## Sources
-- [[../../raw/kaggle/horse-health-readme.txt]] — official competition readme
-- [[../../raw/kaggle/horse-health-pipeline.py]] — full training pipeline
+- `raw/kaggle/horse-health-readme.txt` — official competition readme
+- `raw/kaggle/horse-health-pipeline.py` — full training pipeline
 
 ## Related
 - [[../strategies/kaggle-competition-playbook]] — source workflow this followed

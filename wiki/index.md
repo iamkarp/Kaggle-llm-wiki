@@ -82,6 +82,12 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | `raw/kaggle/solutions/srk-batch-13.md` | PlantTraits 2024 1st + Inclusive Images 1st + Avito Demand 1st + 15 more | Plant trait regression; domain adaptation CV; demand FM stacking; malware prediction |
 | `raw/kaggle/solutions/srk-batch-14.md` | Yelp Photos 1st + Flavours of Physics 1st + ECML Taxi 1st + 13 more | Photo classification CNN; physics-aware ML; taxi route prediction; flight optimization |
 | `raw/kaggle/ndres-past-solutions-catalog.md` | Master catalog (55 competitions) | Full index from ndres.me/kaggle-past-solutions with all solution links and code repos |
+| `raw/kaggle/solutions/missing-batch-finance-tabular.md` | 23 finance/tabular competitions | Two Sigma Connect (546v), Allstate Claims (482v), Otto Group (501v), Prudential, Zillow, KKBox, Criteo, Springleaf, Liberty Mutual, Homesite, ICR, Bluebook, GiveMeSomeCredit, Mitsui, Santander, Criteo CTR, Airbnb Recruiting |
+| `raw/kaggle/solutions/missing-batch-cv-image.md` | 12 CV/image competitions | iMet 2019 FGVC6 (455v), Image Matching 2024 (297v), MABe Mouse Behavior (299v), BYU Flagellar Motors (245v), iWildCam 2020, Fathomnet, Landmark Recognition, 2nd Annual DSB, Malware Classification, Career Con, TReNDS Neuroimaging (387v), Freesound |
+| `raw/kaggle/solutions/missing-batch-nlp-reasoning.md` | 16 NLP/reasoning competitions | ARC Prize 2024 (262v), ARC Prize 2025 (179v), Deep Past Translation (226v), Text Normalization EN/RU, Detecting Insults, ASAP Essay Scoring, MSK Cancer, Twitter Psychopathy, OpenAI Red Teaming, NeurIPS Machine Unlearning, Predict AI Runtime (199v), Job/Event Recommendation |
+| `raw/kaggle/solutions/missing-batch-timeseries-signals.md` | 15 time-series/signals competitions | Liverpool Ion Switching (481v), Grasp & Lift EEG, Seizure Detection/Prediction, Winton Stock Market, GEF Wind Forecasting, NIPS 2017 Adversarial (×3), Child Mind Institute PIU (178v), Inria BCI, Belkin Energy, StayAlert, Flight, How Much Did It Rain |
+| `raw/kaggle/solutions/missing-batch-optimization-games.md` | 12 optimization/game competitions | Santa 2021 Movie Montage (304v), Traveling Santa 2018 (239v), Lux AI S3 (290v), Lux AI 2021 (238v), Lux AI S2, Traveling Santa (orig), Packing Santas Sleigh, Santa Gift Matching, Santa Workshop Tour 2019, Santa 2020, Random Number Grand Challenge, Helping Santas Helpers |
+| `raw/kaggle/solutions/missing-batch-sports-bio-early.md` | 37 sports/bio/early-Kaggle competitions | March Mania 2015/2016/2023/2025/2026, NCAA March Madness 2020 (M+W), Men's Mania 2018/2022, AFSIS Soil, Nomad2018, Connectomics, HivProgression, HHP, KDD Cup 2012/2013, DontGetKicked, DarkWorlds, ChessRatings2, FacebookRecruiting, COVID-19 forecasting (×3), and more |
 
 ### Non-1st-Place Solutions (100+ upvotes)
 
@@ -167,6 +173,8 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | [[techniques/inverse-problem-solving]] | search, permutation, bidirectional, group-theory | active | Solving inverse permutation and reversing moves; ~70% of pancake improvements from INV direction |
 | [[patterns/c-vs-python-compute]] | performance, language-choice, subprocess, parallelism | active | C/Rust binary for tight inner loop + Python orchestrator; ~100x speedup for beam search |
 | [[mistakes/nmcs-large-search-spaces]] | monte-carlo, search, branching-factor, scaling | active | NMCS unviable when branching factor ≥50; pancake n=100 b=99 makes even level-1 impossible |
+| [[concepts/combinatorial-optimization]] | optimization, santa, traveling-salesman, simulated-annealing, genetic-algorithm | active | SA, LKH, OR-Tools, GPU annealing for Santa/TSP/scheduling Kaggle competitions; 12 optimization comps indexed |
+| [[concepts/reinforcement-learning-games]] | reinforcement-learning, game-ai, lux-ai, self-play, mcts | active | Self-play RL, MCTS, imitation learning for Lux AI / game simulation competitions; Seasons 1–3 indexed |
 
 ---
 
@@ -198,4 +206,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-17 | Page count: 63 wiki pages + 49 raw solution files + ndres catalog indexed above*
+*Last updated: 2026-04-18 | Page count: 68 wiki pages + 55 raw solution files + ndres catalog indexed above | 115 missing competitions ingested*

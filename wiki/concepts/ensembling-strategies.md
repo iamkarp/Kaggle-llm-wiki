@@ -316,6 +316,7 @@ Much broader: LR, Ridge, RF, ExtraTrees, KNN, SVM, MLP, GaussianProcess, XGBoost
 - [[../../raw/kaggle/2024-2025-winning-solutions-tabular.md]] — CatBoost baseline trick, hill climbing, AutoGluon, Optuna subset selection
 - [[../../raw/kaggle/modern-tabular-dl-techniques.md]] — hillclimbers library, AutoGluon benchmarks
 - [[../../raw/kaggle/grandmaster-meta-strategies.md]] — ensemble selection principles
+- [[../../raw/kaggle/solutions/missing-batch-finance-tabular.md]] — Otto Group (501 votes, canonical 33-model ensemble), Allstate (482 votes, deep GBDT blending), Prudential (189 votes, XGBoost+NN blend)
 
 ## Related
 - [[../strategies/march-mania-v6-ensemble]] — weighted average applied to March Mania

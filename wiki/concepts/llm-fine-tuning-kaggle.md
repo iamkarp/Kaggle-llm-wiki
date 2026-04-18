@@ -264,6 +264,7 @@ Not applied (Jason's competitions are tabular/sports/vision). Directly applicabl
 - [AWP Kaggle notebook](https://www.kaggle.com/code/itsuki9180/introducing-adversarial-weight-perturbation-awp)
 - [LMSYS 1st place GitHub](https://github.com/tascj/kaggle-lmsys-chatbot-arena)
 - [HuggingFace QLoRA blog](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
+- [[../../raw/kaggle/solutions/missing-batch-nlp-reasoning.md]] — ARC Prize 2024 (262 votes), ARC Prize 2025 (179 votes), Deep Past Translation (226 votes, 6th: 15-model ensemble + diverse data), Text Normalization English/Russian, MSK Cancer Treatment, ASAP Essay Scoring, Detecting Insults
 
 ## Related
 - [[../concepts/knowledge-distillation]] — distillation patterns (tabular context)

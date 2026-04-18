@@ -242,10 +242,12 @@ def signed_log(x):
 
 ## Sources
 
-- `raw/kaggle/financial-competition-strategies.md` *(not yet ingested)* — full reference with all code
+- `raw/kaggle/financial-competition-strategies.md` — full reference with all code
 - [Jane Street Market Prediction 2024](https://www.kaggle.com/competitions/jane-street-real-time-market-data-forecasting)
 - [Optiver Realized Volatility Prediction](https://www.kaggle.com/competitions/optiver-realized-volatility-prediction)
 - [Optiver Trading at Close 2023](https://www.kaggle.com/competitions/optiver-trading-at-the-close)
+- [[../../raw/kaggle/solutions/missing-batch-finance-tabular.md]] — Two Sigma Connect (546 votes), Allstate Claims (482 votes), Winton Stock Market, Zillow Prize, KKBox Churn, Criteo CTR, Mitsui Commodity
+- [[../../raw/kaggle/solutions/missing-batch-timeseries-signals.md]] — The Winton Stock Market Challenge, Two Sigma Financial News
 
 ## Related
 

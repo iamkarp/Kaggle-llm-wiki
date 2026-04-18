@@ -87,7 +87,7 @@ Log: `trading/nfp_cron.log`
 4. Credentials in `.oanda.env` — never commit to git
 
 ## Sources
-- [[../../raw/trading/nfp-backtest-results-trailing.txt]] — trailing stop backtest results
+- `raw/trading/nfp-backtest-results-trailing.txt` — trailing stop backtest results
 - `raw/trading/nfp-backtest-results-tighter` *(not yet ingested)* — tighter stop backtest results
 
 ## Related

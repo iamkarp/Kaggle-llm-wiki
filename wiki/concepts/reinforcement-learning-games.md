@@ -1,0 +1,82 @@
+---
+title: "Reinforcement Learning for Game AI Competitions"
+tags: [reinforcement-learning, game-ai, lux-ai, self-play, mcts, rl, kaggle, simulation]
+date: 2026-04-18
+source_count: 1
+status: active
+---
+
+## Summary
+
+Kaggle game-AI competitions (Lux AI Seasons 1–3, ConnectX, Hungry Geese, Google Football, Halite) reward agents that play a game better than opponents. Winning approaches converge on: self-play RL (PPO/DQN for simple games, AlphaZero-style for complex), hand-crafted rule-based agents as baseline, and imitation learning from expert replays. Lux AI Season 3 (NeurIPS 2024) saw diffusion-based world models competing.
+
+## What It Is
+
+Simulation competitions where agents play against each other in real time (or turn-by-turn). Agent quality is evaluated via a rating system (ELO-style). No train/test data split — the agent is the product.
+
+**Kaggle simulation competitions:**
+- **Lux AI (2021)**: 2-player resource collection + base building
+- **Lux AI Season 2 (NeurIPS 2023)**: added robots, factories, complex resource chains
+- **Lux AI Season 3 (NeurIPS 2024)**: heavily expanded (290 votes)
+- **Halite** (by Two Sigma): ship-based resource collection, 4-player
+- **Google Football**: full 11v11 soccer, continuous state space
+- **ConnectX**: simpler combinatorial game (connect-4 variant)
+- **Hungry Geese**: snake-like multiplayer game
+
+## Key Approaches
+
+### Rule-Based Baseline (Always Start Here)
+- Hand-coded heuristics for simple games often reach top-100
+- For Lux AI: greedy resource allocation + closest-unit assignment is a strong baseline
+- Rule-based + minimax search can reach top-10 in simpler games (ConnectX)
+
+### Self-Play Reinforcement Learning
+- **PPO (Proximal Policy Optimization)**: most commonly used; stable training for continuous action spaces
+- **DQN / Rainbow**: better for discrete action spaces (ConnectX)
+- **Self-play loop**: agent plays against past versions of itself; opponent pool diversity prevents mode collapse
+- **Curriculum learning**: start against weak opponents, progressively harder
+
+### Imitation Learning (Behavioral Cloning)
+- Collect replays from top agents → train a supervised model to clone behavior
+- BC bootstrap → RL fine-tune is the standard pipeline
+- Risk: mode collapse to common strategies; add entropy regularization
+
+### Monte Carlo Tree Search (MCTS)
+- Strong for turn-based games with moderate branching factor
+- AlphaZero-style: MCTS guided by value + policy networks trained via self-play
+- Lux AI: MCTS for long-horizon planning + RL for local tactical decisions
+
+### Diffusion / World Models (Lux AI S3, 2024)
+- Learn a differentiable simulator of the game
+- Plan via gradient descent through the model
+- Emerging approach; not yet dominant but top solutions in 2024 NeurIPS competition
+
+## Kaggle-Specific Patterns
+
+- **Determinism matters**: many Kaggle game envs have fixed random seeds per episode — exploit this to test strategy consistency
+- **Opponent modeling**: in multi-agent games, model common opponent strategies and counter them
+- **Ensemble agents**: submit an ensemble that randomly selects from multiple agent strategies per game
+- **Time budget**: agents have strict per-move time limits (typically 1-5 seconds); optimize inference speed
+- **Leaderboard ELO systems**: submit often, track ELO trend — improvement is signal even before LB rank changes
+
+## Competition Results
+
+| Competition | Year | Winner Approach | Total Votes |
+|---|---|---|---|
+| Lux AI Season 3 (NeurIPS 2024) | 2024 | RL + diffusion world model | 290 |
+| Lux AI Season 2 (NeurIPS) | 2023 | Self-play PPO + MCTS | — |
+| Lux AI (2021) | 2021 | Self-play RL + rule-based hybrid | 238 |
+| Google Football | 2020 | PPO with shaped reward | — |
+| Halite by Two Sigma | 2018 | Self-play DQN + heuristics | — |
+
+## In Jason's Work
+
+Not yet applied. Lux AI competitions overlap with January-February (overlapping with March Mania prep). The RL techniques here are separate from the tabular/GBM focus of Jason's current Kaggle work.
+
+## Sources
+- [[../../raw/kaggle/solutions/missing-batch-optimization-games.md]] — Lux AI 2021, Lux AI Season 2, Lux AI Season 3, Random Number Grand Challenge
+
+## Related
+- [[../concepts/combinatorial-optimization]] — Santa optimization competitions (adjacent domain)
+- [[../concepts/validation-strategy]] — agent evaluation via self-play differs from supervised CV
+- [[../strategies/kaggle-meta-strategy]] — general competition strategy applies to game AI too
