@@ -1,0 +1,81 @@
+---
+title: Beam Search for Combinatorial Optimization
+category: techniques
+tags: [search, optimization, heuristic, combinatorial]
+created: 2026-04-16
+updated: 2026-04-16
+---
+
+# Beam Search for Combinatorial Optimization
+
+Maintain a fixed-width "beam" of the W best partial solutions. At each step, expand all candidates, score them, and keep the top W. Repeat until a solution is found.
+
+## Core Algorithm
+
+```
+beam = [(score(initial_state), initial_state, [])]
+for step in range(max_steps):
+    candidates = []
+    for (score, state, moves) in beam:
+        for action in possible_actions(state):
+            new_state = apply(state, action)
+            if is_goal(new_state): return moves + [action]
+            candidates.append((score(new_state), new_state, moves + [action]))
+    beam = deduplicate_and_top_W(candidates)
+```
+
+## When to Use
+
+- The branching factor is moderate (10–100 actions per state)
+- You have a reasonable heuristic to score states
+- Optimal solutions aren't required (beam search is incomplete — it can miss solutions that a full search would find)
+- You need solutions fast: beam search is linear in depth, linear in W × branching factor per step
+
+## Key Design Decisions
+
+### Beam width (W)
+- Wider beams find better solutions but cost O(W × branching) per step
+- Diminishing returns: going from W=100 to W=300 helps a lot; W=1000 to W=3000 less so
+- **Multiple narrow runs beat one wide run** — stochastic restarts with different random seeds explore more of the search space
+
+### Scoring function
+The heuristic is everything. Options:
+- **Domain-specific heuristic** (e.g., breakpoint count for sorting). Fast, interpretable, but can be loose.
+- **Multi-ply lookahead**: Score state by the best heuristic after applying k more greedy moves. In pancake sorting, 2-ply lookahead gave ~2% better solutions than 1-ply.
+- **Trained neural network**: A model predicting "distance to goal" can dramatically outperform hand-crafted heuristics. Top teams in Santa 2024 used ResNet models with beam widths of 4K–65K on GPU.
+
+### Tie-breaking
+When many candidates have the same score, random tie-breaking (with a fixed seed for reproducibility) introduces diversity. This is critical — deterministic tie-breaking can cause the beam to collapse to near-duplicate states.
+
+### Deduplication
+Remove duplicate states within the beam. Without this, the beam quickly fills with copies of a few "popular" states, wasting capacity.
+
+## Stochastic Beam Search
+
+Add small random noise to scores: `score + ε * random()`. Different seeds produce different solutions. Running 20 seeds at W=300 typically finds better solutions than 1 run at W=6000, and parallelizes trivially.
+
+Seed-deterministic evaluation enables:
+- Reproducing any improvement by replaying the exact seed
+- Partitioning seed ranges across machines
+- Incremental improvement: periodically harvest best solutions, keep searching
+
+## Performance
+
+For combinatorial problems, implement the inner loop in C/C++/Rust. Python is ~100x slower for the tight scoring loop. A typical structure:
+
+- **C binary**: takes problem instance + beam width + seed, outputs solution
+- **Python orchestrator**: manages parallel workers, tracks best solutions, writes results
+
+## Compared to Other Methods
+
+| Method | Finds optimal? | Speed | When to prefer |
+|--------|---------------|-------|----------------|
+| BFS/DFS | Yes | Slow (exponential) | Small state spaces |
+| IDA* | Yes | Medium | Good admissible heuristic, moderate depth |
+| Beam search | No | Fast | Large state spaces, need good-enough solutions |
+| MCTS/NMCS | No | Slow | Low branching factor, good simulation policy |
+
+## See Also
+- [[competitions/santa-2024-pancake]] — beam search as primary solver for pancake sorting
+- [[techniques/inverse-problem-solving]] — running beam search in both directions
+- [[patterns/c-vs-python-compute]] — why the inner loop must be in C

@@ -1,0 +1,68 @@
+---
+title: Inverse Problem Solving
+category: techniques
+tags: [search, permutation, bidirectional, optimization]
+created: 2026-04-16
+updated: 2026-04-16
+---
+
+# Inverse Problem Solving
+
+For problems where you can solve in both directions (start→goal or goal→start), try both. The forward and backward search spaces often have different local optima, so one direction may find shorter solutions than the other.
+
+## How It Works
+
+For permutation problems: given permutation `perm`, compute the inverse `inv` where `inv[perm[i]] = i`. Solve `inv` to get moves `[m1, m2, ..., mk]`. The solution to the original is the reversed sequence `[mk, ..., m2, m1]`.
+
+```python
+def inverse_perm(perm):
+    inv = [0] * len(perm)
+    for i, v in enumerate(perm):
+        inv[v] = i
+    return inv
+
+# Solve inverse
+inv_moves = solve(inverse_perm(perm))
+# Solution to original = reversed moves
+fwd_moves = inv_moves[::-1]
+```
+
+## Why It Helps
+
+Heuristic search (beam search, greedy, A*) is sensitive to the shape of the search landscape. Two states that are equidistant from the goal can have very different heuristic scores. The inverse permutation reshuffles these landscapes — a case that's hard forward may be easy backward, and vice versa.
+
+In pancake sorting (Santa 2024):
+- ~70% of improvements came from INV direction
+- Some cases improved only in FWD, some only in INV
+- Running both effectively doubles the search coverage
+
+## When to Apply
+
+The technique applies whenever the problem has a group-theoretic structure — specifically when:
+1. The operations are invertible (prefix reversals are self-inverse)
+2. You can efficiently compute the "inverse problem" (O(n) for permutations)
+3. The same solver works on both the original and inverse
+
+This includes: permutation sorting, Rubik's cube, sliding tile puzzles, and any puzzle where moves are reversible.
+
+## Implementation Pattern
+
+```python
+for case in cases:
+    perm = case.permutation
+    inv = inverse_perm(perm)
+
+    # Try forward
+    fwd_sol = beam_search(perm, seeds=range(20))
+
+    # Try inverse
+    inv_sol = beam_search(inv, seeds=range(20))
+    inv_sol_reversed = inv_sol[::-1]
+
+    # Keep the shorter one
+    best = min(fwd_sol, inv_sol_reversed, key=len)
+```
+
+## See Also
+- [[competitions/santa-2024-pancake]] — inverse direction was the primary source of improvements
+- [[techniques/beam-search]] — the search algorithm used in both directions

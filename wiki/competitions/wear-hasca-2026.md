@@ -3,12 +3,12 @@ title: 3rd WEAR Dataset Challenge @ HASCA 2026
 category: competitions
 tags: [har, time-series, wearable, multimodal, macro-f1]
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-16
 ---
 
 # 3rd WEAR Dataset Challenge @ HASCA 2026
 
-**Platform:** Kaggle | **Metric:** Macro F1-score | **Result:** #1 (0.58575)
+**Platform:** Kaggle | **Metric:** Macro F1-score | **Result:** #1 (0.60855)
 
 ## Problem
 
@@ -31,7 +31,20 @@ Test metadata provides `id`, `sbj_id`, `sensor_location` for each window.
 
 ## What Worked
 
-### PatchTST with Sensor Embedding (V10) — 0.58575 LB
+### Scaled PatchTST (V16) — 0.60855 LB (current best)
+- [[techniques/patchtst]] scaled up: d_model=96, n_heads=4, n_layers=3, d_ff=192, dropout=0.15
+- [[techniques/sensor-embedding]]: nn.Embedding(4, 16) projected to d_model
+- [[techniques/lr-swap-augmentation]]: Negate x-axis, swap left↔right sensor IDs
+- [[techniques/test-time-augmentation]]: Average predictions with L-R flipped input
+- [[techniques/threshold-optimization]]: Per-class bias on OOF predictions
+- Linear warmup (3 epochs) + cosine decay, 40 epochs, patience 10
+- 4-fold grouped CV, batch 256, AdamW lr=3e-4, label smoothing 0.1
+- Pure inertial — NO video features (they hurt generalization)
+- **Runtime: 345 min on CPU** (1 seed, 70-88 min/fold)
+- OOF: 0.5232 → 0.5310 adjusted, LB: 0.60855
+- 239,891 parameters
+
+### PatchTST with Sensor Embedding (V10) — 0.58575 LB (previous best)
 - [[techniques/patchtst]] with d_model=64, n_heads=4, n_layers=3, patch_len=10
 - [[techniques/sensor-embedding]]: nn.Embedding(4, 16) concatenated to patch embeddings
 - [[techniques/lr-swap-augmentation]]: Negate x-axis, swap left↔right sensor IDs
@@ -52,6 +65,12 @@ See [[mistakes/gbm-for-cross-subject-har]]. Multiple GBM variants all failed:
 - V14: GBM+PatchTST 50/50 blend → OOF 0.6348, LB 0.50182
 
 GBM OOF scores are inflated because handcrafted features capture training-subject-specific patterns that don't transfer. Even blending GBM with PatchTST (V14) hurt — from 0.586 to 0.502.
+
+### VideoMAE Features in PatchTST — 0.13211 LB
+See [[mistakes/videomae-cross-subject]]. Even when feeding VideoMAE features to PatchTST (which generalizes well on its own), the video signal is toxic:
+- V15: PatchTST + VideoMAE token → OOF 0.6087, LB 0.13211
+- The model attended to subject-specific video patterns, collapsing to 61% null on test
+- This is WORSE than GBM alone — video features are the single biggest trap in this competition
 
 ### PCA on VideoMAE Features
 See [[mistakes/pca-on-pretrained-features]]. PCA trained on training subjects doesn't generalize.
@@ -78,12 +97,13 @@ Kaggle P100 has CUDA kernel incompatibility with current PyTorch. All DL must ru
 4. **L-R swap augmentation + TTA** effectively doubles training data for limb-worn sensors
 5. **Threshold optimization** is free macro F1 improvement
 6. **Don't blend weak generalizers** — even at optimal OOF weight, GBM contaminated PatchTST on test
+7. **VideoMAE features are toxic** — they encode subject/environment-specific visual info; feeding them to any model (GBM or PatchTST) kills cross-subject generalization
 
 ## Competition Context
 
 | Rank | Team | Score |
 |------|------|-------|
-| 1 | Jason Karpeles | 0.58575 |
+| 1 | Jason Karpeles | 0.60855 |
 | 2 | test_target-feature | 0.58422 |
 | 3 | AttendAndDiscriminate (baseline) | 0.56091 |
 | 4 | TinyHAR (baseline) | 0.54594 |

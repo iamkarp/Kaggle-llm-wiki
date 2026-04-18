@@ -30,6 +30,11 @@ CLAUDE.md         # Schema and operational rules
 
 ## Current Coverage
 
+- **Santa 2024 — Pancake Sorting** — Combinatorial optimization with prefix reversals, 89,748 total moves
+  - Beam search (C, 2-ply lookahead), inverse permutation solving, breakpoint heuristic
+  - Why NMCS fails at high branching factors
+  - C vs Python for compute-intensive search
+
 - **3rd WEAR Dataset Challenge @ HASCA 2026** — HAR with wearable sensors, #1 on public LB
   - PatchTST, sensor embeddings, L-R swap augmentation, threshold optimization
   - Why GBM fails at cross-subject generalization

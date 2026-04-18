@@ -1,0 +1,28 @@
+---
+title: NMCS for Large Search Spaces
+category: mistakes
+tags: [search, monte-carlo, combinatorial-optimization]
+created: 2026-04-16
+updated: 2026-04-16
+---
+
+# NMCS for Large Search Spaces
+
+**What happened:** Applied Nested Monte Carlo Search (NMCS) to pancake sorting at n=100. Even level-1 NMCS was impossibly slow.
+
+**Problem:** NMCS complexity grows exponentially with branching factor. At each node, level-L NMCS runs a full level-(L-1) search for every possible action. With branching factor b=99 (n-1 possible prefix reversals) and solution depth ~100, level-1 NMCS requires ~99^2 × 100 = ~1M simulations per solution attempt. Each simulation is a full random playout of ~100 moves.
+
+**Branching factor rule of thumb:**
+- b ≤ 10: NMCS level 2-3 is feasible
+- b = 10-30: NMCS level 1 is feasible
+- b ≥ 50: NMCS is not viable at any level
+
+**When NMCS works:** Low branching factor + short solutions. Examples: single-player card games (b~5), simple puzzles (b~10-20), Morpion Solitaire (b~30).
+
+**What to use instead:** For high branching factors, use [[techniques/beam-search]] with a good heuristic. Beam search handles b=100 easily because it only keeps W candidates, not the full tree.
+
+**Competition:** Santa 2024 (pancake sorting, n=5 to n=100).
+
+## See Also
+- [[competitions/santa-2024-pancake]]
+- [[techniques/beam-search]]
