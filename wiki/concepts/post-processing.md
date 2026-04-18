@@ -10,6 +10,8 @@ status: active
 
 Post-processing techniques applied to model predictions *after training* to improve metric scores. These are quick wins that don't require retraining. Most relevant for log-loss and MAE metrics. Does not affect AUC (which is rank-based).
 
+**Post-processing is the consistent gold-vs-silver differentiator in modern Kaggle.** Across competitions from mid-2024 through April 2026, post-processing contributed **+0.01 to +0.03 private-LB** in nearly every top-10 solution. Hunting for data quirks, label-distribution mismatches, and subject-level invariants is now a primary competitive skill — budget 2-3 days for it in any competition.
+
 ## RankGauss
 
 Transform predictions to a Gaussian distribution via rank transformation. Useful for:
@@ -167,6 +169,24 @@ print(f"Pred mean: {preds.mean():.1f}, Target mean: {y_train.mean():.1f}")
 
 **Root cause of poor centering:** Signed log transform `sign(x) * log1p(|x|)` on targets with large positive mean. The log compresses the positive tail more than the negative tail, shifting learned predictions toward 0. RMSE on raw targets heavily penalizes this bias.
 
+## Data-Quirk Detection (Gold-vs-Silver Examples)
+
+Beyond mechanical post-processing, the biggest gains come from detecting dataset-specific anomalies:
+
+**CMI Detect Behavior with Sensor Data (2025)**
+Two subjects (SUBJ_019262, SUBJ_045235) had worn their wrist device rotated 180° around the Z-axis. Teams that detected and corrected this at inference time gained meaningful private-LB points. Detection method: plot per-subject accelerometer distributions and look for sign inversions.
+
+**NeurIPS Open Polymer Prediction 2025**
+The training data contained a Tg (glass transition temperature) unit mismatch — some values in °C, others in K. The 1st-place team detected this by probing with ±0.1σ perturbations and applied an empirical correction worth significant private-LB gain. The underlying competition-data leak amplified the effect.
+
+**ISIC 2024 Skin Cancer Detection**
+Top solutions found that GBDTs on patient metadata plus a small CNN ensemble beat pure image models. The 15mm crop size left insufficient pixel signal — the real signal was in tabular metadata (age, body site, skin type). Post-processing here meant recognizing the modality switch.
+
+**PhysioNet ECG Digitization (Research 2026)**
+Top-27 all published writeups. Pre-processing (signal cleaning, trace extraction) and post-processing (median filtering) were the primary differentiator between gold and silver — not model architecture.
+
+**General pattern**: For any competition, ask: (1) Are there subject-level or group-level invariants? (2) Are there unit or distribution mismatches between train/test? (3) Can label caps or structural constraints be enforced as post-processing?
+
 ## Gotchas
 
 - **Temperature scaling invalidates AUC:** It doesn't — temperature scaling is monotone, so rankings don't change. Only probability magnitudes shift.
@@ -181,8 +201,10 @@ Not explicitly applied in March Mania 2026 (log-loss metric would benefit). Cand
 - [[../../raw/kaggle/modern-tabular-dl-techniques.md]] — RankGauss, temperature scaling, clipping
 - [[../../raw/kaggle/2024-2025-winning-solutions-tabular.md]] — label-based post-processing from Home Credit 2024
 - [[../../raw/kaggle/solutions/porto-seguro-1st-jahrer.md]] — RankGauss as preprocessing step
+- [[../../raw/kaggle/kaggle-meta-2024-2026.md]] — gold-vs-silver insight; CMI, Open Polymer, ISIC examples
 
 ## Related
-- [[../concepts/calibration]] — Platt scaling vs temperature scaling comparison
-- [[../concepts/ensembling-strategies]] — calibrate before ensembling for cleaner blending
-- [[../concepts/denoising-autoencoders]] — RankGauss used as preprocessing for swap-noise DAE
+- [[kaggle-landscape-2024-2026]] — meta-analysis confirming post-processing as the gold-vs-silver differentiator
+- [[calibration]] — Platt scaling vs temperature scaling comparison
+- [[ensembling-strategies]] — calibrate before ensembling for cleaner blending
+- [[denoising-autoencoders]] — RankGauss used as preprocessing for swap-noise DAE

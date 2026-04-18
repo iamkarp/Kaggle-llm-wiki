@@ -81,6 +81,8 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | `raw/kaggle/solutions/srk-batch-12.md` | Kore 2022 1st + Hotel-ID 1st + Airbus Ship 1st + 15 more | Halite RL; hotel FGVC retrieval; ship U-Net; Lyft 3D detection; wheat global detection |
 | `raw/kaggle/solutions/srk-batch-13.md` | PlantTraits 2024 1st + Inclusive Images 1st + Avito Demand 1st + 15 more | Plant trait regression; domain adaptation CV; demand FM stacking; malware prediction |
 | `raw/kaggle/solutions/srk-batch-14.md` | Yelp Photos 1st + Flavours of Physics 1st + ECML Taxi 1st + 13 more | Photo classification CNN; physics-aware ML; taxi route prediction; flight optimization |
+| `raw/kaggle/kaggle-meta-2024-2026.md` | Meta-analysis (2024-2026) | What wins Kaggle: canonical stack, synthetic distillation, TTT, post-processing patterns |
+| `raw/kaggle/kaggle-meta-2024-2026-links.md` | Reference links (2024-2026) | 50+ curated URLs: arXiv papers, model cards, GitHub repos, blog posts, competition writeups |
 | `raw/kaggle/ndres-past-solutions-catalog.md` | Master catalog (55 competitions) | Full index from ndres.me/kaggle-past-solutions with all solution links and code repos |
 | `raw/kaggle/solutions/missing-batch-finance-tabular.md` | 23 finance/tabular competitions | Two Sigma Connect (546v), Allstate Claims (482v), Otto Group (501v), Prudential, Zillow, KKBox, Criteo, Springleaf, Liberty Mutual, Homesite, ICR, Bluebook, GiveMeSomeCredit, Mitsui, Santander, Criteo CTR, Airbnb Recruiting |
 | `raw/kaggle/solutions/missing-batch-cv-image.md` | 12 CV/image competitions | iMet 2019 FGVC6 (455v), Image Matching 2024 (297v), MABe Mouse Behavior (299v), BYU Flagellar Motors (245v), iWildCam 2020, Fathomnet, Landmark Recognition, 2nd Annual DSB, Malware Classification, Career Con, TReNDS Neuroimaging (387v), Freesound |
@@ -163,7 +165,9 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | [[concepts/medical-imaging-patterns]] | medical-imaging, 2.5d, foundation-model, pathology, pseudo-labeling | active | 2.5D slice stacking, CLAHE, Phikon MIL for pathology, Stable Diffusion augmentation, BirdCLEF patterns |
 | [[concepts/tabular-augmentation]] | tabular-augmentation, scarf, vime, saint, tta | active | SCARF swap noise (ICLR 2022), SAINT CutMix+Mixup, TTA with feature noise, TabMDA for tree models |
 | [[concepts/gradient-boosting-advanced]] | xgboost, lightgbm, catboost, optuna, gpu, 2024, 2025 | active | Advanced GBDT params: dart, goss, linear_tree, border_count, Optuna GPSampler recipe |
-| [[concepts/post-processing]] | post-processing, rankgauss, calibration, temperature-scaling, clipping | active | RankGauss, temperature scaling (tunes log-loss, not AUC), probability clipping, rank blending |
+| [[concepts/kaggle-landscape-2024-2026]] | meta, kaggle, foundation-models, synthetic-data, distillation, ttt, 2024-2026 | active | Meta-analysis: canonical stack (Unsloth→LoRA→vLLM), synthetic distillation (80% of golds), post-processing as gold-vs-silver, farid.one index, TTT era |
+| [[concepts/synthetic-data-distillation]] | distillation, synthetic-data, llm, foundation-model, lora, qlora | active | Teacher→student distillation: generate with DeepSeek-R1/QwQ-32B, fine-tune Qwen2.5/Gemma2; AIMO-2 case study (34/50); practical pipeline |
+| [[concepts/post-processing]] | post-processing, rankgauss, calibration, temperature-scaling, clipping | active | RankGauss, temperature scaling, probability clipping, rank blending; gold-vs-silver data-quirk detection (CMI rotation, Polymer Tg bug) |
 | [[concepts/time-series-features]] | time-series, feature-engineering, lags, rolling-stats, fourier | active | Lag features, EWMA rolling stats, Fourier cyclical encoding, one-model-per-horizon strategy |
 | [[concepts/time-series-cv]] | time-series, cross-validation, walk-forward, purged-cv, embargo | active | Walk-forward CV, sliding window, purged CV (embargo), post-cutoff CV, multiple window validation |
 | [[concepts/llm-fine-tuning-kaggle]] | nlp, llm, deberta, transformer, awp, llrd, lora, 2024, 2025 | active | AWP, LLRD, multisample dropout, two-stage training, LoRA/QLoRA, knowledge distillation |
@@ -206,4 +210,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-18 | Page count: 68 wiki pages + 55 raw solution files + ndres catalog indexed above | 115 missing competitions ingested*
+*Last updated: 2026-04-18 | Page count: 70 wiki pages + 57 raw files indexed above | 115 missing competitions + meta-analysis ingested*

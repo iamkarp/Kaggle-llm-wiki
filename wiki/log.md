@@ -186,3 +186,9 @@ Chronological audit trail of all wiki operations. Grep-parseable format: `## [YY
 ## [2026-04-18] create | concepts/reinforcement-learning-games.md — self-play RL, MCTS, imitation learning, diffusion world models; covers Lux AI S1/S2/S3 and other game-AI competitions
 ## [2026-04-18] update | 5 existing concept pages — added cross-refs to new batch files: financial-competition-patterns, time-series-features, ensembling-strategies, llm-fine-tuning-kaggle, feature-engineering-tabular
 ## [2026-04-18] update | wiki/index.md — added 6 new batch entries + 2 new concept pages; total 115 missing competitions now indexed
+## [2026-04-18] ingest | raw/kaggle/kaggle-meta-2024-2026.md — comprehensive meta-analysis of Kaggle winning patterns mid-2024 through April 2026; canonical stack, synthetic distillation, TTT, post-processing, competition highlights
+## [2026-04-18] ingest | raw/kaggle/kaggle-meta-2024-2026-links.md — 50+ curated reference links: arXiv papers, model cards, GitHub repos, NVIDIA blog posts, competition writeups, farid.one index
+## [2026-04-18] create | concepts/kaggle-landscape-2024-2026.md — meta-analysis wiki page: canonical stack (Unsloth→LoRA→vLLM on L4s), 3 load-bearing patterns (distillation, post-processing, farid.one), TTT era, competition highlights by domain
+## [2026-04-18] create | concepts/synthetic-data-distillation.md — teacher→student distillation pattern: 80% of 2024-2026 golds; AIMO-2 case study (NemoSkills 34/50); practical pipeline with hyperparameters
+## [2026-04-18] update | concepts/post-processing.md — added gold-vs-silver insight (+0.01-0.03 LB), data-quirk detection section (CMI 180° rotation, Open Polymer Tg unit bug, ISIC metadata signal, PhysioNet preprocessing)
+## [2026-04-18] update | wiki/index.md — added 2 new concept pages + 2 raw meta files; page count 68→70
