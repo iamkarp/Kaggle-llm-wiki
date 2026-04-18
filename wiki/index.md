@@ -29,6 +29,7 @@ Content catalog — every page listed with link and summary. Updated on every cr
 | [[competitions/autopilot-vqa-2026]] | kaggle, cvpr, vqa, vision, qwen, claude | active | AUTOPILOT VQA — 25-column dashcam classification; deadline April 15, 2026; 3-stage VLM pipeline |
 | [[competitions/horse-health-prediction]] | kaggle, tabular, multiclass, f1, ensemble | active | Horse Health Playground — 988×29 multiclass (lived/died/euthanized); OOF micro-F1 0.71862 with seed-avg LGB+XGB+CAT |
 | [[competitions/playground-s5-s6]] | kaggle, playground, seed-averaging, smote-leakage, tabular | active | Playground S5/S6 2025-2026 — GPU hill climbing, 100-seed +0.003, SMOTE leakage case study, LLM-augmented features |
+| [[competitions/stock-return-prediction]] | kaggle, tabular, regression, financial, rmse, cross-sectional | active | 1-Year US Stock Return Prediction — RMSE on fat-tailed returns; GroupKFold beat expanding window; Huber delta scaling; best LB 15217 |
 
 ---
 
@@ -192,4 +193,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-17 | Page count: 62 wiki pages + 49 raw solution files + ndres catalog indexed above*
+*Last updated: 2026-04-17 | Page count: 63 wiki pages + 49 raw solution files + ndres catalog indexed above*

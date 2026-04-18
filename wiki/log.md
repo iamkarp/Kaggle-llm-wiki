@@ -153,6 +153,14 @@ Chronological audit trail of all wiki operations. Grep-parseable format: `## [YY
 ## [2026-04-16] update | wiki/index.md — added 6 SRK batch files (batches 9-14, 106 competitions); 41 raw solution references indexed; total 226 competitions from SRK notebook
 ## [2026-04-16] update | CLAUDE.md schema — added Mermaid diagram conventions (graph TD only, max 20 nodes, when to add), collapsible <details> source blocks, anti-preamble rules (inspired by DeepWiki-Open patterns)
 ## [2026-04-16] update | 8 wiki pages — added Mermaid diagrams and collapsible source blocks: kaggle-competition-playbook (pipeline), ensembling-strategies (3-level stack), validation-strategy (CV decision tree), kaggle-meta-strategy (workflow), overview (knowledge graph), feature-engineering-tabular (5-stage), stacking-deep (architecture), knowledge-distillation (LGBM→NN), machine-learning-advisor (RAG architecture)
+## [2026-04-16] update | concepts/financial-competition-patterns.md — added cross-sectional stock return section: GroupKFold, target clipping, prediction centering, rank features, sector z-scores, signed log, Huber delta gotcha
+## [2026-04-16] update | concepts/gradient-boosting-advanced.md — added Huber/Fair delta scaling rules, LR+patience interaction table, minimum iteration enforcement for full-data retrain, Ridge SVD solver gotcha
+## [2026-04-16] update | concepts/validation-strategy.md — added cross-sectional year CV row, expanding-window-kills-models section, two new anti-patterns
+## [2026-04-16] update | concepts/post-processing.md — added target winsorization for RMSE, prediction mean alignment, log-transform-on-RMSE gotcha
+## [2026-04-16] update | concepts/feature-engineering-tabular.md — added Stage 4b (cross-sectional rank features, sector z-scores, signed log), fat-tailed target transform warning
+## [2026-04-16] update | concepts/time-series-cv.md — added "when NOT to use time-based CV" section for cross-sectional data
+## [2026-04-16] create | competitions/stock-return-prediction.md — 1-year US stock return prediction; GroupKFold, Huber delta, LR+patience, best LB 15217
+## [2026-04-16] update | wiki/index.md — +1 competition page; count +1
 
 ## [2026-04-17] ingest | srk-r2-batch-1.md — 23 non-1st-place solutions (2nd–40th, 100+ upvotes): IEEE Fraud 2nd, Home Credit 2nd, HMS Brain 1st, and 20 more
 ## [2026-04-17] ingest | srk-r2-batch-2.md — 23 non-1st-place solutions: Toxic Comment 2nd, Avito 3rd, RSNA Hemorrhage 2nd, TalkingData 2nd, and 19 more

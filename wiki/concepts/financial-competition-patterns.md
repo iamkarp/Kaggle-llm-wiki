@@ -156,12 +156,89 @@ These patterns apply whenever:
 - Target is a price change, volatility, or return
 - Data has a time dimension with market regimes
 
+### Cross-Sectional Stock Return Prediction (Non-Temporal Financial Data)
+
+Not all financial competitions are time-series. Cross-sectional stock return prediction (e.g., predict 1-year return from fundamentals) has distinct patterns:
+
+**CV: GroupKFold, NOT Expanding Window**
+
+When training data spans multiple years of annual cross-sections, expanding window CV (train ≤2019, val 2020; train ≤2020, val 2021) creates regime-shift problems. Market returns vary wildly across years (2019: +4%, 2020: +74%, 2021: -11%), so validation loss spikes from regime mismatch — not model quality. This triggers premature early stopping (0-15 iterations).
+
+```python
+from sklearn.model_selection import GroupKFold
+
+# Cross-sectional: group by start_year, not time-ordered
+gkf = GroupKFold(n_splits=4)
+for tr_idx, val_idx in gkf.split(X, y, groups=df['start_year']):
+    # Each fold mixes years → stable validation loss
+    ...
+```
+
+**GroupKFold mixes years across folds**, so each fold sees representative market regimes in both train and validation. This gives stable validation loss and meaningful early stopping signals.
+
+**Target Clipping for Fat-Tailed Returns**
+
+Stock returns have extreme outliers (10,000%+ returns). RMSE is dominated by these tails. Clip targets before training:
+
+```python
+# Multiple clip levels as separate target transforms — diversity source
+clip_1_99 = np.clip(y, np.percentile(y, 1), np.percentile(y, 99))   # [-80, 300]
+clip_5_95 = np.clip(y, np.percentile(y, 5), np.percentile(y, 95))   # [-56, 118]
+clip_fixed = np.clip(y, -95, 500)                                    # domain knowledge
+```
+
+Train separate models on each clip level → different bias-variance tradeoffs → ensemble diversity.
+
+**Prediction Centering Matters for RMSE**
+
+RMSE penalizes bias heavily. If market average return is ~15% but model predicts mean ~2%, the constant 15% prediction beats the ML model. Always check:
+
+```python
+print(f"Prediction mean: {preds.mean():.1f}, Target mean: {y.mean():.1f}")
+# If prediction mean << target mean, model is under-centered
+# Likely cause: log transforms or heavy regularization compressing toward 0
+```
+
+**Cross-Sectional Rank Features (Regime-Invariant)**
+
+Rank percentiles within each year remove regime dependence:
+
+```python
+for col in numerical_features:
+    df[f'{col}_rank'] = df.groupby('start_year')[col].rank(pct=True)
+```
+
+These features are invariant to market-level shifts — a company's *relative* P/E ratio matters more than its absolute value across different market regimes.
+
+**Sector-Relative Features**
+
+```python
+for col in fundamentals:
+    sector_mean = df.groupby(['start_year', 'sector'])[col].transform('mean')
+    sector_std = df.groupby(['start_year', 'sector'])[col].transform('std')
+    df[f'{col}_sector_z'] = (df[col] - sector_mean) / (sector_std + 1e-8)
+```
+
+**Signed Log Transform for Dollar-Scale Features**
+
+Revenue, market cap, total assets vary across orders of magnitude. Signed log compresses while preserving sign:
+
+```python
+def signed_log(x):
+    return np.sign(x) * np.log1p(np.abs(x))
+```
+
+**Warning:** Don't use log transforms on the *target* (returns) — it compresses predictions too much. Models trained on `sign(r) * log1p(|r|)` targets tend to predict mean ≈ 0, killing RMSE performance. Use log on features, clip on targets.
+
 ## Gotchas
 
 - Never use standard KFold for financial data — temporal leakage is catastrophic
 - Don't train on all-time data and validate on recent data without embargo — overlapping samples cause pseudo-CV
 - Financial data distribution shifts quarterly — models trained on 2018 data may fail in 2024 regimes
 - Order book features should be computed per time bucket (10 seconds), not per row
+- **Cross-sectional ≠ time-series**: When each row is a stock-year (not a time step), GroupKFold beats expanding window CV. Expanding window + early stopping = model death when year-to-year regime shifts are large
+- **Log-transforming fat-tailed targets kills RMSE**: Log compresses predictions toward 0. For targets with std=138 and mean=18, raw clipped targets outperform log-transformed targets
+- **CatBoost Huber delta must match target scale**: delta=1.0 is catastrophic when target std=138 — all residuals exceed delta, gradient becomes constant, model stops at 0 iterations. Use delta ∝ target_std (e.g., delta=50-100)
 
 ## Sources
 

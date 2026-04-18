@@ -95,6 +95,14 @@ The most important principle:
 - If test has a gap between public and private LB → build a gap into CV splits
 - If test is on entirely new entities → use GroupKFold, not time-split
 
+### When NOT to Use Time-Based CV
+
+**Cross-sectional data with year groups** (e.g., annual stock fundamentals): Each row is a stock-year, not a time step. Expanding window CV (train ≤2019, val 2020) exposes models to regime shifts that dominate validation loss — the model can't learn because validation loss spikes from market regime mismatch, not poor feature learning.
+
+**Use `GroupKFold(groups=year)` instead.** This mixes years across folds, giving each fold a representative sample of market regimes. Result: stable validation loss, meaningful early stopping, models that actually train (1000+ iterations vs 0-15 with expanding window).
+
+This applies whenever: (a) data is cross-sectional by period, (b) the target distribution shifts dramatically between periods, and (c) models use early stopping.
+
 ```python
 # Competition example: test is 4 weeks after training ends
 # Build CV to mimic this exactly:

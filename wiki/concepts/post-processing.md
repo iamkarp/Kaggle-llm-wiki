@@ -126,11 +126,53 @@ df.loc[condition, 'score'] = (df.loc[condition, 'score'] - 0.03).clip(0)
 
 **Lesson:** On competitions with complex temporal stability metrics, always analyze whether the metric can be exploited by time-conditional score adjustments. The post-processing delta (~0.0X) can dwarf pure ML differences (~0.00X).
 
+## Target Winsorization for RMSE on Fat-Tailed Distributions
+
+For regression targets with extreme outliers (e.g., stock returns with range [-99%, +10000%]), train on winsorized targets but evaluate on raw targets:
+
+```python
+# Multiple clip levels → different bias-variance tradeoffs → ensemble diversity
+transforms = {
+    'clip_1_99': np.clip(y, np.percentile(y, 1), np.percentile(y, 99)),
+    'clip_5_95': np.clip(y, np.percentile(y, 5), np.percentile(y, 95)),
+    'clip_fixed': np.clip(y, -95, 500),
+}
+
+# Train separate models on each, ensemble predictions
+# Tight clips (5-95) reduce outlier influence → lower-variance but biased
+# Wide clips (1-99) retain more signal → higher-variance but less biased
+```
+
+**Also clip predictions** to a reasonable range. Models can produce wild extrapolations on test data:
+
+```python
+preds = np.clip(preds, -95, 500)  # match domain knowledge bounds
+```
+
+## Prediction Mean Alignment (Centering)
+
+For RMSE metrics, prediction mean matters. If the market average return is ~15% but your model predicts mean ~2%, a constant prediction of 15% beats the ML model.
+
+```python
+# Check centering
+print(f"Pred mean: {preds.mean():.1f}, Target mean: {y_train.mean():.1f}")
+
+# If off, diagnose:
+# - Log transform on target compresses predictions toward 0
+# - Heavy regularization with low learning rate → model hugs 0
+# - Strong target clipping biases the learned mean
+
+# Fix: use raw (clipped) targets, not log-transformed
+```
+
+**Root cause of poor centering:** Signed log transform `sign(x) * log1p(|x|)` on targets with large positive mean. The log compresses the positive tail more than the negative tail, shifting learned predictions toward 0. RMSE on raw targets heavily penalizes this bias.
+
 ## Gotchas
 
 - **Temperature scaling invalidates AUC:** It doesn't — temperature scaling is monotone, so rankings don't change. Only probability magnitudes shift.
 - **Clipping with non-log-loss metrics:** Don't clip when using AUC or ranking metrics — it's unnecessary and could theoretically hurt if predictions are being ranked.
 - **Overfitting post-processing to validation:** If you tune temperature on the same validation set you use for model selection, you're overfitting. Use a separate calibration holdout or cross-validate the temperature tuning.
+- **Log transform on regression targets with RMSE metric:** If the evaluation metric is RMSE on *raw* (untransformed) targets, training on log-transformed targets produces predictions centered near 0 — potentially worse than a constant prediction at the target mean. Only use log targets when the metric is also in log space (e.g., RMSLE).
 
 ## In Jason's Work
 Not explicitly applied in March Mania 2026 (log-loss metric would benefit). Candidate for future competitions especially where models are stacked (stacked probabilities are often miscalibrated).

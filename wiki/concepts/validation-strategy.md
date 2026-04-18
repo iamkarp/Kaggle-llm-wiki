@@ -48,6 +48,7 @@ The single most important principle. If the LB is a time-based hold-out, your CV
 | Time-series | `TimeSeriesSplit` — **never shuffle** |
 | Group data (users, sessions, subjects) | `GroupKFold` — all rows of a group in same fold |
 | Imbalanced classification | `StratifiedKFold` to preserve class ratios |
+| Cross-sectional by year (e.g., stock fundamentals) | `GroupKFold(groups=year)` — NOT expanding window |
 
 **Minimum 5 folds**. For small datasets (<2000 rows): 10-fold or leave-one-out.
 
@@ -178,6 +179,34 @@ Out-of-fold (OOF) predictions are the currency of proper Kaggle development:
 
 Always generate and save OOF predictions during training.
 
+## Expanding Window CV + Early Stopping = Model Death
+
+When data has strong regime shifts between time periods (e.g., annual stock returns: 2019=+4%, 2020=+74%, 2021=-11%), expanding window CV creates a trap:
+
+1. Train on years ≤2019, validate on 2020 → validation distribution wildly different from training
+2. Early stopping sees validation loss spiking → stops at 0-15 iterations
+3. Model produces near-constant predictions
+
+**Symptoms:** Models report `best_iteration=0` or very low iteration counts. Predictions have very low variance (std < 5 when target std > 100).
+
+**Fix:** Switch to `GroupKFold(groups=year)` which mixes years across folds, giving each fold a representative distribution. Combine with:
+- Lower learning rate (0.02 instead of 0.05)
+- Higher early stopping patience (100+ instead of 50)
+
+```python
+# BROKEN: expanding window on regime-shifting data
+# Fold 0: train ≤2019, val 2020 → market crash year, loss explodes
+# Fold 1: train ≤2020, val 2021 → different regime, model stops early
+
+# FIXED: GroupKFold mixes regimes
+from sklearn.model_selection import GroupKFold
+gkf = GroupKFold(n_splits=4)
+for tr_idx, val_idx in gkf.split(X, y, groups=df['start_year']):
+    model.fit(X[tr_idx], y[tr_idx],
+              eval_set=[(X[val_idx], y[val_idx])],
+              callbacks=[lgb.early_stopping(100)])  # high patience
+```
+
 ## Anti-Patterns
 
 | Anti-Pattern | Why It's Bad | Fix |
@@ -189,6 +218,8 @@ Always generate and save OOF predictions during training.
 | Single CV fold | High variance estimate | Always use ≥5 folds |
 | Leaky features in CV | CV looks great, LB is bad | Check any feature that seems too good |
 | Target encoding without OOF | Target leaks into features | Always use K-fold OOF target encoding |
+| Expanding window on regime-shifting data | Models stop at 0 iterations due to distribution mismatch | Use GroupKFold to mix regimes across folds |
+| Low patience + low learning rate | Model stops before learning anything | patience ≈ 50 / learning_rate |
 
 ## In Jason's Work
 

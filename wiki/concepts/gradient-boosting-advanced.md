@@ -142,11 +142,64 @@ From Home Credit 2024 1st place: **Feature engineering improvements correlate to
 
 Rule of thumb: spend 80% of time on features, 20% on HPO.
 
+## Loss Function Parameter Scaling
+
+### CatBoost Huber Delta — Must Match Target Scale
+
+The Huber loss transitions from MSE (quadratic) to MAE (linear) at `|residual| > delta`. If delta is much smaller than typical residuals, **the loss gradient becomes constant** — the model can't improve and stops at 0 iterations.
+
+```python
+# BAD: delta=1.0 when target std=138 → model stops at 0 iterations
+CatBoostRegressor(loss_function='Huber:delta=1.0', ...)  # BROKEN
+
+# GOOD: delta proportional to target scale
+target_std = y_train.std()
+delta = target_std * 0.5  # e.g., ~70 for target std=138
+CatBoostRegressor(loss_function=f'Huber:delta={delta}', ...)
+```
+
+**Rule of thumb:** `delta = 0.3 × target_std` to `1.0 × target_std`. Smaller delta = more robustness to outliers but slower convergence. For LightGBM, the equivalent is the `alpha` parameter in `huber` objective.
+
+### LightGBM Fair Loss Alpha
+
+Similar scaling applies. `fair_c` (alpha in the fair loss) should be proportional to target scale:
+
+```python
+# For target with std=138
+params = {'objective': 'fair', 'fair_c': 50.0}  # not the default 1.0
+```
+
+## Learning Rate + Early Stopping Interaction
+
+Low learning rate requires more patience. If `learning_rate` is lowered without increasing `early_stopping_rounds`, models stop before learning:
+
+| Learning Rate | Patience Needed | Typical Best Iteration |
+|---|---|---|
+| 0.1 | 50 | 100-300 |
+| 0.05 | 50-100 | 200-500 |
+| 0.02 | 100-200 | 500-1500 |
+| 0.01 | 200+ | 1000-3000 |
+
+**Practical rule:** `patience ≈ 50 / learning_rate`. A model with LR=0.02 and patience=50 will often stop too early during temporary validation loss plateaus.
+
+### Full-Data Retrain: Enforce Minimum Iterations
+
+When retraining on full data (no validation set), early stopping is unavailable. Use `n_estimators = 1.25 × avg_best_cv_iteration`, but **enforce a minimum**:
+
+```python
+avg_best = np.mean([m.best_iteration_ for m in cv_models])
+n_estimators = max(int(avg_best * 1.25), 200)  # minimum 200
+```
+
+Without the floor, models that stopped at 0-15 iterations in CV (due to regime-shift validation noise) produce near-constant predictions.
+
 ## Gotchas
 
 - **CatBoost and LGBM different feature sets:** Some categoricals that boost CatBoost can hurt LightGBM. Maintain separate feature sets per model.
 - **DART early stopping:** Can't use `early_stopping_rounds` with `dart` booster (dropped trees create non-monotonic loss curves). Fix n_estimators first with `gbdt`, then switch to `dart`.
 - **GPU memory:** CatBoost with `border_count=1024` requires significantly more GPU memory than default. Monitor with `nvidia-smi`.
+- **Huber/Fair/Quantile delta/alpha scaling:** These loss parameters must scale with target magnitude. Default values (often 1.0) are catastrophic for targets with std >> 10. Always set relative to `y_train.std()`.
+- **Ridge solver for stacking:** When using Ridge as a meta-learner on scaled features, features with zero IQR produce `inf` after RobustScaler. Fix: `np.clip(np.nan_to_num(X, nan=0, posinf=0, neginf=0), -10, 10)` + `solver='svd'` (not default Cholesky, which overflows).
 
 ## In Jason's Work
 See [[../entities/xgboost]] for Jason's core XGBoost parameter defaults. The patterns here extend those defaults for competition-specific optimizations.

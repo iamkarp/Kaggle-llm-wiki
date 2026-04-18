@@ -1,0 +1,67 @@
+---
+title: "Predict 1-Year US Stock Returns from Fundamentals"
+tags: [kaggle, tabular, regression, financial, rmse, stock-returns, cross-sectional]
+date: 2026-04-16
+status: active
+---
+
+## Summary
+
+Regression competition: predict 1-year stock return from fundamental data (P/E, market cap, revenue, etc.). RMSE metric on raw returns. Key challenge: extreme fat tails (target range [-99%, +10571%], std=138). Best LB: 15217 (LGB single model). Data: 23K train rows × 39 features, 8.5K test.
+
+## Key Learnings
+
+### What Worked
+- **GroupKFold(n_splits=4, groups=start_year)**: Stable CV with mixed market regimes. Expanding window CV caused 0-iteration models.
+- **Low learning rate (0.02) + high patience (100)**: LR=0.05 + patience=50 = models stop at 0-15 iterations. LR=0.02 + patience=100 = 1000+ productive iterations.
+- **Raw clipped targets** (1-99%, 5-95%, fixed [-95,500]): Multiple clip levels as diversity source.
+- **185 features**: Domain financial ratios, signed log transforms, cross-sectional rank percentiles per year, sector-relative z-scores, sector aggregations, missing indicators.
+- **LightGBM Huber/Fair/MSE**: Best single models. LGB Huber with delta=50 most robust to outliers.
+- **Ridge meta-stacking** with SVD solver + `np.clip(np.nan_to_num(X), -10, 10)` for numerical stability.
+- **Prediction clip [-95, 500]**: Prevents wild extrapolations.
+
+### What Failed
+- **Expanding window CV**: Train ≤2019 → val 2020 gives regime-shifted validation. Models stop at 0 iterations.
+- **Log-transformed targets**: `sign(r) * log1p(|r|)` compressed predictions to mean≈0, std≈2.7. RMSE on raw targets was *worse* than constant prediction of 15%.
+- **CatBoost Huber delta=1.0**: Target std=138, so delta=1.0 means ALL residuals exceed delta. Gradient becomes constant. Model produces 0 iterations. Need delta=50-100.
+- **LR=0.05 + patience=50**: Models overfit fast then stop. Not enough runway for stable learning on noisy financial data.
+
+### Submissions
+| Submission | LB Score | Notes |
+|---|---|---|
+| submission_lgb.csv | **15217** | Best — LGB single model from earlier solution |
+| v2_best_single_cat_huber_tA | 15659 | CatBoost Huber, v2 pipeline |
+| v1 competitive_solution | 15761 | Log transforms killed predictions |
+| constant_15 | ~15617 | Just predicting market average |
+
+### Architecture
+
+```
+Data (23K × 39) → Feature Engineering (185 features)
+  ↓
+Target Transforms: clip_1_99, clip_5_95, clip_fixed_95_500, clip_fixed_95_1000
+  ↓
+Models (19 combos): LGB{huber,mse,fair,huber_deep} × XGB{huber,mse} × CAT{huber,rmse,mae}
+  Each × 4 target transforms = 36 model-transform pairs
+  ↓
+Ensemble: Hill-climbing, Ridge meta-stack, inverse-RMSE weighted average
+  ↓
+Prediction clip [-95, 500] → submission.csv
+```
+
+### Critical Numbers
+- Target: mean=18.8%, median=3.5%, std=138.6%, range [-99.2%, +10571%]
+- Train years: 2018-2022 (23K rows)
+- Test: 8.5K rows (year unknown)
+- Market regime shifts: 2019 mean=4.1%, 2020 mean=73.9%, 2021 mean=-10.5%
+
+## Sources
+- `competitive_solution.py` (v1) — initial attempt
+- `competitive_solution_v2.py` (v2) — GroupKFold fix, better LR/patience
+- `solution.py` — baseline 514-line solution
+
+## Related
+- [[../concepts/financial-competition-patterns]] — cross-sectional stock return patterns
+- [[../concepts/gradient-boosting-advanced]] — Huber delta scaling, LR+patience interaction
+- [[../concepts/validation-strategy]] — expanding window CV failure mode
+- [[../concepts/post-processing]] — target winsorization, prediction centering

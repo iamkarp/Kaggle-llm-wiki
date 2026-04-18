@@ -97,7 +97,33 @@ From any datetime column: year, month, day-of-week, day-of-year, week-of-year, i
 
 ### Stage 4: Target Transforms
 - **Regression**: `log1p(target)` for right-skewed targets (remember `expm1` at inference). Box-Cox/Yeo-Johnson for general normalization.
+- **Fat-tailed regression (RMSE metric)**: Multiple clip levels as separate targets → ensemble diversity. Tight clips (5-95th percentile) reduce variance; wide clips (1-99th) retain more signal. **Avoid log-transforming targets when RMSE is on raw values** — log compresses predictions toward 0, producing worse RMSE than a constant prediction at the target mean.
 - **Imbalanced classification**: Class weights first (`scale_pos_weight` in XGBoost, `is_unbalance` in LightGBM). Oversampling as last resort.
+
+### Stage 4b: Cross-Sectional Rank Features (Regime-Invariant)
+
+For data grouped by time periods (years, quarters), rank percentiles within each period remove absolute-scale regime dependence:
+
+```python
+for col in numerical_features:
+    df[f'{col}_rank'] = df.groupby('period')[col].rank(pct=True)
+```
+
+A company at the 90th percentile of P/E ratio is meaningful regardless of whether the market P/E is 15 or 25. Critical for financial, economic, and cross-sectional datasets where absolute values shift across periods.
+
+**Sector-relative z-scores** add another dimension:
+
+```python
+for col in fundamentals:
+    grp = df.groupby(['period', 'sector'])[col]
+    df[f'{col}_sector_z'] = (df[col] - grp.transform('mean')) / (grp.transform('std') + 1e-8)
+```
+
+**Signed log for dollar-scale features** (revenue, market cap, total assets):
+
+```python
+df[f'{col}_slog'] = np.sign(df[col]) * np.log1p(np.abs(df[col]))
+```
 
 ### Stage 5: Group Aggregations
 For each categorical group variable, compute aggregations of numeric features:
