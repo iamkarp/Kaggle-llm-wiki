@@ -196,6 +196,16 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
+## Tools
+
+| Page | Tags | Status | Summary |
+|------|------|--------|---------|
+| [[tools/autoresearch]] | autoresearch, karpathy, autonomous-agent, experimentation, kaggle | active | Karpathy's autonomous agent experiment loop — agent modifies code, trains 5 min, keeps/discards, repeats ~100x overnight; adapted for Kaggle HP search, feature engineering, ensemble optimization |
+| [[tools/kaggle-cli]] | kaggle, cli, api, submission, dataset | active | Kaggle CLI and API — dataset downloads, submissions, notebook management |
+| [[tools/kaggle-cpu-notebooks]] | kaggle, notebooks, gpu, runtime, constraints | active | Kaggle notebook environment — GPU quotas, runtime limits, internet-off constraints |
+
+---
+
 ## Comparisons
 
 | Page | Tags | Status | Summary |
@@ -210,4 +220,4 @@ Content catalog — every page listed with link and summary. Updated on every cr
 
 ---
 
-*Last updated: 2026-04-18 | Page count: 70 wiki pages + 57 raw files indexed above | 115 missing competitions + meta-analysis ingested*
+*Last updated: 2026-04-19 | Page count: 71 wiki pages + 58 raw files indexed above*

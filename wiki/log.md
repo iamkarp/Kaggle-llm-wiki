@@ -192,3 +192,7 @@ Chronological audit trail of all wiki operations. Grep-parseable format: `## [YY
 ## [2026-04-18] create | concepts/synthetic-data-distillation.md — teacher→student distillation pattern: 80% of 2024-2026 golds; AIMO-2 case study (NemoSkills 34/50); practical pipeline with hyperparameters
 ## [2026-04-18] update | concepts/post-processing.md — added gold-vs-silver insight (+0.01-0.03 LB), data-quirk detection section (CMI 180° rotation, Open Polymer Tg unit bug, ISIC metadata signal, PhysioNet preprocessing)
 ## [2026-04-18] update | wiki/index.md — added 2 new concept pages + 2 raw meta files; page count 68→70
+
+## [2026-04-19] ingest | raw/kaggle/autoresearch-karpathy.md — Karpathy's autonomous agent experimentation framework (74K stars); agent modifies code, trains 5 min, keeps/discards, repeats ~100x overnight
+## [2026-04-19] create | tools/autoresearch.md — AutoResearch adapted for Kaggle: program.md template, results.tsv extension, infrastructure mapping (big-brother for training, middle-child for agent host)
+## [2026-04-19] update | wiki/index.md — added Tools section (autoresearch, kaggle-cli, kaggle-cpu-notebooks); page count 70→71
