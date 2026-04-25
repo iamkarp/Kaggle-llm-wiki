@@ -1,0 +1,30 @@
+{
+  "id": "technique:gradient-boosted-trees",
+  "type": "technique",
+  "title": "Gradient Boosted Trees (LightGBM, XGBoost, CatBoost)",
+  "slug": "gradient-boosted-trees",
+  "aliases": [],
+  "tags": [
+    "gbm",
+    "tabular",
+    "lightgbm",
+    "xgboost",
+    "catboost",
+    "ensemble"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/gradient-boosted-trees.md",
+  "summary": "The default choice for tabular data on Kaggle. LightGBM, XGBoost, and CatBoost each have different inductive biases, making them good candidates for ensembling.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/gradient-boosted-trees.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

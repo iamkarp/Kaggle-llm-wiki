@@ -1,0 +1,28 @@
+{
+  "id": "technique:inverse-problem-solving",
+  "type": "technique",
+  "title": "Inverse Problem Solving",
+  "slug": "inverse-problem-solving",
+  "aliases": [],
+  "tags": [
+    "search",
+    "permutation",
+    "bidirectional",
+    "optimization"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/inverse-problem-solving.md",
+  "summary": "For problems where you can solve in both directions (start→goal or goal→start), try both. The forward and backward search spaces often have different local optima, so one direction may find shorter solutions than the other.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/inverse-problem-solving.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

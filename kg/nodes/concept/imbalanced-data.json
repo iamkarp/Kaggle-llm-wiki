@@ -1,0 +1,30 @@
+{
+  "id": "concept:imbalanced-data",
+  "type": "concept",
+  "title": "Imbalanced Data Techniques for Kaggle",
+  "slug": "imbalanced-data",
+  "aliases": [],
+  "tags": [
+    "imbalanced",
+    "smote",
+    "focal-loss",
+    "threshold-optimization",
+    "downsampling",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/imbalanced-data.md",
+  "summary": "A collection of competition-validated techniques for training models when one class is far more frequent than another. The correct technique depends on imbalance severity, model type, and evaluation metric.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/imbalanced-data.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

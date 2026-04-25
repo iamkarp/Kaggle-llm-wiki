@@ -1,0 +1,30 @@
+{
+  "id": "concept:feature-selection",
+  "type": "concept",
+  "title": "Feature Selection — Time Consistency, Forward Selection, Permutation Importance",
+  "slug": "feature-selection",
+  "aliases": [],
+  "tags": [
+    "feature-selection",
+    "time-consistency",
+    "forward-selection",
+    "permutation-importance",
+    "leakage",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/feature-selection.md",
+  "summary": "Feature selection reduces a large feature set to a smaller, higher-quality set. The goal is to remove features that add noise, cause overfitting, introduce distribution shift, or slow training without contributing signal. Different competitions call for different selection strategies.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/feature-selection.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

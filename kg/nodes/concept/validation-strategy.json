@@ -1,0 +1,33 @@
+{
+  "id": "concept:validation-strategy",
+  "type": "concept",
+  "title": "Validation Strategy — CV Design, Gap Tracking, Anti-Patterns",
+  "slug": "validation-strategy",
+  "aliases": [],
+  "tags": [
+    "validation",
+    "cross-validation",
+    "cv",
+    "leakage",
+    "adversarial-validation",
+    "kaggle",
+    "oof",
+    "cv-lb-breakdown",
+    "post-cutoff"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/validation-strategy.md",
+  "summary": "Validation strategy determines how you estimate model performance on unseen data. A good CV score that reliably predicts LB score is the foundation of every Kaggle campaign. A broken CV (due to leakage, wrong split, or distribution mismatch) causes bad model selection decisions even if individual models are good.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/validation-strategy.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

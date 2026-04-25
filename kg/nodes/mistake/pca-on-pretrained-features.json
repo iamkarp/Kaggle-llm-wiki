@@ -1,0 +1,31 @@
+{
+  "id": "mistake:pca-on-pretrained-features",
+  "type": "mistake",
+  "title": "Mistake: PCA on Pretrained Features",
+  "slug": "pca-on-pretrained-features",
+  "aliases": [],
+  "tags": [
+    "pca",
+    "dimensionality-reduction",
+    "overfitting",
+    "pretrained"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/mistakes/pca-on-pretrained-features.md",
+  "summary": "**What happened:** Applied PCA to 768-dim VideoMAE features, reducing to ~100 components. PCA was fit on training subjects. LB score dropped to 0.22.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/mistakes/pca-on-pretrained-features.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "what_happened": "Applied PCA to 768-dim VideoMAE features, reducing to ~100 components. PCA was fit on training subjects. LB score dropped to 0.22.",
+  "why_wrong": "PCA learns principal components from the training data. When training and test come from different subjects, the principal directions of variation in training may encode subject identity rather than activity patterns. Test subjects' features project poorly onto these training-specific components.",
+  "general_rule": "When there's distribution shift between train and test, avoid data-dependent transformations (PCA, learned normalization, data-dependent feature selection). Prefer data-independent alternatives."
+}

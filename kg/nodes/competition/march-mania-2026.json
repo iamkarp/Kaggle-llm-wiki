@@ -1,0 +1,56 @@
+{
+  "id": "competition:march-mania-2026",
+  "type": "competition",
+  "title": "March Mania 2026 — NCAA Basketball Prediction",
+  "slug": "march-mania-2026",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "ncaa",
+    "basketball",
+    "ensemble",
+    "xgboost",
+    "lightgbm",
+    "logistic-regression"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "summary": "March Mania 2026 is Kaggle's annual NCAA men's basketball tournament prediction competition (prize: $50K). Jason's best submission is **v6 weighted ensemble at 0.02210 Stage 1 LB score**. Stage 2 (actual 2026 bracket) was also submitted using v6 pipeline. Later attempts (v11, v12) did not improve on v6.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14",
+  "platform": "kaggle",
+  "prize_usd": 50000,
+  "best_lb_score": 0.0221,
+  "what_worked": [
+    "Weighted ensemble of diverse model depths (5–9) and types (XGBoost, LightGBM, LogReg, Elo baseline)",
+    "Four Factors features (eFG%, TOV%, ORB%, FT rate)",
+    "Elo ratings as a baseline signal",
+    "Tournament Experience as a feature (prior tournament appearances)",
+    "Massey Ordinals for strength-of-schedule",
+    "Pythagorean Win % for true strength estimation",
+    "Calibrated probabilities (Platt scaling on LogReg component)"
+  ],
+  "what_didnt_work": [
+    "v11: Adjusted efficiency metrics — may have introduced noise or leakage",
+    "v12: Recency weighting — tournament performance may not follow recent-season trends",
+    "Going deeper than v6's architecture"
+  ],
+  "open_questions": [
+    "What was the Stage 2 final score?",
+    "Would team-specific tempo/pace features help?",
+    "Does conference strength need explicit encoding?"
+  ],
+  "solo": true,
+  "team_size": 1,
+  "task_type": "task_type:ranking-prediction"
+}

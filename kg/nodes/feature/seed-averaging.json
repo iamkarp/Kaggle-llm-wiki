@@ -1,0 +1,25 @@
+{
+  "id": "feature:seed-averaging",
+  "type": "feature",
+  "title": "Seed averaging",
+  "slug": "seed-averaging",
+  "aliases": [],
+  "tags": [],
+  "status": "draft",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "summary": "within each model — individual scores stabilized around 0.706–0.712 (previously 0.708–0.723 single-seed spread).",
+  "source_refs": [],
+  "confidence": 0.7,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ]
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-24",
+  "used_in": [],
+  "leakage_risk": "none"
+}

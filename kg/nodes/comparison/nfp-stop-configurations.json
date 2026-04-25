@@ -1,0 +1,29 @@
+{
+  "id": "comparison:nfp-stop-configurations",
+  "type": "comparison",
+  "title": "NFP Stop Configurations Comparison",
+  "slug": "nfp-stop-configurations",
+  "aliases": [],
+  "tags": [
+    "trading",
+    "forex",
+    "nfp",
+    "straddle",
+    "comparison"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/comparisons/nfp-stop-configurations.md",
+  "summary": "Comparison of different stop-loss and take-profit configurations for the NFP straddle strategy, based on backtest results across multiple NFP releases.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/comparisons/nfp-stop-configurations.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

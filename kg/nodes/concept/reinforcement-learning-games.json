@@ -1,0 +1,32 @@
+{
+  "id": "concept:reinforcement-learning-games",
+  "type": "concept",
+  "title": "Reinforcement Learning for Game AI Competitions",
+  "slug": "reinforcement-learning-games",
+  "aliases": [],
+  "tags": [
+    "reinforcement-learning",
+    "game-ai",
+    "lux-ai",
+    "self-play",
+    "mcts",
+    "rl",
+    "kaggle",
+    "simulation"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/reinforcement-learning-games.md",
+  "summary": "Simulation competitions where agents play against each other in real time (or turn-by-turn). Agent quality is evaluated via a rating system (ELO-style). No train/test data split — the agent is the product.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/reinforcement-learning-games.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-18",
+  "updated": "2026-04-18"
+}

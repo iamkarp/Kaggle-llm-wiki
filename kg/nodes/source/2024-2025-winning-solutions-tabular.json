@@ -1,0 +1,24 @@
+{
+  "id": "source:2024-2025-winning-solutions-tabular",
+  "type": "source",
+  "title": "2024–2025 Winning Solutions: Tabular/Financial/Insurance Competitions",
+  "slug": "2024-2025-winning-solutions-tabular",
+  "status": "active",
+  "wiki_path": "raw/kaggle/2024-2025-winning-solutions-tabular.md",
+  "raw_path": "raw/kaggle/2024-2025-winning-solutions-tabular.md",
+  "sha256": "cc6a5307a2f812d5cd749f8eaf2dc8dbcc90f43c994d6bad0825e04cd6268b37",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:ensembling-strategies",
+    "concept:gradient-boosting-advanced",
+    "concept:post-processing",
+    "concept:time-series-cv",
+    "concept:validation-strategy",
+    "strategy:kaggle-meta-strategy"
+  ],
+  "year": 2026,
+  "size_bytes": 9003,
+  "line_count": 138
+}

@@ -1,0 +1,33 @@
+{
+  "id": "technique:gaussian-random-projection",
+  "type": "technique",
+  "title": "Gaussian Random Projection",
+  "slug": "gaussian-random-projection",
+  "aliases": [],
+  "tags": [
+    "dimensionality-reduction",
+    "feature-engineering",
+    "pretrained-features"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/gaussian-random-projection.md",
+  "summary": "A data-independent dimensionality reduction method that projects high-dimensional features to a lower-dimensional space using a random Gaussian matrix. Unlike PCA, the projection matrix doesn't depend on training data.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/gaussian-random-projection.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "when_to_use": [
+    "Reducing pretrained feature dimensions (e.g., 768-dim VideoMAE → 50-dim)",
+    "When train/test distribution shift makes PCA unreliable",
+    "When you need a quick baseline before trying more sophisticated approaches",
+    "When computational cost of PCA is prohibitive"
+  ]
+}

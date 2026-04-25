@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/concept.schema.json",
+  "title": "Concept",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "concept"},
+    "definition": {"type": "string"},
+    "formulation": {"type": "string", "description": "Math or pseudocode"},
+    "prerequisites": {"type": "array", "items": {"type": "string"}, "description": "Concept ids"},
+    "symptoms": {"type": "array", "items": {"type": "string"}},
+    "diagnostic_signals": {"type": "array", "items": {"type": "string"}},
+    "examples": {"type": "array", "items": {"type": "string"}, "description": "Competition or Submission ids"},
+    "failure_modes": {"type": "array", "items": {"type": "string"}, "description": "Mistake ids"}
+  }
+}

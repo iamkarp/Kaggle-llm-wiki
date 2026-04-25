@@ -1,0 +1,2448 @@
+{
+  "strategy:nfp-straddle-forex": [
+    {
+      "from": "comparison:nfp-stop-configurations",
+      "relation": "related_to"
+    },
+    {
+      "from": "person:jason-profile",
+      "relation": "related_to"
+    },
+    {
+      "from": "api_service:oanda",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:straddle-strategy": [
+    {
+      "from": "comparison:nfp-stop-configurations",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "requires"
+    },
+    {
+      "from": "api_service:oanda",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "api_service:oanda": [
+    {
+      "from": "comparison:nfp-stop-configurations",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:straddle-strategy",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "related_to"
+    }
+  ],
+  "metric:accuracy": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "evaluated_by"
+    }
+  ],
+  "task_type:vqa": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "instance_of"
+    }
+  ],
+  "competition:autopilot-vqa-2026": [
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:multimodal-classification",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:text-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "applied_in"
+    }
+  ],
+  "source:autopilot-vqa-strategy": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "cites"
+    }
+  ],
+  "source:autopilot-vqa-claude": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "cites"
+    }
+  ],
+  "model:qwen-vl": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "concept:multimodal-classification",
+      "relation": "related_to"
+    },
+    {
+      "from": "model:claude-sonnet",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "uses"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "model:claude-sonnet": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "uses"
+    },
+    {
+      "from": "model:qwen-vl",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "organization:kaggle": [
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "hosted_by"
+    },
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "hosted_by"
+    },
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "hosted_by"
+    },
+    {
+      "from": "competition:playground-s5-s6",
+      "relation": "hosted_by"
+    },
+    {
+      "from": "competition:stock-return-prediction",
+      "relation": "hosted_by"
+    },
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "hosted_by"
+    }
+  ],
+  "metric:micro-f1": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "evaluated_by"
+    }
+  ],
+  "task_type:multiclass-classification": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "instance_of"
+    }
+  ],
+  "dataset:horse-colic": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    }
+  ],
+  "feature:seed-averaging": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    }
+  ],
+  "feature:lesion-decomposition": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    }
+  ],
+  "feature:hospital-target-encoding": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    }
+  ],
+  "competition:horse-health-prediction": [
+    {
+      "from": "submission:horse-health-prediction--v1-blend",
+      "relation": "part_of"
+    },
+    {
+      "from": "submission:horse-health-prediction--v2-blend",
+      "relation": "part_of"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:kaggle-competition-playbook": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:kaggle-landscape-2024-2026",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:pseudo-labeling",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:synthetic-data-distillation",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:target-encoding",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:text-feature-engineering",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "cites"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "cites"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "cites"
+    }
+  ],
+  "source:target-encoding-advanced": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "cites"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "cites"
+    }
+  ],
+  "library:lightgbm-catboost": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    },
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "uses"
+    },
+    {
+      "from": "library:xgboost",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "uses"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "uses"
+    },
+    {
+      "from": "competition:playground-s5-s6",
+      "relation": "uses"
+    },
+    {
+      "from": "competition:stock-return-prediction",
+      "relation": "uses"
+    },
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "pattern:multimodal-fusion",
+      "relation": "uses"
+    }
+  ],
+  "library:xgboost": [
+    {
+      "from": "competition:horse-health-prediction",
+      "relation": "uses"
+    },
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "concept:calibration",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "related_to"
+    },
+    {
+      "from": "library:lightgbm-catboost",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "uses"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "uses"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "uses"
+    }
+  ],
+  "metric:mse": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "evaluated_by"
+    }
+  ],
+  "task_type:ranking-prediction": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "instance_of"
+    }
+  ],
+  "dataset:massey-ordinals": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "dataset:march-madness": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "feature:four-factors-features": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "feature:elo-ratings": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "feature:tournament-experience-as-a-feature": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "feature:pythagorean-win": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "uses"
+    }
+  ],
+  "competition:march-mania-2026": [
+    {
+      "from": "submission:march-mania-2026--v6-ensemble",
+      "relation": "part_of"
+    },
+    {
+      "from": "submission:march-mania-2026--v11-adjusted-efficiency",
+      "relation": "part_of"
+    },
+    {
+      "from": "submission:march-mania-2026--v12-recency-weighting",
+      "relation": "part_of"
+    },
+    {
+      "from": "submission:march-mania-2026--v13",
+      "relation": "part_of"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:calibration",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "applied_in"
+    }
+  ],
+  "source:v6-ensemble-documentation": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:calibration",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "cites"
+    },
+    {
+      "from": "library:lightgbm-catboost",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "cites"
+    }
+  ],
+  "source:memory-2026-02-22": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "cites"
+    }
+  ],
+  "competition:playground-s5-s6": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:imbalanced-data",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "applied_in"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "task_type:combinatorial-optimization": [
+    {
+      "from": "competition:santa-2024-pancake",
+      "relation": "instance_of"
+    }
+  ],
+  "competition:santa-2024-pancake": [
+    {
+      "from": "technique:inverse-problem-solving",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "pattern:c-vs-python-compute",
+      "relation": "failed_in"
+    },
+    {
+      "from": "pattern:c-vs-python-compute",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "mistake:nmcs-large-search-spaces",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:beam-search",
+      "relation": "applied_in"
+    },
+    {
+      "from": "technique:inverse-problem-solving",
+      "relation": "applied_in"
+    }
+  ],
+  "mistake:nmcs-large-search-spaces": [
+    {
+      "from": "competition:santa-2024-pancake",
+      "relation": "caused"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:beam-search",
+      "relation": "prevents"
+    }
+  ],
+  "technique:beam-search": [
+    {
+      "from": "competition:santa-2024-pancake",
+      "relation": "uses"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:c-vs-python-compute",
+      "relation": "uses"
+    },
+    {
+      "from": "technique:inverse-problem-solving",
+      "relation": "works_with"
+    }
+  ],
+  "technique:inverse-problem-solving": [
+    {
+      "from": "competition:santa-2024-pancake",
+      "relation": "uses"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:beam-search",
+      "relation": "works_with"
+    }
+  ],
+  "competition:stock-return-prediction": [
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "applied_in"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "metric:f1": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "evaluated_by"
+    }
+  ],
+  "task_type:har": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "instance_of"
+    }
+  ],
+  "dataset:wear": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "uses"
+    }
+  ],
+  "competition:wear-hasca-2026": [
+    {
+      "from": "technique:patchtst",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "technique:sensor-embedding",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "technique:lr-swap-augmentation",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "technique:test-time-augmentation",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "technique:threshold-optimization",
+      "relation": "succeeded_in"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "applied_in"
+    },
+    {
+      "from": "pattern:oof-vs-lb-divergence",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:multimodal-fusion",
+      "relation": "applied_in"
+    },
+    {
+      "from": "technique:lr-swap-augmentation",
+      "relation": "applied_in"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "applied_in"
+    },
+    {
+      "from": "technique:sensor-embedding",
+      "relation": "applied_in"
+    },
+    {
+      "from": "technique:threshold-optimization",
+      "relation": "applied_in"
+    }
+  ],
+  "mistake:gbm-for-cross-subject-har": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "caused"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "prevents"
+    },
+    {
+      "from": "pattern:oof-vs-lb-divergence",
+      "relation": "prevents"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "prevents"
+    },
+    {
+      "from": "mistake:videomae-cross-subject",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gaussian-random-projection",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "related_to"
+    }
+  ],
+  "mistake:videomae-cross-subject": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "caused"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "prevents"
+    },
+    {
+      "from": "pattern:oof-vs-lb-divergence",
+      "relation": "prevents"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "prevents"
+    }
+  ],
+  "mistake:pca-on-pretrained-features": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "caused"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gaussian-random-projection",
+      "relation": "prevents"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "prevents"
+    },
+    {
+      "from": "technique:gaussian-random-projection",
+      "relation": "related_to"
+    }
+  ],
+  "mistake:catboost-cpu-timeout": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "caused"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "prevents"
+    },
+    {
+      "from": "library:lightgbm-catboost",
+      "relation": "caused"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:kaggle-cpu-notebooks",
+      "relation": "related_to"
+    }
+  ],
+  "tool:kaggle-cpu-notebooks": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "mistake:catboost-cpu-timeout",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:kaggle-cli",
+      "relation": "related_to"
+    }
+  ],
+  "technique:patchtst": [
+    {
+      "from": "competition:wear-hasca-2026",
+      "relation": "uses"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "uses"
+    },
+    {
+      "from": "technique:sensor-embedding",
+      "relation": "works_with"
+    },
+    {
+      "from": "tool:kaggle-cpu-notebooks",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:multimodal-fusion",
+      "relation": "uses"
+    },
+    {
+      "from": "pattern:oof-vs-lb-divergence",
+      "relation": "uses"
+    }
+  ],
+  "concept:xgboost-ensembles": [
+    {
+      "from": "concept:calibration",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "requires"
+    },
+    {
+      "from": "library:lightgbm-catboost",
+      "relation": "related_to"
+    },
+    {
+      "from": "library:xgboost",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:calibration": [
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:negative-downsampling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "related_to"
+    }
+  ],
+  "source:talkingdata-fraud-1st-komaki": [
+    {
+      "from": "concept:categorical-embeddings",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:negative-downsampling",
+      "relation": "cites"
+    }
+  ],
+  "concept:target-encoding": [
+    {
+      "from": "concept:categorical-embeddings",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "improves_on"
+    }
+  ],
+  "concept:text-feature-engineering": [
+    {
+      "from": "concept:categorical-embeddings",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "requires"
+    }
+  ],
+  "concept:feature-engineering-tabular": [
+    {
+      "from": "concept:categorical-embeddings",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:feature-selection-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:memory-optimization",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:shap-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:text-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:xgboost-ensembles",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "requires"
+    }
+  ],
+  "concept:negative-downsampling": [
+    {
+      "from": "concept:categorical-embeddings",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:imbalanced-data",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:reinforcement-learning-games": [
+    {
+      "from": "concept:combinatorial-optimization",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:missing-batch-optimization-games": [
+    {
+      "from": "concept:combinatorial-optimization",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:reinforcement-learning-games",
+      "relation": "cites"
+    }
+  ],
+  "concept:validation-strategy": [
+    {
+      "from": "concept:combinatorial-optimization",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:external-data-leakage",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:imbalanced-data",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:knowledge-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:negative-downsampling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:online-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:reinforcement-learning-games",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:shap-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:time-series-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:universal-kaggle-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "requires"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "requires"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "requires"
+    }
+  ],
+  "concept:combinatorial-optimization": [
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:reinforcement-learning-games",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:icr-age-conditions-1st-room722": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "cites"
+    }
+  ],
+  "source:moa-1st-mark-peng": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "source:porto-seguro-1st-jahrer": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "concept:denoising-autoencoders": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:knowledge-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:online-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:knowledge-distillation": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:kaggle-landscape-2024-2026",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:llm-fine-tuning-kaggle",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:memory-optimization",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:multi-target-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:synthetic-data-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabpfn-tabm",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:ensembling-strategies": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:march-mania-v6-ensemble",
+      "relation": "requires"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:imbalanced-data",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:kaggle-landscape-2024-2026",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:knowledge-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:llm-fine-tuning-kaggle",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:online-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabpfn-tabm",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:text-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:universal-kaggle-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:machine-learning-advisor",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:kaggle-competition-playbook",
+      "relation": "requires"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "requires"
+    }
+  ],
+  "concept:stacking-deep": [
+    {
+      "from": "concept:deep-learning-tabular",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:multi-target-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:jane-street-1st-yirun-zhang": [
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "cites"
+    }
+  ],
+  "source:home-credit-1st-tunguz": [
+    {
+      "from": "concept:denoising-autoencoders",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-selection",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "source:optiver-close-1st-hyd": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:online-learning",
+      "relation": "cites"
+    }
+  ],
+  "source:2024-2025-winning-solutions-tabular": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:time-series-cv",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "cites"
+    }
+  ],
+  "source:modern-tabular-dl-techniques": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:tabpfn-tabm",
+      "relation": "cites"
+    }
+  ],
+  "source:grandmaster-meta-strategies": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "cites"
+    },
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "cites"
+    }
+  ],
+  "source:missing-batch-finance-tabular": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:feature-engineering-tabular",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "cites"
+    }
+  ],
+  "concept:online-learning": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:time-series-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:deep-learning-tabular": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:multi-target-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabpfn-tabm",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabular-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:tabpfn-tabm": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:gradient-boosting-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabular-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:post-processing": [
+    {
+      "from": "concept:ensembling-strategies",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:imbalanced-data",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:kaggle-landscape-2024-2026",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "requires"
+    }
+  ],
+  "concept:external-data-leakage": [
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:imbalanced-data": [
+    {
+      "from": "concept:external-data-leakage",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:feature-selection-advanced": [
+    {
+      "from": "concept:external-data-leakage",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:shap-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:shap-feature-engineering": [
+    {
+      "from": "concept:feature-selection-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:gradient-boosting-advanced": [
+    {
+      "from": "concept:feature-selection-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:memory-optimization",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:shap-feature-engineering",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:target-encoding-advanced",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "requires"
+    }
+  ],
+  "source:ieee-fraud-1st-chris-deotte": [
+    {
+      "from": "concept:feature-selection",
+      "relation": "cites"
+    }
+  ],
+  "source:missing-batch-timeseries-signals": [
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "cites"
+    }
+  ],
+  "concept:time-series-cv": [
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:validation-strategy",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:time-series-features": [
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:time-series-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:multi-target-learning": [
+    {
+      "from": "concept:financial-competition-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:image-classification-tricks": [
+    {
+      "from": "concept:image-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:loss-functions-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:metric-learning-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:multimodal-classification",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:pseudo-labeling-cv": [
+    {
+      "from": "concept:image-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:loss-functions-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:medical-imaging-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:segmentation-architectures",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:metric-learning-cv": [
+    {
+      "from": "concept:image-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:image-classification-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:medical-imaging-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:loss-functions-cv": [
+    {
+      "from": "concept:image-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:image-classification-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:medical-imaging-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:metric-learning-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:segmentation-architectures",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:image-augmentation": [
+    {
+      "from": "concept:image-classification-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:medical-imaging-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:metric-learning-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:segmentation-architectures",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabular-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:synthetic-data-distillation": [
+    {
+      "from": "concept:kaggle-landscape-2024-2026",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:kaggle-landscape-2024-2026": [
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "concept:post-processing",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:synthetic-data-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "requires"
+    }
+  ],
+  "source:amex-default-14th-chris-deotte": [
+    {
+      "from": "concept:knowledge-distillation",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "concept:pseudo-labeling": [
+    {
+      "from": "concept:knowledge-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:llm-fine-tuning-kaggle",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:multi-target-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:negative-downsampling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:synthetic-data-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:tabular-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:universal-kaggle-tricks",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling-cv",
+      "relation": "improves_on"
+    }
+  ],
+  "source:timeseries-nlp-techniques": [
+    {
+      "from": "concept:llm-fine-tuning-kaggle",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:time-series-cv",
+      "relation": "cites"
+    },
+    {
+      "from": "concept:time-series-features",
+      "relation": "cites"
+    }
+  ],
+  "source:missing-batch-nlp-reasoning": [
+    {
+      "from": "concept:llm-fine-tuning-kaggle",
+      "relation": "cites"
+    }
+  ],
+  "concept:segmentation-architectures": [
+    {
+      "from": "concept:loss-functions-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:medical-imaging-patterns",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:pseudo-labeling-cv",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:multimodal-classification": [
+    {
+      "from": "strategy:autopilot-vqa-pipeline",
+      "relation": "requires"
+    },
+    {
+      "from": "model:qwen-vl",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:optiver-volatility-1st-nyanp": [
+    {
+      "from": "concept:nearest-neighbor-features",
+      "relation": "cites"
+    }
+  ],
+  "concept:categorical-embeddings": [
+    {
+      "from": "concept:negative-downsampling",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:jane-street-2025-8th-grigoreva": [
+    {
+      "from": "concept:online-learning",
+      "relation": "cites"
+    }
+  ],
+  "concept:feature-selection": [
+    {
+      "from": "concept:online-learning",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "concept:feature-selection-advanced",
+      "relation": "improves_on"
+    }
+  ],
+  "source:kaggle-meta-2024-2026": [
+    {
+      "from": "concept:post-processing",
+      "relation": "cites"
+    }
+  ],
+  "source:santander-transaction-1st-fl2o": [
+    {
+      "from": "concept:pseudo-labeling",
+      "relation": "cites"
+    }
+  ],
+  "source:otto-group-1st-giba-semenov": [
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "source:playground-s5e4-1st-chris-deotte": [
+    {
+      "from": "concept:stacking-deep",
+      "relation": "cites"
+    }
+  ],
+  "concept:nearest-neighbor-features": [
+    {
+      "from": "concept:stacking-deep",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "comparison:nfp-stop-configurations": [
+    {
+      "from": "concept:straddle-strategy",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "strategy:nfp-straddle-forex",
+      "relation": "related_to"
+    }
+  ],
+  "concept:llm-fine-tuning-kaggle": [
+    {
+      "from": "concept:synthetic-data-distillation",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:m5-forecasting-1st-yeonjun": [
+    {
+      "from": "concept:time-series-features",
+      "relation": "cites"
+    }
+  ],
+  "concept:universal-kaggle-tricks": [
+    {
+      "from": "strategy:kaggle-meta-strategy",
+      "relation": "requires"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:memory-2026-02-22-update": [
+    {
+      "from": "concept:validation-strategy",
+      "relation": "cites"
+    }
+  ],
+  "tool:machine-learning-advisor": [
+    {
+      "from": "model:claude-sonnet",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:user-profile": [
+    {
+      "from": "person:jason-profile",
+      "relation": "cites"
+    }
+  ],
+  "source:memory-main": [
+    {
+      "from": "person:jason-profile",
+      "relation": "cites"
+    }
+  ],
+  "person:jason-profile": [
+    {
+      "from": "competition:march-mania-2026",
+      "relation": "team_members"
+    },
+    {
+      "from": "competition:autopilot-vqa-2026",
+      "relation": "team_members"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "source:machine-learning-advisor-app": [
+    {
+      "from": "tool:machine-learning-advisor",
+      "relation": "cites"
+    }
+  ],
+  "synthesis:overview": [
+    {
+      "from": "tool:machine-learning-advisor",
+      "relation": "related_to"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "strategy:kaggle-meta-strategy": [
+    {
+      "from": "tool:machine-learning-advisor",
+      "relation": "applied_in"
+    },
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "tool:autoresearch",
+      "relation": "applied_in"
+    }
+  ],
+  "strategy:autopilot-vqa-pipeline": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "strategy:march-mania-v6-ensemble": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "technique:gaussian-random-projection": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:multimodal-fusion",
+      "relation": "uses"
+    }
+  ],
+  "technique:gradient-boosted-trees": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gaussian-random-projection",
+      "relation": "works_with"
+    }
+  ],
+  "technique:lr-swap-augmentation": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "uses"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:test-time-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:test-time-augmentation",
+      "relation": "works_with"
+    }
+  ],
+  "technique:threshold-optimization": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:test-time-augmentation",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:test-time-augmentation",
+      "relation": "works_with"
+    }
+  ],
+  "technique:sensor-embedding": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "works_with"
+    }
+  ],
+  "technique:test-time-augmentation": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:lr-swap-augmentation",
+      "relation": "works_with"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    }
+  ],
+  "pattern:c-vs-python-compute": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:beam-search",
+      "relation": "related_to"
+    }
+  ],
+  "pattern:cross-subject-generalization": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:oof-vs-lb-divergence",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:gradient-boosted-trees",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:patchtst",
+      "relation": "related_to"
+    }
+  ],
+  "pattern:multimodal-fusion": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "pattern:oof-vs-lb-divergence": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    },
+    {
+      "from": "pattern:cross-subject-generalization",
+      "relation": "related_to"
+    },
+    {
+      "from": "technique:threshold-optimization",
+      "relation": "related_to"
+    }
+  ],
+  "concept:financial-competition-patterns": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:medical-imaging-patterns": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:memory-optimization": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "concept:tabular-augmentation": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "tool:autoresearch": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "tool:kaggle-cli": [
+    {
+      "from": "meta:wiki-index",
+      "relation": "related_to"
+    }
+  ],
+  "submission:march-mania-2026--v11-adjusted-efficiency": [
+    {
+      "from": "submission:march-mania-2026--v6-ensemble",
+      "relation": "supersedes"
+    }
+  ],
+  "submission:march-mania-2026--v12-recency-weighting": [
+    {
+      "from": "submission:march-mania-2026--v6-ensemble",
+      "relation": "supersedes"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:missing-batch-sports-bio-early",
+  "type": "source",
+  "title": "Kaggle Solutions — Missing Batch — Sports (March Mania), Biology & Early Kaggle Classics",
+  "slug": "missing-batch-sports-bio-early",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/missing-batch-sports-bio-early.md",
+  "raw_path": "raw/kaggle/solutions/missing-batch-sports-bio-early.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/missing-batch-sports-bio-early.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/missing-batch-sports-bio-early.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 24599,
+  "line_count": 512
+}

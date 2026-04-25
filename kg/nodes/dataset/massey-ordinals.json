@@ -1,0 +1,27 @@
+{
+  "id": "dataset:massey-ordinals",
+  "type": "dataset",
+  "title": "Massey Ordinals",
+  "slug": "massey-ordinals",
+  "name": "Massey Ordinals",
+  "modality": "tabular",
+  "subjects_or_entities": "team season",
+  "summary": "Strength-of-schedule rankings for NCAA basketball teams across systems.",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ]
+  },
+  "created": "2026-04-14",
+  "updated": "2026-04-24",
+  "source_competition": "competition:march-mania-2026"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:nlp-audio-medical-batch",
+  "type": "source",
+  "title": "Kaggle Past Solutions — NLP, Audio & Medical Imaging",
+  "slug": "nlp-audio-medical-batch",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/nlp-audio-medical-batch.md",
+  "raw_path": "raw/kaggle/solutions/nlp-audio-medical-batch.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/nlp-audio-medical-batch.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/nlp-audio-medical-batch.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 9024,
+  "line_count": 165
+}

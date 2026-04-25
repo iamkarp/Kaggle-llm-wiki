@@ -1,0 +1,9 @@
+# Collapse auto-injected KG blocks from default markdown diffs
+*.md diff=markdown
+
+# JSON build artifacts: generated, do not review line-by-line
+kg/nodes/**/*.json -diff
+kg/edges.jsonl -diff
+kg/indexes/*.json -diff
+kg/manifest.json -diff
+kg/build.log -diff

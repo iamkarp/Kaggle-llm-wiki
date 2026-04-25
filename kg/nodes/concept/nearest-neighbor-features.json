@@ -1,0 +1,31 @@
+{
+  "id": "concept:nearest-neighbor-features",
+  "type": "concept",
+  "title": "Nearest Neighbor Features — Non-Parametric Local Aggregation",
+  "slug": "nearest-neighbor-features",
+  "aliases": [],
+  "tags": [
+    "nearest-neighbor",
+    "knn",
+    "features",
+    "aggregation",
+    "tabular",
+    "time-series",
+    "non-parametric"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/nearest-neighbor-features.md",
+  "summary": "Nearest neighbor (NN) features aggregate the target values or engineered statistics of the K most similar training samples as new features for each observation. This provides a non-parametric local estimate — essentially answering \"what happened in situations like this one?\"",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/nearest-neighbor-features.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "concept:financial-competition-patterns",
+  "type": "concept",
+  "title": "Financial & Trading Competition Patterns",
+  "slug": "financial-competition-patterns",
+  "aliases": [],
+  "tags": [
+    "financial",
+    "time-series",
+    "purged-cv",
+    "jane-street",
+    "optiver",
+    "trading",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/financial-competition-patterns.md",
+  "summary": "Patterns extracted from Jane Street, Optiver, and G-Research competitions for financial time-series modeling. Fundamental differences from standard tabular competitions: temporal leakage is severe, regime shifts require retraining, and microstructure features dominate raw prices.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/financial-competition-patterns.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

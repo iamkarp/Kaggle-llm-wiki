@@ -1,0 +1,32 @@
+{
+  "id": "strategy:kaggle-competition-playbook",
+  "type": "strategy",
+  "title": "Kaggle Competition Playbook — End-to-End Workflow",
+  "slug": "kaggle-competition-playbook",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "playbook",
+    "workflow",
+    "eda",
+    "feature-engineering",
+    "ensembling",
+    "validation",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/strategies/kaggle-competition-playbook.md",
+  "summary": "Jason's comprehensive playbook for Kaggle tabular ML competitions, covering the full workflow from problem framing through final submission selection. Read this at the start of every new competition.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/strategies/kaggle-competition-playbook.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

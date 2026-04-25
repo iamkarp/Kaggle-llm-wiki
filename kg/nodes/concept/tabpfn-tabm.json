@@ -1,0 +1,32 @@
+{
+  "id": "concept:tabpfn-tabm",
+  "type": "concept",
+  "title": "TabPFN & TabM — New SOTA Tabular Foundation Models",
+  "slug": "tabpfn-tabm",
+  "aliases": [],
+  "tags": [
+    "tabpfn",
+    "tabm",
+    "foundation-model",
+    "tabular",
+    "in-context-learning",
+    "deep-learning",
+    "2024",
+    "2025"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/tabpfn-tabm.md",
+  "summary": "Two breakthroughs (2024–2025) that for the first time challenged GBDTs on tabular data:",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/tabpfn-tabm.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

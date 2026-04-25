@@ -1,0 +1,30 @@
+{
+  "id": "mistake:catboost-cpu-timeout",
+  "type": "mistake",
+  "title": "Mistake: CatBoost CPU Timeout",
+  "slug": "catboost-cpu-timeout",
+  "aliases": [],
+  "tags": [
+    "catboost",
+    "runtime",
+    "kaggle",
+    "timeout"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/mistakes/catboost-cpu-timeout.md",
+  "summary": "**What happened:** CatBoost multi-class classification with ~157 features, 4-fold CV. Each fold took ~3 hours on Kaggle CPU. 4 folds × 3h = 12h just for CatBoost, leaving no time for LightGBM, XGBoost, or any other processing.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/mistakes/catboost-cpu-timeout.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "what_happened": "CatBoost multi-class classification with ~157 features, 4-fold CV. Each fold took ~3 hours on Kaggle CPU. 4 folds × 3h = 12h just for CatBoost, leaving no time for LightGBM, XGBoost, or any other processing.",
+  "general_rule": "On Kaggle CPU notebooks:\n- LightGBM: fastest (~10 min/fold for moderate data)\n- XGBoost: moderate (~15 min/fold)\n- CatBoost: slowest (~3h/fold for multi-class) — avoid on CPU"
+}

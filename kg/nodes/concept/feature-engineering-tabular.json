@@ -1,0 +1,32 @@
+{
+  "id": "concept:feature-engineering-tabular",
+  "type": "concept",
+  "title": "Feature Engineering — Tabular Data Patterns",
+  "slug": "feature-engineering-tabular",
+  "aliases": [],
+  "tags": [
+    "feature-engineering",
+    "tabular",
+    "xgboost",
+    "basketball",
+    "kaggle",
+    "preprocessing",
+    "interactions",
+    "aggregations"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/feature-engineering-tabular.md",
+  "summary": "Feature engineering for tabular data transforms raw records into signals that ML models can leverage. For gradient boosting (XGBoost, LightGBM, CatBoost), good features often matter more than model choice.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/feature-engineering-tabular.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

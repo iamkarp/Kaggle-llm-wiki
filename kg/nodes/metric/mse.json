@@ -1,0 +1,25 @@
+{
+  "id": "metric:mse",
+  "type": "metric",
+  "title": "Mean Squared Error",
+  "slug": "mse",
+  "name": "MSE",
+  "direction": "lower_better",
+  "status": "active",
+  "wiki_path": "kg/canonical/metric/mse",
+  "summary": "Mean of squared errors.",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

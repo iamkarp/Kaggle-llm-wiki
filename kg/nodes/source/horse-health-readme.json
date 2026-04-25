@@ -1,0 +1,30 @@
+{
+  "id": "source:horse-health-readme",
+  "type": "source",
+  "title": "Horse Health Readme",
+  "slug": "horse-health-readme",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/horse-health-readme.txt",
+  "raw_path": "raw/kaggle/horse-health-readme.txt",
+  "summary": "Auto-ingested from raw/kaggle/horse-health-readme.txt.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/horse-health-readme.txt"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 4015,
+  "line_count": 134
+}

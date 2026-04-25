@@ -1,0 +1,31 @@
+{
+  "id": "strategy:march-mania-v6-ensemble",
+  "type": "strategy",
+  "title": "March Mania v6 Ensemble — Weighted 3-Pipeline Architecture",
+  "slug": "march-mania-v6-ensemble",
+  "aliases": [],
+  "tags": [
+    "ensemble",
+    "xgboost",
+    "lightgbm",
+    "logistic-regression",
+    "calibration",
+    "ncaa",
+    "kaggle"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/strategies/march-mania-v6-ensemble.md",
+  "summary": "The v6 ensemble is Jason's best March Mania submission (0.02210 Stage 1 LB). It combines three independently trained pipelines with fixed weights. The key design principle: balance high-variance deep trees with lower-variance linear/hybrid models to reduce overfitting across tournament years.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/strategies/march-mania-v6-ensemble.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "source:jane-street-2025-8th-grigoreva",
+  "type": "source",
+  "title": "Jane Street Real-Time Market Data Forecasting 2025 — 8th Place Solution",
+  "slug": "jane-street-2025-8th-grigoreva",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/jane-street-2025-8th-grigoreva.md",
+  "raw_path": "raw/kaggle/solutions/jane-street-2025-8th-grigoreva.md",
+  "sha256": "e40b56ec0fd87b89b77f24bd9202529834a6ccc2f24b8656a248a4b75e3a0c4e",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:online-learning"
+  ],
+  "year": 2025,
+  "size_bytes": 6517,
+  "line_count": 137
+}

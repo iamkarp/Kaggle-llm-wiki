@@ -1,0 +1,39 @@
+{
+  "id": "concept:ensembling-strategies",
+  "type": "concept",
+  "title": "Ensembling Strategies — Fourth-Root Blend, Stacking, Diversity",
+  "slug": "ensembling-strategies",
+  "aliases": [],
+  "tags": [
+    "ensemble",
+    "stacking",
+    "blending",
+    "fourth-root",
+    "oof",
+    "diversity",
+    "kaggle",
+    "gru",
+    "transformer",
+    "post-processing",
+    "hill-climbing",
+    "autogluon",
+    "catboost-baseline",
+    "2024",
+    "2025"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/ensembling-strategies.md",
+  "summary": "Ensembling combines predictions from multiple models to reduce variance and improve generalization. On Kaggle, ensembles consistently outperform single models, often by a meaningful margin (0.001–0.01 depending on metric scale). The key insight: **models that make different errors are more valuable than models that are individually better**.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/ensembling-strategies.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "competition:stock-return-prediction",
+  "type": "competition",
+  "title": "Predict 1-Year US Stock Returns from Fundamentals",
+  "slug": "stock-return-prediction",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "tabular",
+    "regression",
+    "financial",
+    "rmse",
+    "stock-returns",
+    "cross-sectional"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/stock-return-prediction.md",
+  "summary": "Regression competition: predict 1-year stock return from fundamental data (P/E, market cap, revenue, etc.). RMSE metric on raw returns. Key challenge: extreme fat tails (target range [-99%, +10571%], std=138). Best LB: 15217 (LGB single model). Data: 23K train rows × 39 features, 8.5K test.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/stock-return-prediction.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

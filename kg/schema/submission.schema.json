@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/submission.schema.json",
+  "title": "Submission",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "submission"},
+    "competition_id": {"type": "string", "description": "Competition id"},
+    "version_label": {"type": "string", "examples": ["v6", "v2.9", "v13"]},
+    "submitted_at": {"type": "string", "format": "date"},
+    "lb_score": {"type": "number"},
+    "private_lb_score": {"type": "number"},
+    "cv_score": {"type": "number"},
+    "oof_score": {"type": "number"},
+    "gap": {"type": "number", "description": "CV-LB or OOF-LB gap"},
+    "model_stack": {"type": "array", "items": {"type": "string"}, "description": "Model or Library ids"},
+    "feature_sets": {"type": "array", "items": {"type": "string"}, "description": "Feature ids"},
+    "weights": {"type": "object", "description": "Blend weights, e.g. {'v2.9': 0.35, 'v2.8': 0.35, 'v5': 0.30}"},
+    "hyperparams": {"type": "object"},
+    "seed": {"type": "integer"},
+    "notes": {"type": "string"},
+    "kept_for_final": {"type": "boolean"},
+    "kept_selected": {"type": "boolean"},
+    "runtime_sec": {"type": "number", "minimum": 0},
+    "hardware": {"type": "string", "examples": ["kaggle-cpu", "kaggle-t4-x2", "kaggle-p100", "local-rtx4090"]},
+    "kernel_url": {"type": "string", "format": "uri"}
+  }
+}

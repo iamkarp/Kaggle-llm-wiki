@@ -1,0 +1,22 @@
+{
+  "id": "source:modern-tabular-dl-techniques",
+  "type": "source",
+  "title": "Modern Deep Learning & Advanced Techniques for Tabular Kaggle (2023–2025)",
+  "slug": "modern-tabular-dl-techniques",
+  "status": "active",
+  "wiki_path": "raw/kaggle/modern-tabular-dl-techniques.md",
+  "raw_path": "raw/kaggle/modern-tabular-dl-techniques.md",
+  "sha256": "1edfe59652e258a23795d606ec302f73488606f35b0fbab76944f3bccc64d4cb",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:ensembling-strategies",
+    "concept:gradient-boosting-advanced",
+    "concept:post-processing",
+    "concept:tabpfn-tabm"
+  ],
+  "year": 2026,
+  "size_bytes": 9979,
+  "line_count": 225
+}

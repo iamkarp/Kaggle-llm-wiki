@@ -1,0 +1,19 @@
+{
+  "id": "source:optiver-volatility-1st-nyanp",
+  "type": "source",
+  "title": "Optiver Realized Volatility Prediction — 1st Place Solution",
+  "slug": "optiver-volatility-1st-nyanp",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/optiver-volatility-1st-nyanp.md",
+  "raw_path": "raw/kaggle/solutions/optiver-volatility-1st-nyanp.md",
+  "sha256": "a0d0dcb1a49e64cf33586dc9e04d4b629d2eccc1ca7f00c53067836f53126403",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:nearest-neighbor-features"
+  ],
+  "year": 2026,
+  "size_bytes": 4607,
+  "line_count": 93
+}

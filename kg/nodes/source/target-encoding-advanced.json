@@ -1,0 +1,20 @@
+{
+  "id": "source:target-encoding-advanced",
+  "type": "source",
+  "title": "Advanced Target Encoding Techniques for Kaggle",
+  "slug": "target-encoding-advanced",
+  "status": "active",
+  "wiki_path": "raw/kaggle/target-encoding-advanced.md",
+  "raw_path": "raw/kaggle/target-encoding-advanced.md",
+  "sha256": "c661651a84c8292ff1866f7884a6ee09bffe98d6d0e90acd8529d41223dd2945",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "competition:horse-health-prediction",
+    "meta:wiki-index"
+  ],
+  "year": 2026,
+  "size_bytes": 12462,
+  "line_count": 379
+}

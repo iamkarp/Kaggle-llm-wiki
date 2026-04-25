@@ -1,0 +1,21 @@
+{
+  "id": "source:timeseries-nlp-techniques",
+  "type": "source",
+  "title": "Kaggle Time Series Forecasting & NLP/LLM Techniques (2022–2025)",
+  "slug": "timeseries-nlp-techniques",
+  "status": "active",
+  "wiki_path": "raw/kaggle/timeseries-nlp-techniques.md",
+  "raw_path": "raw/kaggle/timeseries-nlp-techniques.md",
+  "sha256": "bf0b68e574c69652f8283e065d4130caa22f4a2586163a03d8162af080baf859",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:llm-fine-tuning-kaggle",
+    "concept:time-series-cv",
+    "concept:time-series-features"
+  ],
+  "year": 2026,
+  "size_bytes": 12652,
+  "line_count": 265
+}

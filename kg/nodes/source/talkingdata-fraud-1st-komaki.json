@@ -1,0 +1,20 @@
+{
+  "id": "source:talkingdata-fraud-1st-komaki",
+  "type": "source",
+  "title": "TalkingData Ad Fraud Detection — 1st Place Solution",
+  "slug": "talkingdata-fraud-1st-komaki",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/talkingdata-fraud-1st-komaki.md",
+  "raw_path": "raw/kaggle/solutions/talkingdata-fraud-1st-komaki.md",
+  "sha256": "3c8b69dd63cc7ec2aa0c5ba419aab00f673df3a43fe966f388700ca22a96836d",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:categorical-embeddings",
+    "concept:negative-downsampling"
+  ],
+  "year": 2026,
+  "size_bytes": 6954,
+  "line_count": 144
+}

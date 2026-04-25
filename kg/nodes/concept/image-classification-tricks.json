@@ -1,0 +1,31 @@
+{
+  "id": "concept:image-classification-tricks",
+  "type": "concept",
+  "title": "Image Classification Tricks",
+  "slug": "image-classification-tricks",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "classification",
+    "efficientnet",
+    "pooling",
+    "ensembling",
+    "metadata-fusion",
+    "multi-resolution"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/image-classification-tricks.md",
+  "summary": "Competition-winning image classification solutions share a set of recurring architectural and training tricks beyond the backbone choice. This page documents the most impactful ones.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/image-classification-tricks.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

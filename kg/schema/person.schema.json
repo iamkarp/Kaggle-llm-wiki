@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/person.schema.json",
+  "title": "Person",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "person"},
+    "display_name": {"type": "string"},
+    "kaggle_handle": {"type": "string"},
+    "github_handle": {"type": "string"},
+    "affiliation": {"type": "string", "description": "Organization id"},
+    "role": {"type": "string", "enum": ["self", "collaborator", "author", "grandmaster", "advisor", "competitor"]},
+    "competitions": {"type": "array", "items": {"type": "string"}, "description": "Competition ids"},
+    "notable_wins": {"type": "array", "items": {"type": "string"}}
+  }
+}

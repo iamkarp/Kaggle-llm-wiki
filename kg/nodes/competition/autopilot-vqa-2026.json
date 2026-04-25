@@ -1,0 +1,45 @@
+{
+  "id": "competition:autopilot-vqa-2026",
+  "type": "competition",
+  "title": "AUTOPILOT VQA — Dashcam Visual Question Answering",
+  "slug": "autopilot-vqa-2026",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "cvpr",
+    "vqa",
+    "vision",
+    "multimodal",
+    "qwen",
+    "claude",
+    "ensemble",
+    "classification"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/autopilot-vqa-2026.md",
+  "summary": "Kaggle/CVPR competition: classify 25 questions about dashcam video clips. Metric is mean per-question accuracy across all 25 columns. Jason's strategy uses a hierarchical VLM pipeline (Qwen2.5-VL-32B for bulk + Claude Sonnet for causal reasoning) with majority-vote ensemble. Deadline April 15, 2026.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/autopilot-vqa-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14",
+  "platform": "kaggle (cvpr 2026 challenge)",
+  "prize_usd": 300,
+  "what_worked": [],
+  "what_didnt_work": [],
+  "open_questions": [
+    "Which N/A auto-fill rules give the biggest score lift?",
+    "Does the 5-frame optical-flow sampling outperform uniform sampling on this dataset?",
+    "Does Claude provide meaningful uplift on Q5/Q6 vs Qwen alone?"
+  ],
+  "solo": true,
+  "team_size": 1,
+  "task_type": "task_type:vqa"
+}

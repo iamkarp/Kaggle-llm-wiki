@@ -1,0 +1,52 @@
+{
+  "id": "competition:horse-health-prediction",
+  "type": "competition",
+  "title": "Horse Health Prediction (Kaggle Playground)",
+  "slug": "horse-health-prediction",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "tabular",
+    "multiclass",
+    "f1",
+    "lightgbm",
+    "xgboost",
+    "catboost",
+    "ensemble",
+    "small-data"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "summary": "Kaggle Playground tabular 3-class classification: predict final horse colic case outcome (`lived` / `died` / `euthanized`). Small dataset (988 train / 247 test) mirroring the classic UCI horse-colic problem. Metric: **micro-averaged F1**.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "platform": "kaggle",
+  "what_worked": [
+    "Seed averaging within each model — individual scores stabilized around 0.706–0.712 (previously 0.708–0.723 single-seed spread).",
+    "Blend > best individual by ~0.007 F1 — the three trees disagree enough to add signal.",
+    "Lesion decomposition — trees pick up lesion_1_site as informative (the raw 4–5 digit code is effectively a high-cardinality categorical that trees struggle to split meaningfully).",
+    "Hospital target encoding — real overlap (124 shared hospitals) makes this a legitimate feature, not leakage."
+  ],
+  "what_didnt_work": [
+    "Grid-search over blend weights on OOF — overfit. Fourth-root weighting is the right default on a dataset this small.",
+    "Geometric-mean blend of probabilities was 0.003 F1 below arithmetic — unusual, but the models are already close enough in calibration that logs add noise."
+  ],
+  "open_questions": [
+    "Logistic regression + one-hot as a 4th ensemble component for additional diversity? Small dataset makes this appealing.",
+    "Additional lesion decomposition: the 5-digit codes (e.g., 11300) encode site=11 (all intestinal) — does mapping site=11 to a separate \"multi-site\" flag help?",
+    "Would stacking with a ridge meta-learner beat the fourth-root blend? On 988 rows, probably noisy."
+  ],
+  "solo": true,
+  "team_size": 1,
+  "task_type": "task_type:multiclass-classification"
+}

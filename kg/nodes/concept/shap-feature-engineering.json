@@ -1,0 +1,30 @@
+{
+  "id": "concept:shap-feature-engineering",
+  "type": "concept",
+  "title": "SHAP as a Feature Engineering Discovery Tool",
+  "slug": "shap-feature-engineering",
+  "aliases": [],
+  "tags": [
+    "shap",
+    "feature-engineering",
+    "interpretability",
+    "interactions",
+    "drift-detection",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/shap-feature-engineering.md",
+  "summary": "A methodology for using Shapley values to drive feature engineering decisions rather than just post-hoc explanation. The NVIDIA Grandmasters Playbook explicitly lists error analysis via SHAP among its 7 battle-tested techniques.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/shap-feature-engineering.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

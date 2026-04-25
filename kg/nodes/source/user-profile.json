@@ -1,0 +1,19 @@
+{
+  "id": "source:user-profile",
+  "type": "source",
+  "title": "USER.md - About Your Human",
+  "slug": "user-profile",
+  "status": "active",
+  "wiki_path": "raw/system/user-profile.md",
+  "raw_path": "raw/system/user-profile.md",
+  "sha256": "8b8d3a683009f596686e87bb3fde44c1c03301a30ba2c4ddbf6861709f39efde",
+  "ingested_at": "2026-04-24",
+  "origin": "doc",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "person:jason-profile"
+  ],
+  "year": 2026,
+  "size_bytes": 765,
+  "line_count": 18
+}

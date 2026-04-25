@@ -1,0 +1,19 @@
+{
+  "id": "source:memory-main",
+  "type": "source",
+  "title": "MEMORY.md - Long-Term Memory",
+  "slug": "memory-main",
+  "status": "active",
+  "wiki_path": "raw/system/memory-main.md",
+  "raw_path": "raw/system/memory-main.md",
+  "sha256": "8a0b247e748dbee457f2ce18572e3e7f72c453709e3a0ea9b56c23f7c3aad6e6",
+  "ingested_at": "2026-04-24",
+  "origin": "doc",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "person:jason-profile"
+  ],
+  "year": 2026,
+  "size_bytes": 2874,
+  "line_count": 66
+}

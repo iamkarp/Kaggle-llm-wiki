@@ -1,0 +1,31 @@
+{
+  "id": "concept:image-augmentation",
+  "type": "concept",
+  "title": "Image Augmentation",
+  "slug": "image-augmentation",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "augmentation",
+    "albumentations",
+    "tta",
+    "cyclegan",
+    "synthetic-data",
+    "autoaugment"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/image-augmentation.md",
+  "summary": "Image augmentation is the most reliable regularization technique in CV competitions. This page covers standard Albumentations recipes, Test-Time Augmentation (TTA), AutoAugment policy transfer, and CycleGAN synthetic data for unseen classes.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/image-augmentation.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

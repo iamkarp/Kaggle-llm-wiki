@@ -1,0 +1,28 @@
+{
+  "id": "mistake:nmcs-large-search-spaces",
+  "type": "mistake",
+  "title": "NMCS for Large Search Spaces",
+  "slug": "nmcs-large-search-spaces",
+  "aliases": [],
+  "tags": [
+    "search",
+    "monte-carlo",
+    "combinatorial-optimization"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/mistakes/nmcs-large-search-spaces.md",
+  "summary": "**What happened:** Applied Nested Monte Carlo Search (NMCS) to pancake sorting at n=100. Even level-1 NMCS was impossibly slow.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/mistakes/nmcs-large-search-spaces.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16",
+  "what_happened": "Applied Nested Monte Carlo Search (NMCS) to pancake sorting at n=100. Even level-1 NMCS was impossibly slow."
+}

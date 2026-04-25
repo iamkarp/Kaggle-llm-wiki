@@ -1,0 +1,34 @@
+{
+  "id": "strategy:kaggle-meta-strategy",
+  "type": "strategy",
+  "title": "Kaggle Meta-Strategy — Grandmaster Principles for Any Competition",
+  "slug": "kaggle-meta-strategy",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "meta",
+    "strategy",
+    "cv",
+    "validation",
+    "shake-up",
+    "leakage",
+    "seeds",
+    "ensemble",
+    "grandmaster"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/strategies/kaggle-meta-strategy.md",
+  "summary": "Cross-competition principles from KazAnova (#2 globally), Chris Deotte (NVIDIA, 4x GM), Anthony Goldbloom (Kaggle CEO), and ML Contests annual analyses. These apply to every tabular competition regardless of domain.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/strategies/kaggle-meta-strategy.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "concept:post-processing",
+  "type": "concept",
+  "title": "Post-Processing — RankGauss, Calibration, Clipping, Rank Blending",
+  "slug": "post-processing",
+  "aliases": [],
+  "tags": [
+    "post-processing",
+    "rankgauss",
+    "calibration",
+    "temperature-scaling",
+    "clipping",
+    "rank-transform",
+    "probability"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/post-processing.md",
+  "summary": "Post-processing techniques applied to model predictions *after training* to improve metric scores. These are quick wins that don't require retraining. Most relevant for log-loss and MAE metrics. Does not affect AUC (which is rank-based).",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/post-processing.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

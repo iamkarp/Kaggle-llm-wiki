@@ -1,0 +1,33 @@
+{
+  "id": "concept:synthetic-data-distillation",
+  "type": "concept",
+  "title": "Synthetic Data Distillation — Teacher→Student for Kaggle",
+  "slug": "synthetic-data-distillation",
+  "aliases": [],
+  "tags": [
+    "distillation",
+    "synthetic-data",
+    "llm",
+    "foundation-model",
+    "kaggle",
+    "lora",
+    "qlora",
+    "unsloth",
+    "vllm"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/synthetic-data-distillation.md",
+  "summary": "```mermaid\ngraph TD\n    A[Large Teacher Model] --> B[Generate Synthetic Data]\n    B --> C[Curate & Filter]\n    C --> D[Fine-Tune Student]\n    D --> E[Serve on Kaggle L4s]\n    F[Raw Competition Data] --> B\n    G[Quality Filters] --> C\n```",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/synthetic-data-distillation.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-18",
+  "updated": "2026-04-18"
+}

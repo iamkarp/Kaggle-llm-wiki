@@ -1,0 +1,33 @@
+{
+  "id": "technique:test-time-augmentation",
+  "type": "technique",
+  "title": "Test-Time Augmentation (TTA)",
+  "slug": "test-time-augmentation",
+  "aliases": [],
+  "tags": [
+    "inference",
+    "augmentation",
+    "ensemble"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/test-time-augmentation.md",
+  "summary": "At inference time, make predictions on multiple augmented versions of each test sample and average the probability outputs. A free accuracy boost that doesn't require retraining.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/test-time-augmentation.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "when_to_use": [
+    "Always try it when the augmentation used during training can be applied at test time",
+    "Nearly free (2x inference cost for L-R flip TTA)",
+    "Diminishing returns with many augmentations — 2-4 variants is usually optimal",
+    "Stack with techniques/threshold-optimization for additional gains"
+  ]
+}

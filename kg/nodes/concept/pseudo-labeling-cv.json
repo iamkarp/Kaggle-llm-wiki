@@ -1,0 +1,29 @@
+{
+  "id": "concept:pseudo-labeling-cv",
+  "type": "concept",
+  "title": "Pseudo-Labeling for CV",
+  "slug": "pseudo-labeling-cv",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "pseudo-labeling",
+    "semi-supervised",
+    "segmentation",
+    "confidence-threshold"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/pseudo-labeling-cv.md",
+  "summary": "Pseudo-labeling (also called self-training) uses a model's own predictions on unlabeled data as training targets. In CV competitions, it is most powerful for **segmentation** (where labeled data is expensive) and **classification** with large unlabeled test sets.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/pseudo-labeling-cv.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

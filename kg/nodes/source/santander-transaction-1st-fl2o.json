@@ -1,0 +1,19 @@
+{
+  "id": "source:santander-transaction-1st-fl2o",
+  "type": "source",
+  "title": "Santander Customer Transaction Prediction — 1st Place Solution",
+  "slug": "santander-transaction-1st-fl2o",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/santander-transaction-1st-fl2o.md",
+  "raw_path": "raw/kaggle/solutions/santander-transaction-1st-fl2o.md",
+  "sha256": "730a6640dca830cf17b8aff90c6f66cf7438e0bb5d394c4a222257c3ed98aceb",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:pseudo-labeling"
+  ],
+  "year": 2026,
+  "size_bytes": 5748,
+  "line_count": 132
+}

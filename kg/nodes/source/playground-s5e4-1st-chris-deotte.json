@@ -1,0 +1,19 @@
+{
+  "id": "source:playground-s5e4-1st-chris-deotte",
+  "type": "source",
+  "title": "Playground Series S5E4 — 1st Place Solution",
+  "slug": "playground-s5e4-1st-chris-deotte",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/playground-s5e4-1st-chris-deotte.md",
+  "raw_path": "raw/kaggle/solutions/playground-s5e4-1st-chris-deotte.md",
+  "sha256": "e7f25195f21b06e30400945d9f347ced50731df1501d124caf58470b0fc5fc4b",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:stacking-deep"
+  ],
+  "year": 2025,
+  "size_bytes": 5510,
+  "line_count": 135
+}

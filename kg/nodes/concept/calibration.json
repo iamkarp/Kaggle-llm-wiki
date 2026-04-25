@@ -1,0 +1,30 @@
+{
+  "id": "concept:calibration",
+  "type": "concept",
+  "title": "Probability Calibration — Platt Scaling and Isotonic Regression",
+  "slug": "calibration",
+  "aliases": [],
+  "tags": [
+    "calibration",
+    "probabilities",
+    "platt-scaling",
+    "isotonic",
+    "logistic-regression",
+    "classification"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/calibration.md",
+  "summary": "Calibration adjusts a model's raw probability outputs so they match actual observed frequencies. A well-calibrated model that outputs 70% win probability should be right ~70% of the time. Uncalibrated models (especially SVMs, gradient boosting on small data) often output probabilities that are too extreme or too conservative.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/calibration.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

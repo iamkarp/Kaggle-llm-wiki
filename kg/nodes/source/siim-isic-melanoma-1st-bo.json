@@ -1,0 +1,30 @@
+{
+  "id": "source:siim-isic-melanoma-1st-bo",
+  "type": "source",
+  "title": "SIIM-ISIC Melanoma Classification — 1st Place Solution",
+  "slug": "siim-isic-melanoma-1st-bo",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/siim-isic-melanoma-1st-bo.md",
+  "raw_path": "raw/kaggle/solutions/siim-isic-melanoma-1st-bo.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/siim-isic-melanoma-1st-bo.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/siim-isic-melanoma-1st-bo.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2020,
+  "size_bytes": 7455,
+  "line_count": 184
+}

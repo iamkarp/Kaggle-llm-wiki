@@ -1,0 +1,27 @@
+{
+  "id": "pattern:c-vs-python-compute",
+  "type": "pattern",
+  "title": "C vs Python for Compute-Intensive Search",
+  "slug": "c-vs-python-compute",
+  "aliases": [],
+  "tags": [
+    "performance",
+    "optimization",
+    "language-choice"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/patterns/c-vs-python-compute.md",
+  "summary": "When the inner loop of your solver involves tight numerical computation (array manipulation, heuristic evaluation, state expansion), Python is ~100x slower than C. For Kaggle competitions with compute time limits, this difference determines whether a solution is feasible.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/patterns/c-vs-python-compute.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

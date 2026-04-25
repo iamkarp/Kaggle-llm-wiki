@@ -1,0 +1,21 @@
+{
+  "id": "source:memory-2026-02-22",
+  "type": "source",
+  "title": "2026-02-22",
+  "slug": "memory-2026-02-22",
+  "status": "active",
+  "wiki_path": "raw/kaggle/memory-2026-02-22.md",
+  "raw_path": "raw/kaggle/memory-2026-02-22.md",
+  "sha256": "71a4afa02c2fc86799f4587dc8a3ff71ef1142f47f7c1a924a4f1671491adcb5",
+  "ingested_at": "2026-04-24",
+  "origin": "internal-note",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "competition:march-mania-2026",
+    "concept:feature-engineering-tabular",
+    "strategy:march-mania-v6-ensemble"
+  ],
+  "year": 2026,
+  "size_bytes": 531,
+  "line_count": 16
+}

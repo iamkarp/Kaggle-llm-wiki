@@ -1,0 +1,31 @@
+{
+  "id": "concept:combinatorial-optimization",
+  "type": "concept",
+  "title": "Combinatorial Optimization in Kaggle Competitions",
+  "slug": "combinatorial-optimization",
+  "aliases": [],
+  "tags": [
+    "optimization",
+    "santa",
+    "traveling-salesman",
+    "simulated-annealing",
+    "genetic-algorithm",
+    "lux-ai",
+    "kaggle"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/combinatorial-optimization.md",
+  "summary": "A class of Kaggle competitions where the objective is to find the best arrangement/assignment/route rather than a predictive model. Solutions are scored on the quality of a constructed solution, not a trained model's predictions. Examples:\n- **Traveling Santa** — TSP variants on grids with prime/non-prime constraints\n- **Santa Gift Matching** — stable matching with happiness functions\n- **Santa's Workshop Tour** — scheduling/routing under constraints\n- **Packing Santa's Sleigh** — 3D bin packing\n- **Santa 2020/2021** — combinatorial puzzle solving / movie scheduling\n- **Lux AI** — real-time strategy game AI (connects to RL, see [[reinforcement-learning-games]])",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/combinatorial-optimization.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-18",
+  "updated": "2026-04-18"
+}

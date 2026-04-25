@@ -1,0 +1,28 @@
+{
+  "id": "tool:kaggle-cli",
+  "type": "tool",
+  "title": "Kaggle CLI Usage",
+  "slug": "kaggle-cli",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "cli",
+    "notebook",
+    "submission"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/tools/kaggle-cli.md",
+  "summary": "```bash\npip install kaggle\n# Place kaggle.json in ~/.kaggle/\nchmod 600 ~/.kaggle/kaggle.json\n```",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/tools/kaggle-cli.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

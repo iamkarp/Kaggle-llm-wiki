@@ -1,0 +1,32 @@
+{
+  "id": "strategy:nfp-straddle-forex",
+  "type": "strategy",
+  "title": "NFP Straddle — Forex Volatility Strategy on Non-Farm Payroll",
+  "slug": "nfp-straddle-forex",
+  "aliases": [],
+  "tags": [
+    "forex",
+    "trading",
+    "straddle",
+    "nfp",
+    "oanda",
+    "usd-jpy",
+    "eur-usd",
+    "gbp-usd"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/strategies/nfp-straddle-forex.md",
+  "summary": "A simultaneous BUY + SELL straddle placed on USD_JPY, EUR_USD, and GBP_USD around Non-Farm Payroll (NFP) release events. One direction stops out; the other rides momentum. Backtested 2015–present, best results with 4-pip initial stop and 5-pip trailing stop. Live on OANDA with 25 units per trade (hardcoded — DO NOT CHANGE).",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/strategies/nfp-straddle-forex.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

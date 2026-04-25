@@ -1,0 +1,21 @@
+{
+  "id": "source:grandmaster-meta-strategies",
+  "type": "source",
+  "title": "Kaggle Grandmaster Meta-Strategies",
+  "slug": "grandmaster-meta-strategies",
+  "status": "active",
+  "wiki_path": "raw/kaggle/grandmaster-meta-strategies.md",
+  "raw_path": "raw/kaggle/grandmaster-meta-strategies.md",
+  "sha256": "2ed6f984d3db9d296e3da2e1892a41e39af16a5c659f4983e9ea37bd8cb7ddea",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:ensembling-strategies",
+    "concept:validation-strategy",
+    "strategy:kaggle-meta-strategy"
+  ],
+  "year": 2026,
+  "size_bytes": 8833,
+  "line_count": 195
+}

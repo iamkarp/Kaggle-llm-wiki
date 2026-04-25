@@ -1,0 +1,27 @@
+{
+  "id": "dataset:march-madness",
+  "type": "dataset",
+  "title": "Kaggle March Madness Data",
+  "slug": "march-madness",
+  "name": "Kaggle March Madness Data",
+  "modality": "tabular",
+  "subjects_or_entities": "team-game",
+  "summary": "Historical NCAA tournament games, Massey Ordinals, regular-season results.",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ]
+  },
+  "created": "2026-04-14",
+  "updated": "2026-04-24",
+  "source_competition": "competition:march-mania-2026"
+}

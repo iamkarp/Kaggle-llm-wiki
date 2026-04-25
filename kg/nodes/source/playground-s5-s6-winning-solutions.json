@@ -1,0 +1,30 @@
+{
+  "id": "source:playground-s5-s6-winning-solutions",
+  "type": "source",
+  "title": "Kaggle Playground Series S5 & S6 Winning Solutions (2025-2026)",
+  "slug": "playground-s5-s6-winning-solutions",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/playground-s5-s6-winning-solutions.md",
+  "raw_path": "raw/kaggle/playground-s5-s6-winning-solutions.md",
+  "summary": "Auto-ingested from raw/kaggle/playground-s5-s6-winning-solutions.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/playground-s5-s6-winning-solutions.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 7189,
+  "line_count": 228
+}

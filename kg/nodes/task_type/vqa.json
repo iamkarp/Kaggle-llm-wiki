@@ -1,0 +1,24 @@
+{
+  "id": "task_type:vqa",
+  "type": "task_type",
+  "title": "Visual Question Answering",
+  "slug": "vqa",
+  "name": "vqa",
+  "status": "active",
+  "wiki_path": "kg/canonical/task_type/vqa",
+  "summary": "Answer questions about images.",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

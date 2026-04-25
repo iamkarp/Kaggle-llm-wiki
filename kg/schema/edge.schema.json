@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/edge.schema.json",
+  "title": "Edge",
+  "description": "A typed directed relationship between two nodes.",
+  "type": "object",
+  "required": ["source", "target", "relation"],
+  "additionalProperties": false,
+  "properties": {
+    "source": {"type": "string", "pattern": "^[a-z_]+:[a-z0-9-]+$"},
+    "target": {"type": "string", "pattern": "^[a-z_]+:[a-z0-9-]+$"},
+    "relation": {
+      "type": "string",
+      "enum": [
+        "uses", "applied_in", "evaluated_by", "measured_with", "trained_on",
+        "derived_from", "improves_on", "supersedes", "contradicts", "compared_to",
+        "requires", "part_of", "works_with", "failed_in", "succeeded_in",
+        "caused", "prevents", "cites", "authored_by", "affiliated_with",
+        "hosted_by", "instance_of", "mentioned_in", "team_members", "related_to"
+      ]
+    },
+    "weight": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {"type": "string"},
+          "locator": {"type": "string"},
+          "quote": {"type": "string"}
+        }
+      }
+    },
+    "date": {"type": "string", "format": "date"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "notes": {"type": "string"},
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "method": {"type": "string", "enum": ["frontmatter", "wikilink", "table", "regex", "tag", "llm-extract", "overlay"]},
+        "extractor_version": {"type": "string"},
+        "src_section": {"type": "string"}
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "concept:online-learning",
+  "type": "concept",
+  "title": "Online Learning — Retraining During Test, Memory Management, Incremental Adaptation",
+  "slug": "online-learning",
+  "aliases": [],
+  "tags": [
+    "online-learning",
+    "retraining",
+    "time-series",
+    "distribution-shift",
+    "hdf5",
+    "memory",
+    "trading",
+    "market",
+    "gru",
+    "auxiliary-targets"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/online-learning.md",
+  "summary": "Online learning (in the Kaggle sense) means retraining models on newly revealed test data during the competition's evaluation phase. When a competition provides test data incrementally — one day or one batch at a time — you can incorporate recent data into the model before predicting the next batch. This combats distribution shift as market regimes or behavioral patterns evolve over the test period.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/online-learning.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

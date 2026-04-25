@@ -1,0 +1,30 @@
+{
+  "id": "concept:metric-learning-cv",
+  "type": "concept",
+  "title": "Metric Learning for CV",
+  "slug": "metric-learning-cv",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "metric-learning",
+    "arcface",
+    "embedding",
+    "retrieval",
+    "label-transfer"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/metric-learning-cv.md",
+  "summary": "Metric learning trains models to produce embeddings where similar samples cluster tightly and dissimilar samples are pushed apart. In competition CV, the key payoff is **embedding-based label transfer**: replace softmax predictions with nearest-neighbor retrieval in embedding space.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/metric-learning-cv.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

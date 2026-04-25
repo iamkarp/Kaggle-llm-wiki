@@ -1,0 +1,28 @@
+{
+  "id": "pattern:multimodal-fusion",
+  "type": "pattern",
+  "title": "Multimodal Fusion",
+  "slug": "multimodal-fusion",
+  "aliases": [],
+  "tags": [
+    "multimodal",
+    "video",
+    "inertial",
+    "fusion"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/patterns/multimodal-fusion.md",
+  "summary": "Combining features from different data modalities (e.g., inertial sensor data + video features) to improve predictions.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/patterns/multimodal-fusion.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "source:amex-default-14th-chris-deotte",
+  "type": "source",
+  "title": "American Express Default Prediction — 14th Place (Gold) Solution",
+  "slug": "amex-default-14th-chris-deotte",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/amex-default-14th-chris-deotte.md",
+  "raw_path": "raw/kaggle/solutions/amex-default-14th-chris-deotte.md",
+  "sha256": "fe05a5d06f289ab0421f52f819862b50101281edab04a3b2a3ed5fa05cbd1eda",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:knowledge-distillation",
+    "concept:stacking-deep"
+  ],
+  "year": 2022,
+  "size_bytes": 6488,
+  "line_count": 147
+}

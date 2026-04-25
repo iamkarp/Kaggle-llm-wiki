@@ -1,0 +1,22 @@
+{
+  "id": "submission:march-mania-2026--v11-adjusted-efficiency",
+  "type": "submission",
+  "title": "March Mania 2026 — NCAA Basketball Prediction — v11 (Adjusted Efficiency)",
+  "slug": "march-mania-2026--v11-adjusted-efficiency",
+  "status": "active",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "competition_id": "competition:march-mania-2026",
+  "version_label": "v11 (Adjusted Efficiency)",
+  "notes": "Adjusted efficiency metrics didn't help",
+  "summary": "Submission v11 (Adjusted Efficiency) for March Mania 2026 — NCAA Basketball Prediction",
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "created": "2026-04-14",
+  "updated": "2026-04-14",
+  "lb_score": 6
+}

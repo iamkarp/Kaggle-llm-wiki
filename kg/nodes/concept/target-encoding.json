@@ -1,0 +1,30 @@
+{
+  "id": "concept:target-encoding",
+  "type": "concept",
+  "title": "Target Encoding — Weighted Blend with OOF",
+  "slug": "target-encoding",
+  "aliases": [],
+  "tags": [
+    "target-encoding",
+    "categorical",
+    "feature-engineering",
+    "leakage",
+    "oof",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/target-encoding.md",
+  "summary": "Target encoding replaces a categorical value with a numeric statistic derived from the target — typically the mean target value for that category. It handles high-cardinality categoricals (>50 unique values) that would explode dimensionality if one-hot encoded.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/target-encoding.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

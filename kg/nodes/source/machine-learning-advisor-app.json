@@ -1,0 +1,19 @@
+{
+  "id": "source:machine-learning-advisor-app",
+  "type": "source",
+  "title": "MachineLearningAdvisor — Implementation Reference",
+  "slug": "machine-learning-advisor-app",
+  "status": "active",
+  "wiki_path": "raw/system/machine-learning-advisor-app.md",
+  "raw_path": "raw/system/machine-learning-advisor-app.md",
+  "sha256": "ed144c65c38e6fd918def9f1ad75162168306402fb63cca572a0688689bde416",
+  "ingested_at": "2026-04-24",
+  "origin": "doc",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "tool:machine-learning-advisor"
+  ],
+  "year": 2026,
+  "size_bytes": 4702,
+  "line_count": 142
+}

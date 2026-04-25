@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/tool.schema.json",
+  "title": "Tool",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "tool"},
+    "install_cmd": {"type": "string"},
+    "cli_name": {"type": "string"},
+    "platforms": {"type": "array", "items": {"type": "string", "enum": ["linux", "macos", "windows", "kaggle-cpu", "kaggle-gpu", "colab", "local"]}},
+    "auth_method": {"type": "string"},
+    "config_paths": {"type": "array", "items": {"type": "string"}},
+    "typical_commands": {"type": "array", "items": {"type": "string"}},
+    "gotchas": {"type": "array", "items": {"type": "string"}},
+    "related_tools": {"type": "array", "items": {"type": "string"}, "description": "Tool ids"}
+  }
+}

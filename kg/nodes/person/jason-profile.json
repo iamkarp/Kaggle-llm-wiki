@@ -1,0 +1,28 @@
+{
+  "id": "person:jason-profile",
+  "type": "person",
+  "title": "Jason — Human Collaborator Profile",
+  "slug": "jason-profile",
+  "aliases": [],
+  "tags": [
+    "person",
+    "human",
+    "profile",
+    "preferences"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/entities/jason-profile.md",
+  "summary": "Jason is the human collaborator behind all projects in this workspace. He competes in Kaggle ML competitions, runs live forex trading strategies, and works in marketing/data (PMG TikTok). Based in CST timezone.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/jason-profile.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

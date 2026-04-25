@@ -1,0 +1,31 @@
+{
+  "id": "tool:autoresearch",
+  "type": "tool",
+  "title": "AutoResearch — Autonomous Agent Experimentation for ML Contests",
+  "slug": "autoresearch",
+  "aliases": [],
+  "tags": [
+    "autoresearch",
+    "karpathy",
+    "autonomous-agent",
+    "experimentation",
+    "hyperparameter-search",
+    "kaggle",
+    "self-improvement"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/tools/autoresearch.md",
+  "summary": "[AutoResearch](https://github.com/karpathy/autoresearch) is Karpathy's framework for autonomous AI agent experimentation: an agent modifies training code, runs a fixed-budget experiment, evaluates improvement, keeps or discards, and repeats indefinitely. ~12 experiments/hour, ~100 overnight. Originally built for LLM training (nanochat), the pattern maps directly onto Kaggle competition workflows — hyperparameter search, feature engineering, architecture exploration — with the agent as a tireless overnight researcher.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/tools/autoresearch.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-19",
+  "updated": "2026-04-19"
+}

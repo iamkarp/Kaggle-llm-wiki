@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/source.schema.json",
+  "title": "Source",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "source"},
+    "raw_path": {"type": "string", "description": "Path under raw/, e.g. raw/kaggle/v6-ensemble-documentation.md"},
+    "sha256": {"type": "string"},
+    "ingested_at": {"type": "string", "format": "date"},
+    "origin": {"type": "string", "enum": ["kaggle-forum", "kaggle-notebook", "kaggle-writeup", "doc", "chat", "paper", "email", "blog", "github", "internal-note", "other"]},
+    "license_status": {"type": "string", "enum": ["public", "fair-use", "internal", "unknown"]},
+    "extracted_nodes": {"type": "array", "items": {"type": "string"}, "description": "Node ids extracted from this source"}
+  }
+}

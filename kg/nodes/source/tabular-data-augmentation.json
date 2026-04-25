@@ -1,0 +1,33 @@
+{
+  "id": "source:tabular-data-augmentation",
+  "type": "source",
+  "title": "Tabular Data Augmentation for Kaggle Competitions",
+  "slug": "tabular-data-augmentation",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/tabular-data-augmentation.md",
+  "raw_path": "raw/kaggle/tabular-data-augmentation.md",
+  "summary": "Auto-ingested from raw/kaggle/tabular-data-augmentation.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/tabular-data-augmentation.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 7074,
+  "line_count": 150,
+  "dois": [
+    "10.1145/3637528.3671993"
+  ]
+}

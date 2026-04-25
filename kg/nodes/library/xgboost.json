@@ -1,0 +1,53 @@
+{
+  "id": "library:xgboost",
+  "type": "library",
+  "title": "XGBoost — eXtreme Gradient Boosting",
+  "slug": "xgboost",
+  "aliases": [],
+  "tags": [
+    "xgboost",
+    "gradient-boosting",
+    "tabular",
+    "framework",
+    "tool"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/entities/xgboost.md",
+  "summary": "XGBoost is a gradient-boosted decision tree library. It builds an ensemble of decision trees sequentially, each correcting the errors of the previous. Known for winning tabular data competitions on Kaggle from 2014–2020+.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/xgboost.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14",
+  "pypi_name": "xgboost",
+  "language": "python",
+  "typical_hyperparams": {
+    "n_estimators": {
+      "default": "500–600",
+      "notes": "Higher with lower learning rate"
+    },
+    "max_depth": {
+      "default": "5–9",
+      "notes": "9 for \"Elite\" component; 5-8 for diversity"
+    },
+    "learning_rate": {
+      "default": "0.01–0.015",
+      "notes": "Lower = more trees needed but better generalization"
+    },
+    "objective": {
+      "default": "binary:logistic",
+      "notes": "For classification/probability output"
+    },
+    "eval_metric": {
+      "default": "logloss",
+      "notes": "Monitors training progress"
+    }
+  }
+}

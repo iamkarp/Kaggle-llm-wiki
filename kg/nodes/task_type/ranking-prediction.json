@@ -1,0 +1,24 @@
+{
+  "id": "task_type:ranking-prediction",
+  "type": "task_type",
+  "title": "Probability/Ranking Prediction",
+  "slug": "ranking-prediction",
+  "name": "probability_ranking",
+  "status": "active",
+  "wiki_path": "kg/canonical/task_type/ranking-prediction",
+  "summary": "Output calibrated probabilities or rankings (e.g. tournament predictions).",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

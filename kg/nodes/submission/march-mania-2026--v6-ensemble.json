@@ -1,0 +1,28 @@
+{
+  "id": "submission:march-mania-2026--v6-ensemble",
+  "type": "submission",
+  "title": "March Mania 2026 — NCAA Basketball Prediction — v6 ensemble",
+  "slug": "march-mania-2026--v6-ensemble",
+  "status": "active",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "competition_id": "competition:march-mania-2026",
+  "version_label": "v6 ensemble",
+  "notes": "Best; 0.35×v2.9 + 0.35×v2.8 + 0.30×v5",
+  "summary": "Submission v6 ensemble for March Mania 2026 — NCAA Basketball Prediction",
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "created": "2026-04-14",
+  "updated": "2026-04-14",
+  "lb_score": 0.0221,
+  "weights": {
+    "v2.9": 0.35,
+    "v2.8": 0.35,
+    "v5": 0.3
+  },
+  "kept_for_final": true
+}

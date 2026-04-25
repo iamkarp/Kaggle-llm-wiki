@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/api_service.schema.json",
+  "title": "APIService",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "api_service"},
+    "provider": {"type": "string", "description": "Organization id"},
+    "base_url": {"type": "string", "format": "uri"},
+    "auth_method": {"type": "string", "examples": ["api-key", "oauth2", "bearer-token", "session"]},
+    "rate_limits": {"type": "string"},
+    "cost_model": {"type": "string"},
+    "docs_url": {"type": "string", "format": "uri"}
+  }
+}

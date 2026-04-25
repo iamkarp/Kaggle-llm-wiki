@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/metric.schema.json",
+  "title": "Metric",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "metric"},
+    "name": {"type": "string"},
+    "formula": {"type": "string"},
+    "direction": {"type": "string", "enum": ["higher_better", "lower_better"]},
+    "range": {"type": "object", "properties": {"min": {"type": "number"}, "max": {"type": "number"}}},
+    "used_by_competitions": {"type": "array", "items": {"type": "string"}, "description": "Competition ids"},
+    "related_metrics": {"type": "array", "items": {"type": "string"}, "description": "Metric ids"},
+    "gotchas": {"type": "array", "items": {"type": "string"}}
+  }
+}

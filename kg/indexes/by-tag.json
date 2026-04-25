@@ -1,0 +1,1203 @@
+{
+  "2.5d": [
+    "concept:medical-imaging-patterns"
+  ],
+  "2024": [
+    "concept:ensembling-strategies",
+    "concept:gradient-boosting-advanced",
+    "concept:kaggle-landscape-2024-2026",
+    "concept:llm-fine-tuning-kaggle",
+    "concept:tabpfn-tabm"
+  ],
+  "2025": [
+    "concept:ensembling-strategies",
+    "concept:gradient-boosting-advanced",
+    "concept:kaggle-landscape-2024-2026",
+    "concept:llm-fine-tuning-kaggle",
+    "concept:tabpfn-tabm"
+  ],
+  "2026": [
+    "concept:kaggle-landscape-2024-2026"
+  ],
+  "adversarial-validation": [
+    "concept:external-data-leakage",
+    "concept:feature-selection-advanced",
+    "concept:validation-strategy"
+  ],
+  "aggregation": [
+    "concept:nearest-neighbor-features"
+  ],
+  "aggregations": [
+    "concept:feature-engineering-tabular"
+  ],
+  "albumentations": [
+    "concept:image-augmentation"
+  ],
+  "anthropic": [
+    "model:claude-sonnet"
+  ],
+  "api": [
+    "api_service:oanda"
+  ],
+  "arcface": [
+    "concept:metric-learning-cv"
+  ],
+  "attention": [
+    "concept:deep-learning-tabular",
+    "concept:segmentation-architectures"
+  ],
+  "augmentation": [
+    "concept:image-augmentation",
+    "technique:lr-swap-augmentation",
+    "technique:test-time-augmentation"
+  ],
+  "autoaugment": [
+    "concept:image-augmentation"
+  ],
+  "autoencoder": [
+    "concept:denoising-autoencoders"
+  ],
+  "autogluon": [
+    "concept:ensembling-strategies"
+  ],
+  "autonomous-agent": [
+    "tool:autoresearch"
+  ],
+  "autoresearch": [
+    "tool:autoresearch"
+  ],
+  "auxiliary-learning": [
+    "concept:multi-target-learning"
+  ],
+  "auxiliary-targets": [
+    "concept:online-learning",
+    "concept:stacking-deep"
+  ],
+  "awp": [
+    "concept:llm-fine-tuning-kaggle"
+  ],
+  "bagging": [
+    "concept:negative-downsampling"
+  ],
+  "basketball": [
+    "competition:march-mania-2026",
+    "concept:feature-engineering-tabular"
+  ],
+  "bce": [
+    "concept:loss-functions-cv"
+  ],
+  "beam-search": [
+    "competition:santa-2024-pancake"
+  ],
+  "bidirectional": [
+    "technique:inverse-problem-solving"
+  ],
+  "bioinformatics": [
+    "concept:medical-imaging-patterns"
+  ],
+  "blending": [
+    "concept:ensembling-strategies",
+    "concept:stacking-deep"
+  ],
+  "boruta": [
+    "concept:feature-selection-advanced"
+  ],
+  "broker": [
+    "api_service:oanda"
+  ],
+  "calibration": [
+    "concept:calibration",
+    "concept:negative-downsampling",
+    "concept:post-processing",
+    "strategy:march-mania-v6-ensemble"
+  ],
+  "catboost": [
+    "competition:horse-health-prediction",
+    "concept:gradient-boosting-advanced",
+    "concept:target-encoding-advanced",
+    "library:lightgbm-catboost",
+    "mistake:catboost-cpu-timeout",
+    "technique:gradient-boosted-trees"
+  ],
+  "catboost-baseline": [
+    "concept:ensembling-strategies"
+  ],
+  "categorical": [
+    "concept:categorical-embeddings",
+    "concept:target-encoding",
+    "concept:target-encoding-advanced",
+    "technique:sensor-embedding"
+  ],
+  "chromadb": [
+    "tool:machine-learning-advisor"
+  ],
+  "class-imbalance": [
+    "concept:negative-downsampling"
+  ],
+  "classification": [
+    "competition:autopilot-vqa-2026",
+    "concept:calibration",
+    "concept:image-classification-tricks",
+    "concept:multimodal-classification",
+    "technique:patchtst",
+    "technique:threshold-optimization"
+  ],
+  "claude": [
+    "competition:autopilot-vqa-2026",
+    "model:claude-sonnet",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "cli": [
+    "tool:kaggle-cli"
+  ],
+  "clipping": [
+    "concept:post-processing"
+  ],
+  "coarse-to-fine": [
+    "concept:segmentation-architectures"
+  ],
+  "combinatorial": [
+    "technique:beam-search"
+  ],
+  "combinatorial-optimization": [
+    "competition:santa-2024-pancake",
+    "mistake:nmcs-large-search-spaces"
+  ],
+  "comparison": [
+    "comparison:nfp-stop-configurations"
+  ],
+  "confidence-threshold": [
+    "concept:pseudo-labeling",
+    "concept:pseudo-labeling-cv"
+  ],
+  "cosine-schedule": [
+    "concept:knowledge-distillation"
+  ],
+  "cpu": [
+    "tool:kaggle-cpu-notebooks"
+  ],
+  "cross-sectional": [
+    "competition:stock-return-prediction"
+  ],
+  "cross-subject": [
+    "mistake:gbm-for-cross-subject-har",
+    "mistake:videomae-cross-subject"
+  ],
+  "cross-validation": [
+    "concept:time-series-cv",
+    "concept:validation-strategy"
+  ],
+  "cudf": [
+    "concept:knowledge-distillation",
+    "concept:memory-optimization"
+  ],
+  "cv": [
+    "concept:image-augmentation",
+    "concept:image-classification-tricks",
+    "concept:loss-functions-cv",
+    "concept:medical-imaging-patterns",
+    "concept:metric-learning-cv",
+    "concept:pseudo-labeling-cv",
+    "concept:segmentation-architectures",
+    "concept:validation-strategy",
+    "strategy:kaggle-meta-strategy"
+  ],
+  "cv-lb-breakdown": [
+    "concept:validation-strategy"
+  ],
+  "cvpr": [
+    "competition:autopilot-vqa-2026",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "cyclegan": [
+    "concept:image-augmentation"
+  ],
+  "dae": [
+    "concept:denoising-autoencoders"
+  ],
+  "deberta": [
+    "concept:llm-fine-tuning-kaggle"
+  ],
+  "decoder": [
+    "concept:segmentation-architectures"
+  ],
+  "deep-learning": [
+    "concept:deep-learning-tabular",
+    "concept:tabpfn-tabm",
+    "technique:patchtst"
+  ],
+  "deepinsight": [
+    "concept:deep-learning-tabular",
+    "concept:stacking-deep"
+  ],
+  "diagnostic": [
+    "pattern:oof-vs-lb-divergence"
+  ],
+  "dice": [
+    "concept:loss-functions-cv"
+  ],
+  "dimensionality-reduction": [
+    "mistake:pca-on-pretrained-features",
+    "technique:gaussian-random-projection"
+  ],
+  "distillation": [
+    "concept:kaggle-landscape-2024-2026",
+    "concept:llm-fine-tuning-kaggle",
+    "concept:multi-target-learning",
+    "concept:synthetic-data-distillation"
+  ],
+  "distribution-shift": [
+    "concept:online-learning"
+  ],
+  "diversity": [
+    "concept:ensembling-strategies"
+  ],
+  "domain-shift": [
+    "pattern:cross-subject-generalization"
+  ],
+  "downsampling": [
+    "concept:imbalanced-data",
+    "concept:negative-downsampling"
+  ],
+  "drift-detection": [
+    "concept:shap-feature-engineering"
+  ],
+  "dropout": [
+    "concept:deep-learning-tabular"
+  ],
+  "eda": [
+    "strategy:kaggle-competition-playbook"
+  ],
+  "efficientnet": [
+    "concept:image-classification-tricks"
+  ],
+  "embargo": [
+    "concept:time-series-cv"
+  ],
+  "embedding": [
+    "concept:metric-learning-cv",
+    "technique:sensor-embedding"
+  ],
+  "embeddings": [
+    "concept:categorical-embeddings",
+    "concept:text-feature-engineering",
+    "tool:machine-learning-advisor"
+  ],
+  "ensemble": [
+    "competition:autopilot-vqa-2026",
+    "competition:horse-health-prediction",
+    "competition:march-mania-2026",
+    "concept:ensembling-strategies",
+    "concept:stacking-deep",
+    "concept:universal-kaggle-tricks",
+    "concept:xgboost-ensembles",
+    "strategy:kaggle-meta-strategy",
+    "strategy:march-mania-v6-ensemble",
+    "technique:gradient-boosted-trees",
+    "technique:test-time-augmentation"
+  ],
+  "ensembling": [
+    "concept:image-classification-tricks",
+    "strategy:kaggle-competition-playbook"
+  ],
+  "entity-embeddings": [
+    "concept:target-encoding-advanced"
+  ],
+  "eur-usd": [
+    "strategy:nfp-straddle-forex"
+  ],
+  "experimentation": [
+    "tool:autoresearch"
+  ],
+  "external-data": [
+    "concept:external-data-leakage"
+  ],
+  "f1": [
+    "competition:horse-health-prediction"
+  ],
+  "feature-engineering": [
+    "concept:feature-engineering-tabular",
+    "concept:shap-feature-engineering",
+    "concept:target-encoding",
+    "concept:text-feature-engineering",
+    "concept:time-series-features",
+    "strategy:kaggle-competition-playbook",
+    "technique:gaussian-random-projection"
+  ],
+  "feature-selection": [
+    "concept:feature-selection",
+    "concept:feature-selection-advanced"
+  ],
+  "features": [
+    "concept:nearest-neighbor-features"
+  ],
+  "financial": [
+    "competition:stock-return-prediction",
+    "concept:financial-competition-patterns",
+    "concept:time-series-cv"
+  ],
+  "fine-tuning": [
+    "concept:llm-fine-tuning-kaggle"
+  ],
+  "focal-loss": [
+    "concept:imbalanced-data",
+    "concept:loss-functions-cv"
+  ],
+  "forecasting": [
+    "concept:time-series-cv",
+    "concept:time-series-features"
+  ],
+  "forex": [
+    "api_service:oanda",
+    "comparison:nfp-stop-configurations",
+    "concept:straddle-strategy",
+    "strategy:nfp-straddle-forex"
+  ],
+  "forward-selection": [
+    "concept:feature-selection"
+  ],
+  "foundation-model": [
+    "concept:medical-imaging-patterns",
+    "concept:synthetic-data-distillation",
+    "concept:tabpfn-tabm"
+  ],
+  "foundation-models": [
+    "concept:kaggle-landscape-2024-2026"
+  ],
+  "fourier": [
+    "concept:time-series-features"
+  ],
+  "fourth-root": [
+    "concept:ensembling-strategies"
+  ],
+  "fpa": [
+    "concept:segmentation-architectures"
+  ],
+  "framework": [
+    "library:lightgbm-catboost",
+    "library:xgboost"
+  ],
+  "fraud": [
+    "concept:categorical-embeddings",
+    "concept:negative-downsampling"
+  ],
+  "fusion": [
+    "pattern:multimodal-fusion"
+  ],
+  "game-ai": [
+    "concept:reinforcement-learning-games"
+  ],
+  "gbm": [
+    "mistake:gbm-for-cross-subject-har",
+    "technique:gradient-boosted-trees"
+  ],
+  "gbp-usd": [
+    "strategy:nfp-straddle-forex"
+  ],
+  "generalization": [
+    "mistake:gbm-for-cross-subject-har",
+    "mistake:videomae-cross-subject",
+    "pattern:cross-subject-generalization",
+    "pattern:oof-vs-lb-divergence"
+  ],
+  "genetic-algorithm": [
+    "concept:combinatorial-optimization"
+  ],
+  "geometric-mean": [
+    "concept:stacking-deep"
+  ],
+  "glmm": [
+    "concept:target-encoding-advanced"
+  ],
+  "gpu": [
+    "concept:gradient-boosting-advanced",
+    "tool:kaggle-cpu-notebooks"
+  ],
+  "gpu-hill-climbing": [
+    "competition:playground-s5-s6"
+  ],
+  "gradient-boosting": [
+    "concept:xgboost-ensembles",
+    "library:lightgbm-catboost",
+    "library:xgboost"
+  ],
+  "grandmaster": [
+    "strategy:kaggle-meta-strategy"
+  ],
+  "groupby": [
+    "concept:universal-kaggle-tricks"
+  ],
+  "gru": [
+    "concept:ensembling-strategies",
+    "concept:online-learning"
+  ],
+  "har": [
+    "competition:wear-hasca-2026",
+    "mistake:gbm-for-cross-subject-har",
+    "pattern:cross-subject-generalization",
+    "technique:lr-swap-augmentation",
+    "technique:sensor-embedding"
+  ],
+  "hdf5": [
+    "concept:online-learning"
+  ],
+  "heuristic": [
+    "technique:beam-search"
+  ],
+  "high-cardinality": [
+    "concept:categorical-embeddings"
+  ],
+  "hill-climbing": [
+    "concept:ensembling-strategies"
+  ],
+  "human": [
+    "person:jason-profile"
+  ],
+  "hybrid-retrieval": [
+    "tool:machine-learning-advisor"
+  ],
+  "hyperparameter": [
+    "concept:gradient-boosting-advanced"
+  ],
+  "hyperparameter-search": [
+    "tool:autoresearch"
+  ],
+  "hyperparameters": [
+    "concept:xgboost-ensembles"
+  ],
+  "id-leakage": [
+    "concept:external-data-leakage"
+  ],
+  "imbalanced": [
+    "concept:imbalanced-data",
+    "concept:negative-downsampling",
+    "concept:pseudo-labeling"
+  ],
+  "in-context-learning": [
+    "concept:tabpfn-tabm"
+  ],
+  "inertial": [
+    "pattern:multimodal-fusion"
+  ],
+  "inference": [
+    "technique:test-time-augmentation"
+  ],
+  "interaction-sequences": [
+    "concept:categorical-embeddings"
+  ],
+  "interactions": [
+    "concept:feature-engineering-tabular",
+    "concept:shap-feature-engineering"
+  ],
+  "interpretability": [
+    "concept:shap-feature-engineering"
+  ],
+  "isic": [
+    "concept:medical-imaging-patterns"
+  ],
+  "isotonic": [
+    "concept:calibration"
+  ],
+  "james-stein": [
+    "concept:target-encoding-advanced"
+  ],
+  "jane-street": [
+    "concept:financial-competition-patterns"
+  ],
+  "json-extraction": [
+    "model:claude-sonnet"
+  ],
+  "kaggle": [
+    "competition:autopilot-vqa-2026",
+    "competition:horse-health-prediction",
+    "competition:march-mania-2026",
+    "competition:playground-s5-s6",
+    "competition:stock-return-prediction",
+    "concept:combinatorial-optimization",
+    "concept:ensembling-strategies",
+    "concept:external-data-leakage",
+    "concept:feature-engineering-tabular",
+    "concept:kaggle-landscape-2024-2026",
+    "concept:llm-fine-tuning-kaggle",
+    "concept:reinforcement-learning-games",
+    "concept:stacking-deep",
+    "concept:synthetic-data-distillation",
+    "concept:time-series-cv",
+    "concept:time-series-features",
+    "concept:universal-kaggle-tricks",
+    "concept:validation-strategy",
+    "mistake:catboost-cpu-timeout",
+    "strategy:autopilot-vqa-pipeline",
+    "strategy:kaggle-competition-playbook",
+    "strategy:kaggle-meta-strategy",
+    "strategy:march-mania-v6-ensemble",
+    "tool:autoresearch",
+    "tool:kaggle-cli",
+    "tool:kaggle-cpu-notebooks"
+  ],
+  "karpathy": [
+    "tool:autoresearch"
+  ],
+  "knn": [
+    "concept:nearest-neighbor-features"
+  ],
+  "knowledge-distillation": [
+    "concept:knowledge-distillation"
+  ],
+  "label-transfer": [
+    "concept:metric-learning-cv"
+  ],
+  "lags": [
+    "concept:time-series-features"
+  ],
+  "language-choice": [
+    "pattern:c-vs-python-compute"
+  ],
+  "large-scale": [
+    "concept:negative-downsampling"
+  ],
+  "lda": [
+    "concept:categorical-embeddings"
+  ],
+  "leakage": [
+    "concept:external-data-leakage",
+    "concept:feature-selection",
+    "concept:target-encoding",
+    "concept:validation-strategy",
+    "pattern:oof-vs-lb-divergence",
+    "strategy:kaggle-meta-strategy"
+  ],
+  "lgbm": [
+    "concept:knowledge-distillation"
+  ],
+  "lightgbm": [
+    "competition:horse-health-prediction",
+    "competition:march-mania-2026",
+    "concept:gradient-boosting-advanced",
+    "library:lightgbm-catboost",
+    "strategy:march-mania-v6-ensemble",
+    "technique:gradient-boosted-trees"
+  ],
+  "llm": [
+    "concept:llm-fine-tuning-kaggle",
+    "concept:synthetic-data-distillation",
+    "concept:text-feature-engineering",
+    "model:claude-sonnet"
+  ],
+  "llm-augmentation": [
+    "competition:playground-s5-s6"
+  ],
+  "llrd": [
+    "concept:llm-fine-tuning-kaggle"
+  ],
+  "lofo": [
+    "concept:feature-selection-advanced"
+  ],
+  "logistic-regression": [
+    "competition:march-mania-2026",
+    "concept:calibration",
+    "strategy:march-mania-v6-ensemble"
+  ],
+  "lora": [
+    "concept:llm-fine-tuning-kaggle",
+    "concept:synthetic-data-distillation"
+  ],
+  "loss-functions": [
+    "concept:loss-functions-cv"
+  ],
+  "lovasz": [
+    "concept:loss-functions-cv"
+  ],
+  "lux-ai": [
+    "concept:combinatorial-optimization",
+    "concept:reinforcement-learning-games"
+  ],
+  "macro-f1": [
+    "competition:wear-hasca-2026",
+    "technique:threshold-optimization"
+  ],
+  "market": [
+    "concept:online-learning"
+  ],
+  "mcts": [
+    "concept:reinforcement-learning-games"
+  ],
+  "medical-imaging": [
+    "concept:medical-imaging-patterns"
+  ],
+  "memory": [
+    "concept:online-learning"
+  ],
+  "memory-optimization": [
+    "concept:memory-optimization"
+  ],
+  "meta": [
+    "concept:kaggle-landscape-2024-2026",
+    "meta:wiki-index",
+    "strategy:kaggle-meta-strategy",
+    "synthesis:overview"
+  ],
+  "meta-learner": [
+    "concept:stacking-deep"
+  ],
+  "metadata": [
+    "concept:external-data-leakage"
+  ],
+  "metadata-fusion": [
+    "concept:image-classification-tricks"
+  ],
+  "metric-learning": [
+    "concept:metric-learning-cv"
+  ],
+  "mixup": [
+    "concept:tabular-augmentation"
+  ],
+  "moa": [
+    "concept:multi-target-learning"
+  ],
+  "monte-carlo": [
+    "mistake:nmcs-large-search-spaces"
+  ],
+  "multi-level": [
+    "concept:stacking-deep"
+  ],
+  "multi-resolution": [
+    "concept:image-classification-tricks"
+  ],
+  "multi-target": [
+    "concept:multi-target-learning"
+  ],
+  "multiclass": [
+    "competition:horse-health-prediction"
+  ],
+  "multimodal": [
+    "competition:autopilot-vqa-2026",
+    "competition:wear-hasca-2026",
+    "concept:multimodal-classification",
+    "mistake:videomae-cross-subject",
+    "model:qwen-vl",
+    "pattern:multimodal-fusion"
+  ],
+  "ncaa": [
+    "competition:march-mania-2026",
+    "strategy:march-mania-v6-ensemble"
+  ],
+  "nearest-neighbor": [
+    "concept:nearest-neighbor-features"
+  ],
+  "nested-cv": [
+    "concept:knowledge-distillation"
+  ],
+  "neural-network": [
+    "concept:denoising-autoencoders",
+    "concept:tabular-augmentation"
+  ],
+  "nfp": [
+    "comparison:nfp-stop-configurations",
+    "concept:straddle-strategy",
+    "strategy:nfp-straddle-forex"
+  ],
+  "nlp": [
+    "concept:llm-fine-tuning-kaggle",
+    "concept:multi-target-learning",
+    "concept:text-feature-engineering"
+  ],
+  "nmf": [
+    "concept:categorical-embeddings"
+  ],
+  "nnunet": [
+    "concept:segmentation-architectures"
+  ],
+  "non-parametric": [
+    "concept:nearest-neighbor-features"
+  ],
+  "normalization": [
+    "concept:deep-learning-tabular"
+  ],
+  "notebook": [
+    "tool:kaggle-cli"
+  ],
+  "null-importance": [
+    "concept:feature-selection-advanced"
+  ],
+  "oanda": [
+    "strategy:nfp-straddle-forex"
+  ],
+  "online-learning": [
+    "concept:online-learning"
+  ],
+  "oof": [
+    "concept:ensembling-strategies",
+    "concept:stacking-deep",
+    "concept:target-encoding",
+    "concept:validation-strategy"
+  ],
+  "optimization": [
+    "concept:combinatorial-optimization",
+    "pattern:c-vs-python-compute",
+    "technique:beam-search",
+    "technique:inverse-problem-solving"
+  ],
+  "options": [
+    "concept:straddle-strategy"
+  ],
+  "optiver": [
+    "concept:financial-competition-patterns"
+  ],
+  "optuna": [
+    "concept:gradient-boosting-advanced"
+  ],
+  "ordinal": [
+    "concept:multi-target-learning"
+  ],
+  "otto": [
+    "concept:stacking-deep"
+  ],
+  "overfitting": [
+    "mistake:pca-on-pretrained-features"
+  ],
+  "overview": [
+    "synthesis:overview"
+  ],
+  "pancake-sorting": [
+    "competition:santa-2024-pancake"
+  ],
+  "pandas": [
+    "concept:memory-optimization"
+  ],
+  "parquet": [
+    "concept:memory-optimization"
+  ],
+  "pathology": [
+    "concept:medical-imaging-patterns"
+  ],
+  "pca": [
+    "concept:categorical-embeddings",
+    "mistake:pca-on-pretrained-features"
+  ],
+  "performance": [
+    "concept:memory-optimization",
+    "pattern:c-vs-python-compute"
+  ],
+  "permutation": [
+    "competition:santa-2024-pancake",
+    "technique:inverse-problem-solving"
+  ],
+  "permutation-importance": [
+    "concept:feature-selection"
+  ],
+  "person": [
+    "person:jason-profile"
+  ],
+  "pipeline": [
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "platt-scaling": [
+    "concept:calibration"
+  ],
+  "playbook": [
+    "strategy:kaggle-competition-playbook"
+  ],
+  "playground": [
+    "competition:playground-s5-s6"
+  ],
+  "polars": [
+    "concept:memory-optimization"
+  ],
+  "pooling": [
+    "concept:image-classification-tricks"
+  ],
+  "post-cutoff": [
+    "concept:validation-strategy"
+  ],
+  "post-processing": [
+    "concept:ensembling-strategies",
+    "concept:kaggle-landscape-2024-2026",
+    "concept:post-processing",
+    "technique:threshold-optimization"
+  ],
+  "preferences": [
+    "person:jason-profile"
+  ],
+  "preprocessing": [
+    "concept:feature-engineering-tabular"
+  ],
+  "pretrained": [
+    "mistake:pca-on-pretrained-features"
+  ],
+  "pretrained-features": [
+    "technique:gaussian-random-projection"
+  ],
+  "probabilities": [
+    "concept:calibration"
+  ],
+  "probability": [
+    "concept:post-processing"
+  ],
+  "profile": [
+    "person:jason-profile"
+  ],
+  "pseudo-labeling": [
+    "concept:pseudo-labeling",
+    "concept:pseudo-labeling-cv",
+    "concept:universal-kaggle-tricks"
+  ],
+  "purged-cv": [
+    "concept:financial-competition-patterns",
+    "concept:time-series-cv"
+  ],
+  "pytorch": [
+    "tool:kaggle-cpu-notebooks"
+  ],
+  "qlora": [
+    "concept:synthetic-data-distillation"
+  ],
+  "qwen": [
+    "competition:autopilot-vqa-2026",
+    "model:qwen-vl",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "rag": [
+    "tool:machine-learning-advisor"
+  ],
+  "rank-transform": [
+    "concept:post-processing"
+  ],
+  "rankgauss": [
+    "concept:denoising-autoencoders",
+    "concept:post-processing"
+  ],
+  "rapids": [
+    "concept:gradient-boosting-advanced",
+    "concept:knowledge-distillation",
+    "concept:memory-optimization"
+  ],
+  "regex": [
+    "concept:text-feature-engineering"
+  ],
+  "regression": [
+    "competition:stock-return-prediction"
+  ],
+  "reinforcement-learning": [
+    "concept:reinforcement-learning-games"
+  ],
+  "representation-learning": [
+    "concept:denoising-autoencoders"
+  ],
+  "retraining": [
+    "concept:online-learning"
+  ],
+  "retrieval": [
+    "concept:metric-learning-cv"
+  ],
+  "rl": [
+    "concept:reinforcement-learning-games"
+  ],
+  "rmse": [
+    "competition:stock-return-prediction"
+  ],
+  "rolling-stats": [
+    "concept:time-series-features"
+  ],
+  "rsna": [
+    "concept:medical-imaging-patterns"
+  ],
+  "runtime": [
+    "mistake:catboost-cpu-timeout",
+    "tool:kaggle-cpu-notebooks"
+  ],
+  "saint": [
+    "concept:tabular-augmentation"
+  ],
+  "santa": [
+    "concept:combinatorial-optimization"
+  ],
+  "scarf": [
+    "concept:tabular-augmentation"
+  ],
+  "scse": [
+    "concept:segmentation-architectures"
+  ],
+  "search": [
+    "mistake:nmcs-large-search-spaces",
+    "technique:beam-search",
+    "technique:inverse-problem-solving"
+  ],
+  "seed-averaging": [
+    "competition:playground-s5-s6",
+    "concept:universal-kaggle-tricks"
+  ],
+  "seeds": [
+    "strategy:kaggle-meta-strategy"
+  ],
+  "segmentation": [
+    "concept:pseudo-labeling-cv",
+    "concept:segmentation-architectures"
+  ],
+  "self-improvement": [
+    "tool:autoresearch"
+  ],
+  "self-play": [
+    "concept:reinforcement-learning-games"
+  ],
+  "semi-supervised": [
+    "concept:pseudo-labeling",
+    "concept:pseudo-labeling-cv"
+  ],
+  "shake-up": [
+    "strategy:kaggle-meta-strategy"
+  ],
+  "shap": [
+    "concept:feature-selection-advanced",
+    "concept:shap-feature-engineering"
+  ],
+  "shiny": [
+    "tool:machine-learning-advisor"
+  ],
+  "simulated-annealing": [
+    "concept:combinatorial-optimization"
+  ],
+  "simulation": [
+    "concept:reinforcement-learning-games"
+  ],
+  "skeleton-recall": [
+    "concept:loss-functions-cv"
+  ],
+  "small-data": [
+    "competition:horse-health-prediction"
+  ],
+  "smote": [
+    "concept:imbalanced-data"
+  ],
+  "smote-leakage": [
+    "competition:playground-s5-s6"
+  ],
+  "soft-labels": [
+    "concept:knowledge-distillation"
+  ],
+  "stacking": [
+    "concept:ensembling-strategies",
+    "concept:stacking-deep"
+  ],
+  "stock-returns": [
+    "competition:stock-return-prediction"
+  ],
+  "straddle": [
+    "comparison:nfp-stop-configurations",
+    "concept:straddle-strategy",
+    "strategy:nfp-straddle-forex"
+  ],
+  "strategy": [
+    "strategy:kaggle-meta-strategy"
+  ],
+  "submission": [
+    "tool:kaggle-cli"
+  ],
+  "swap-noise": [
+    "concept:denoising-autoencoders"
+  ],
+  "symmetry": [
+    "technique:lr-swap-augmentation"
+  ],
+  "synthetic-data": [
+    "concept:image-augmentation",
+    "concept:kaggle-landscape-2024-2026",
+    "concept:synthetic-data-distillation"
+  ],
+  "system": [
+    "tool:machine-learning-advisor"
+  ],
+  "tabm": [
+    "concept:tabpfn-tabm"
+  ],
+  "tabnet": [
+    "concept:deep-learning-tabular",
+    "concept:stacking-deep"
+  ],
+  "tabpfn": [
+    "concept:tabpfn-tabm"
+  ],
+  "tabular": [
+    "competition:horse-health-prediction",
+    "competition:playground-s5-s6",
+    "competition:stock-return-prediction",
+    "concept:deep-learning-tabular",
+    "concept:denoising-autoencoders",
+    "concept:external-data-leakage",
+    "concept:feature-engineering-tabular",
+    "concept:feature-selection",
+    "concept:feature-selection-advanced",
+    "concept:financial-competition-patterns",
+    "concept:imbalanced-data",
+    "concept:multi-target-learning",
+    "concept:nearest-neighbor-features",
+    "concept:shap-feature-engineering",
+    "concept:stacking-deep",
+    "concept:tabpfn-tabm",
+    "concept:tabular-augmentation",
+    "concept:target-encoding",
+    "concept:target-encoding-advanced",
+    "concept:text-feature-engineering",
+    "concept:universal-kaggle-tricks",
+    "concept:xgboost-ensembles",
+    "library:lightgbm-catboost",
+    "library:xgboost",
+    "strategy:kaggle-competition-playbook",
+    "technique:gradient-boosted-trees"
+  ],
+  "tabular-augmentation": [
+    "concept:tabular-augmentation"
+  ],
+  "target-encoding": [
+    "concept:target-encoding",
+    "concept:target-encoding-advanced"
+  ],
+  "temperature-scaling": [
+    "concept:post-processing"
+  ],
+  "test-augmentation": [
+    "concept:pseudo-labeling"
+  ],
+  "text": [
+    "concept:text-feature-engineering"
+  ],
+  "tfidf": [
+    "concept:text-feature-engineering"
+  ],
+  "threshold-optimization": [
+    "concept:imbalanced-data"
+  ],
+  "time-consistency": [
+    "concept:feature-selection"
+  ],
+  "time-series": [
+    "competition:wear-hasca-2026",
+    "concept:financial-competition-patterns",
+    "concept:nearest-neighbor-features",
+    "concept:online-learning",
+    "concept:time-series-cv",
+    "concept:time-series-features",
+    "technique:patchtst"
+  ],
+  "timeout": [
+    "mistake:catboost-cpu-timeout"
+  ],
+  "tool": [
+    "api_service:oanda",
+    "library:lightgbm-catboost",
+    "library:xgboost",
+    "model:claude-sonnet",
+    "model:qwen-vl"
+  ],
+  "topic-models": [
+    "concept:categorical-embeddings"
+  ],
+  "trading": [
+    "api_service:oanda",
+    "comparison:nfp-stop-configurations",
+    "concept:financial-competition-patterns",
+    "concept:online-learning",
+    "concept:straddle-strategy",
+    "strategy:nfp-straddle-forex"
+  ],
+  "transformer": [
+    "concept:ensembling-strategies",
+    "concept:knowledge-distillation",
+    "concept:llm-fine-tuning-kaggle",
+    "technique:patchtst"
+  ],
+  "traveling-salesman": [
+    "concept:combinatorial-optimization"
+  ],
+  "tsne": [
+    "concept:stacking-deep"
+  ],
+  "tta": [
+    "concept:image-augmentation",
+    "concept:tabular-augmentation"
+  ],
+  "ttt": [
+    "concept:kaggle-landscape-2024-2026"
+  ],
+  "tversky": [
+    "concept:loss-functions-cv"
+  ],
+  "unet": [
+    "concept:medical-imaging-patterns",
+    "concept:segmentation-architectures"
+  ],
+  "universal-tricks": [
+    "concept:universal-kaggle-tricks"
+  ],
+  "unsloth": [
+    "concept:synthetic-data-distillation"
+  ],
+  "usd-jpy": [
+    "strategy:nfp-straddle-forex"
+  ],
+  "validation": [
+    "concept:validation-strategy",
+    "pattern:cross-subject-generalization",
+    "pattern:oof-vs-lb-divergence",
+    "strategy:kaggle-competition-playbook",
+    "strategy:kaggle-meta-strategy"
+  ],
+  "variable-selection": [
+    "concept:deep-learning-tabular"
+  ],
+  "video": [
+    "mistake:videomae-cross-subject",
+    "pattern:multimodal-fusion"
+  ],
+  "videomae": [
+    "mistake:videomae-cross-subject"
+  ],
+  "vime": [
+    "concept:tabular-augmentation"
+  ],
+  "vision": [
+    "competition:autopilot-vqa-2026",
+    "concept:multimodal-classification",
+    "model:qwen-vl",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "vllm": [
+    "concept:synthetic-data-distillation"
+  ],
+  "vlm": [
+    "concept:multimodal-classification",
+    "model:qwen-vl"
+  ],
+  "vqa": [
+    "competition:autopilot-vqa-2026",
+    "concept:multimodal-classification",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "vsn": [
+    "concept:deep-learning-tabular"
+  ],
+  "walk-forward": [
+    "concept:time-series-cv"
+  ],
+  "wearable": [
+    "competition:wear-hasca-2026",
+    "technique:lr-swap-augmentation",
+    "technique:sensor-embedding"
+  ],
+  "woe": [
+    "concept:target-encoding-advanced"
+  ],
+  "workflow": [
+    "strategy:kaggle-competition-playbook"
+  ],
+  "xgboost": [
+    "competition:horse-health-prediction",
+    "competition:march-mania-2026",
+    "concept:feature-engineering-tabular",
+    "concept:gradient-boosting-advanced",
+    "concept:xgboost-ensembles",
+    "library:xgboost",
+    "strategy:march-mania-v6-ensemble",
+    "technique:gradient-boosted-trees"
+  ]
+}

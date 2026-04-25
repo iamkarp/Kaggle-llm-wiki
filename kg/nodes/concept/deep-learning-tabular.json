@@ -1,0 +1,33 @@
+{
+  "id": "concept:deep-learning-tabular",
+  "type": "concept",
+  "title": "Deep Learning on Tabular Data — When DNNs Beat GBMs",
+  "slug": "deep-learning-tabular",
+  "aliases": [],
+  "tags": [
+    "deep-learning",
+    "tabular",
+    "vsn",
+    "variable-selection",
+    "dropout",
+    "normalization",
+    "attention",
+    "deepinsight",
+    "tabnet"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/deep-learning-tabular.md",
+  "summary": "Conventional wisdom: gradient boosted trees (LightGBM, XGBoost, CatBoost) beat neural networks on tabular data. This is mostly true. But \"mostly\" has important exceptions:",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/deep-learning-tabular.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "paper:arxiv-1604-06737",
+  "type": "paper",
+  "title": "arXiv:1604.06737",
+  "slug": "arxiv-1604-06737",
+  "aliases": [
+    "1604.06737",
+    "arXiv:1604.06737"
+  ],
+  "tags": [
+    "paper",
+    "arxiv"
+  ],
+  "status": "active",
+  "wiki_path": "kg/canonical/paper/arxiv-1604-06737",
+  "summary": "arXiv paper 1604.06737 (auto-extracted from raw sources).",
+  "source_refs": [],
+  "confidence": 0.9,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/target-encoding-advanced.md",
+      "raw/kaggle/solutions/tabular-classics-batch.md"
+    ]
+  },
+  "version": 1,
+  "year": 2016,
+  "venue": "arXiv",
+  "arxiv_id": "1604.06737",
+  "url": "https://arxiv.org/abs/1604.06737",
+  "authors": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:imbalanced-data-techniques",
+  "type": "source",
+  "title": "Imbalanced Data Techniques for Kaggle Competitions",
+  "slug": "imbalanced-data-techniques",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/imbalanced-data-techniques.md",
+  "raw_path": "raw/kaggle/imbalanced-data-techniques.md",
+  "summary": "Auto-ingested from raw/kaggle/imbalanced-data-techniques.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/imbalanced-data-techniques.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 8041,
+  "line_count": 207
+}

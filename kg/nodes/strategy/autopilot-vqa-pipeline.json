@@ -1,0 +1,31 @@
+{
+  "id": "strategy:autopilot-vqa-pipeline",
+  "type": "strategy",
+  "title": "AUTOPILOT VQA Pipeline",
+  "slug": "autopilot-vqa-pipeline",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "cvpr",
+    "vqa",
+    "vision",
+    "pipeline",
+    "qwen",
+    "claude"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/strategies/autopilot-vqa-pipeline.md",
+  "summary": "Three-stage VLM pipeline for the AUTOPILOT VQA dashcam classification competition. Uses Qwen-VL for visual understanding and Claude Sonnet for structured JSON extraction across 25 classification columns.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/strategies/autopilot-vqa-pipeline.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

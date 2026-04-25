@@ -1,0 +1,29 @@
+{
+  "id": "api_service:oanda",
+  "type": "api_service",
+  "title": "OANDA",
+  "slug": "oanda",
+  "aliases": [],
+  "tags": [
+    "forex",
+    "broker",
+    "api",
+    "trading",
+    "tool"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/entities/oanda.md",
+  "summary": "OANDA is a forex broker providing a REST API (v20) for automated trading. Jason uses it for live execution of the NFP straddle strategy across two practice/live accounts.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/oanda.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:advanced-feature-selection",
+  "type": "source",
+  "title": "Advanced Feature Selection Techniques for Kaggle Competitions",
+  "slug": "advanced-feature-selection",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/advanced-feature-selection.md",
+  "raw_path": "raw/kaggle/advanced-feature-selection.md",
+  "summary": "Auto-ingested from raw/kaggle/advanced-feature-selection.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/advanced-feature-selection.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 9929,
+  "line_count": 266
+}

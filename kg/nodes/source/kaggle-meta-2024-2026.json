@@ -1,0 +1,19 @@
+{
+  "id": "source:kaggle-meta-2024-2026",
+  "type": "source",
+  "title": "What wins Kaggle in 2024-2026",
+  "slug": "kaggle-meta-2024-2026",
+  "status": "active",
+  "wiki_path": "raw/kaggle/kaggle-meta-2024-2026.md",
+  "raw_path": "raw/kaggle/kaggle-meta-2024-2026.md",
+  "sha256": "307b1b8d04aac460798a66152caccffb970507dfcb53931ead847730c14c14d0",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:post-processing"
+  ],
+  "year": 2026,
+  "size_bytes": 13328,
+  "line_count": 51
+}

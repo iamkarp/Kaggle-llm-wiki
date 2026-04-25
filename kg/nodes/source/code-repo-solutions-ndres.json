@@ -1,0 +1,30 @@
+{
+  "id": "source:code-repo-solutions-ndres",
+  "type": "source",
+  "title": "Kaggle Winning Solution Code Repositories",
+  "slug": "code-repo-solutions-ndres",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/code-repo-solutions-ndres.md",
+  "raw_path": "raw/kaggle/solutions/code-repo-solutions-ndres.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/code-repo-solutions-ndres.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/code-repo-solutions-ndres.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 7086,
+  "line_count": 177
+}

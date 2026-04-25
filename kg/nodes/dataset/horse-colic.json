@@ -1,0 +1,28 @@
+{
+  "id": "dataset:horse-colic",
+  "type": "dataset",
+  "title": "UCI Horse Colic",
+  "slug": "horse-colic",
+  "name": "horse-colic",
+  "modality": "tabular",
+  "size_rows": 988,
+  "subjects_or_entities": "horse",
+  "summary": "Tabular 3-class classification of horse colic outcome (UCI).",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ]
+  },
+  "created": "2026-04-15",
+  "updated": "2026-04-24",
+  "source_competition": "competition:horse-health-prediction"
+}

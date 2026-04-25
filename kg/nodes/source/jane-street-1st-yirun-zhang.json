@@ -1,0 +1,19 @@
+{
+  "id": "source:jane-street-1st-yirun-zhang",
+  "type": "source",
+  "title": "Jane Street Market Prediction — 1st Place Solution",
+  "slug": "jane-street-1st-yirun-zhang",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/jane-street-1st-yirun-zhang.md",
+  "raw_path": "raw/kaggle/solutions/jane-street-1st-yirun-zhang.md",
+  "sha256": "d537cae8beae4dd7f3c128302add2a0a2f5dbe2a22c903e8ddbdd52395315903",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:denoising-autoencoders"
+  ],
+  "year": 2026,
+  "size_bytes": 5592,
+  "line_count": 113
+}

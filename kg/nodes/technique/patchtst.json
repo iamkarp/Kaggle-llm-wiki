@@ -1,0 +1,39 @@
+{
+  "id": "technique:patchtst",
+  "type": "technique",
+  "title": "PatchTST — Patch Time Series Transformer",
+  "slug": "patchtst",
+  "aliases": [],
+  "tags": [
+    "transformer",
+    "time-series",
+    "classification",
+    "deep-learning"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/patchtst.md",
+  "summary": "A transformer architecture for time series that splits the input into fixed-length patches (like ViT does for images), projects each patch to an embedding, and processes the sequence of patch embeddings with standard transformer encoder layers.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/patchtst.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "when_to_use": [
+    "Time series classification/regression with moderate sequence lengths",
+    "When you need cross-domain generalization (e.g., cross-subject HAR)",
+    "When handcrafted features underperform (complex temporal patterns)",
+    "When you have enough data to train a transformer (10k+ samples)"
+  ],
+  "weaknesses": [
+    "Patch length matters: Too small = noisy, too large = loses temporal resolution. Start with ~10-20% of sequence length.",
+    "CPU-viable: Small PatchTST (d_model≤128) trains in reasonable time on CPU — no GPU required for moderate datasets",
+    "Sensor embedding is critical for HAR: Without it, the model doesn't know which body part the data comes from. See techniques/sensor-embedding."
+  ]
+}

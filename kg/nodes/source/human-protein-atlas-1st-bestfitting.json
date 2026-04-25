@@ -1,0 +1,30 @@
+{
+  "id": "source:human-protein-atlas-1st-bestfitting",
+  "type": "source",
+  "title": "Human Protein Atlas Image Classification — 1st Place Solution",
+  "slug": "human-protein-atlas-1st-bestfitting",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/human-protein-atlas-1st-bestfitting.md",
+  "raw_path": "raw/kaggle/solutions/human-protein-atlas-1st-bestfitting.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/human-protein-atlas-1st-bestfitting.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/human-protein-atlas-1st-bestfitting.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 7115,
+  "line_count": 155
+}

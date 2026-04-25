@@ -1,0 +1,29 @@
+{
+  "id": "concept:multimodal-classification",
+  "type": "concept",
+  "title": "Multimodal Classification",
+  "slug": "multimodal-classification",
+  "aliases": [],
+  "tags": [
+    "vision",
+    "vlm",
+    "multimodal",
+    "classification",
+    "vqa"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/concepts/multimodal-classification.md",
+  "summary": "Multimodal classification combines information from multiple data modalities (images, text, metadata) to produce structured predictions. In Kaggle context, this often involves using vision-language models (VLMs) to extract features from images and combining with tabular or text features for final classification.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/multimodal-classification.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

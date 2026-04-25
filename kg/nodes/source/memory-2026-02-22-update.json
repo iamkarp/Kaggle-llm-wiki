@@ -1,0 +1,19 @@
+{
+  "id": "source:memory-2026-02-22-update",
+  "type": "source",
+  "title": "2026-02-22 (continued)",
+  "slug": "memory-2026-02-22-update",
+  "status": "active",
+  "wiki_path": "raw/kaggle/memory-2026-02-22-update.md",
+  "raw_path": "raw/kaggle/memory-2026-02-22-update.md",
+  "sha256": "10422c6b55116a105c9fa23da02c37d5bb9e90a47da6ee157d583c6ff9e24a6b",
+  "ingested_at": "2026-04-24",
+  "origin": "internal-note",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:validation-strategy"
+  ],
+  "year": 2026,
+  "size_bytes": 582,
+  "line_count": 11
+}

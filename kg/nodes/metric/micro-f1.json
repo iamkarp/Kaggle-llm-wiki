@@ -1,0 +1,29 @@
+{
+  "id": "metric:micro-f1",
+  "type": "metric",
+  "title": "Micro F1",
+  "slug": "micro-f1",
+  "name": "Micro F1",
+  "direction": "higher_better",
+  "range": {
+    "min": 0,
+    "max": 1
+  },
+  "status": "active",
+  "wiki_path": "kg/canonical/metric/micro-f1",
+  "summary": "F1 computed by aggregating TP/FP/FN globally.",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/strategy.schema.json",
+  "title": "Strategy",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "strategy"},
+    "applies_to": {"type": "array", "items": {"type": "string"}, "description": "Competition or TaskType ids"},
+    "pipeline_steps": {"type": "array", "items": {"type": "string"}, "description": "Ordered steps"},
+    "components": {"type": "array", "items": {"type": "string"}, "description": "Model, Library, or Technique ids"},
+    "blend_recipe": {"type": "object", "description": "Component → weight, e.g. {'submission:march-mania-2026--v2.9': 0.35}"},
+    "expected_score_range": {"type": "object", "properties": {"min": {"type": "number"}, "max": {"type": "number"}}},
+    "resource_budget": {"type": "object", "properties": {"runtime_hours": {"type": "number"}, "gpu": {"type": "string"}, "ram_gb": {"type": "number"}}},
+    "kill_switches": {"type": "array", "items": {"type": "string"}, "description": "Conditions that abort the strategy"},
+    "supersedes": {"type": "string", "description": "Strategy id"},
+    "superseded_by": {"type": "string", "description": "Strategy id"}
+  }
+}

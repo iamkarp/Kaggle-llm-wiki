@@ -1,0 +1,33 @@
+{
+  "id": "concept:gradient-boosting-advanced",
+  "type": "concept",
+  "title": "Gradient Boosting — Advanced Configuration Tricks",
+  "slug": "gradient-boosting-advanced",
+  "aliases": [],
+  "tags": [
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "hyperparameter",
+    "optuna",
+    "gpu",
+    "rapids",
+    "2024",
+    "2025"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/gradient-boosting-advanced.md",
+  "summary": "Advanced XGBoost/LightGBM/CatBoost configuration patterns that go beyond the basics. These are the tricks that win competitions once the baseline is solid. Compiled from 2024–2025 winning solutions and NVIDIA Grandmaster Pro Tips.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/gradient-boosting-advanced.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

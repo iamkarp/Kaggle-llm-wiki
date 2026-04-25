@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/feature.schema.json",
+  "title": "Feature",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "feature"},
+    "feature_family": {"type": "string", "examples": ["four-factors", "elo", "embeddings", "fft", "rolling-stat", "target-encoded"]},
+    "formula_or_recipe": {"type": "string"},
+    "inputs": {"type": "array", "items": {"type": "string"}, "description": "Dataset or upstream Feature ids"},
+    "leakage_risk": {"type": "string", "enum": ["none", "low", "medium", "high"]},
+    "compute_cost": {"type": "string", "enum": ["cheap", "moderate", "expensive"]},
+    "used_in": {"type": "array", "items": {"type": "string"}, "description": "Submission ids"}
+  }
+}

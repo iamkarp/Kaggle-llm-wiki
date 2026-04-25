@@ -1,0 +1,30 @@
+{
+  "id": "source:bengali-grapheme-1st-deoxy",
+  "type": "source",
+  "title": "Bengali.AI Handwritten Grapheme Classification — 1st Place Solution",
+  "slug": "bengali-grapheme-1st-deoxy",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/bengali-grapheme-1st-deoxy.md",
+  "raw_path": "raw/kaggle/solutions/bengali-grapheme-1st-deoxy.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/bengali-grapheme-1st-deoxy.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/bengali-grapheme-1st-deoxy.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 6211,
+  "line_count": 143
+}

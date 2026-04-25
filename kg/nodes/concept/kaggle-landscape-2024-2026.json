@@ -1,0 +1,34 @@
+{
+  "id": "concept:kaggle-landscape-2024-2026",
+  "type": "concept",
+  "title": "Kaggle Competitive Landscape 2024-2026",
+  "slug": "kaggle-landscape-2024-2026",
+  "aliases": [],
+  "tags": [
+    "meta",
+    "kaggle",
+    "foundation-models",
+    "synthetic-data",
+    "distillation",
+    "ttt",
+    "post-processing",
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/kaggle-landscape-2024-2026.md",
+  "summary": "Ensembled fine-tuned open-source foundation models — not bespoke architectures — now dominate nearly every Kaggle leaderboard. The differentiator is no longer \"which model\" but whose synthetic data, whose test-time tricks, and whose cross-validation discipline. Three patterns are unusually load-bearing: (1) teacher→student distillation, (2) post-processing worth 0.01-0.03 LB, and (3) farid.one/kaggle-solutions as the single highest-ROI research resource.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/kaggle-landscape-2024-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-18",
+  "updated": "2026-04-18"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:medical-bioinformatics-solutions",
+  "type": "source",
+  "title": "Medical Imaging & Bioinformatics Kaggle Solutions",
+  "slug": "medical-bioinformatics-solutions",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/medical-bioinformatics-solutions.md",
+  "raw_path": "raw/kaggle/medical-bioinformatics-solutions.md",
+  "summary": "Auto-ingested from raw/kaggle/medical-bioinformatics-solutions.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/medical-bioinformatics-solutions.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 11884,
+  "line_count": 326
+}

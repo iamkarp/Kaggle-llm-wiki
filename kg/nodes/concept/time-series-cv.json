@@ -1,0 +1,32 @@
+{
+  "id": "concept:time-series-cv",
+  "type": "concept",
+  "title": "Time Series Cross-Validation — Walk-Forward, Purged CV, Gap Strategy",
+  "slug": "time-series-cv",
+  "aliases": [],
+  "tags": [
+    "time-series",
+    "cross-validation",
+    "walk-forward",
+    "purged-cv",
+    "embargo",
+    "financial",
+    "forecasting",
+    "kaggle"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/time-series-cv.md",
+  "summary": "Cross-validation strategies specifically designed for time-ordered data. Standard k-fold is **incorrect** for time series because it creates future leakage (future data appears in training folds). Using wrong CV for a time-series competition is one of the most common fatal errors.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/time-series-cv.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

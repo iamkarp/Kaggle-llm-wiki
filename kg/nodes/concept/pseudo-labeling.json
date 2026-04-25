@@ -1,0 +1,29 @@
+{
+  "id": "concept:pseudo-labeling",
+  "type": "concept",
+  "title": "Pseudo-Labeling — Semi-Supervised Learning with High-Confidence Test Predictions",
+  "slug": "pseudo-labeling",
+  "aliases": [],
+  "tags": [
+    "pseudo-labeling",
+    "semi-supervised",
+    "test-augmentation",
+    "imbalanced",
+    "confidence-threshold"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/pseudo-labeling.md",
+  "summary": "Pseudo-labeling is a semi-supervised technique: train an initial model on labeled training data, assign predicted labels to unlabeled test data with high confidence, then retrain on training + pseudo-labeled test data. It effectively expands the training set using the test distribution.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/pseudo-labeling.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

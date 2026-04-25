@@ -1,0 +1,154 @@
+# Eval queries for the KG. Each query has:
+#   - name:           short description
+#   - kind:           one of "node-list" | "edge-list" | "lookup"
+#   - filter:         a Python expression evaluated with `n` (node) or `e` (edge) in scope
+#                     and returning a bool. Anything else (`nodes`, `edges`) is also
+#                     available. Pure stdlib only.
+#   - project:        optional Python expression returning the value to compare. Default: id.
+#   - expected:       sorted list of expected results.
+#   - description:    longer text shown on failure.
+
+- name: "all-mistakes"
+  kind: node-list
+  filter: 'n["type"] == "mistake"'
+  expected:
+    - "mistake:catboost-cpu-timeout"
+    - "mistake:gbm-for-cross-subject-har"
+    - "mistake:nmcs-large-search-spaces"
+    - "mistake:pca-on-pretrained-features"
+    - "mistake:videomae-cross-subject"
+
+- name: "best-march-mania-submission"
+  kind: node-list
+  filter: 'n["type"] == "submission" and n.get("competition_id") == "competition:march-mania-2026" and n.get("kept_for_final") is True'
+  expected:
+    - "submission:march-mania-2026--v6-ensemble"
+
+- name: "v6-blend-weights"
+  kind: lookup
+  filter: 'n["id"] == "submission:march-mania-2026--v6-ensemble"'
+  project: 'sorted(n.get("weights", {}).items())'
+  expected:
+    - ["v2.8", 0.35]
+    - ["v2.9", 0.35]
+    - ["v5", 0.3]
+
+- name: "competitions-evaluated-by-mse"
+  kind: edge-list
+  filter: 'e["relation"] == "evaluated_by" and e["target"] == "metric:mse"'
+  project: 'e["source"]'
+  expected:
+    - "competition:march-mania-2026"
+
+- name: "techniques-that-prevent-cross-subject-har-mistake"
+  kind: edge-list
+  filter: 'e["relation"] == "prevents" and e["target"] == "mistake:gbm-for-cross-subject-har"'
+  project: 'e["source"]'
+  expected:
+    - "pattern:cross-subject-generalization"
+    - "pattern:oof-vs-lb-divergence"
+    - "technique:patchtst"
+
+- name: "march-mania-uses-libraries"
+  kind: edge-list
+  filter: 'e["relation"] == "uses" and e["source"] == "competition:march-mania-2026" and e["target"].startswith("library:")'
+  project: 'e["target"]'
+  expected:
+    - "library:lightgbm-catboost"
+    - "library:xgboost"
+
+- name: "march-mania-supersedes"
+  kind: edge-list
+  filter: 'e["relation"] == "supersedes" and e["source"] == "submission:march-mania-2026--v6-ensemble"'
+  project: 'e["target"]'
+  expected:
+    # v13 has score "Unknown" so it isn't in the supersedes set (needs a comparable score).
+    - "submission:march-mania-2026--v11-adjusted-efficiency"
+    - "submission:march-mania-2026--v12-recency-weighting"
+
+- name: "competitions-hosted-by-kaggle"
+  kind: edge-list
+  filter: 'e["relation"] == "hosted_by" and e["target"] == "organization:kaggle" and e["source"].startswith("competition:")'
+  project: 'e["source"]'
+  expected:
+    - "competition:autopilot-vqa-2026"
+    - "competition:horse-health-prediction"
+    - "competition:march-mania-2026"
+    - "competition:playground-s5-s6"
+    - "competition:stock-return-prediction"
+    - "competition:wear-hasca-2026"
+
+- name: "competitions-instance-of-har"
+  kind: edge-list
+  filter: 'e["relation"] == "instance_of" and e["target"] == "task_type:har"'
+  project: 'e["source"]'
+  expected:
+    - "competition:wear-hasca-2026"
+
+- name: "competitions-using-massey-ordinals"
+  kind: edge-list
+  filter: 'e["relation"] == "uses" and e["target"] == "dataset:massey-ordinals"'
+  project: 'e["source"]'
+  expected:
+    - "competition:march-mania-2026"
+
+- name: "all-techniques-applied-in-march-mania"
+  kind: edge-list
+  filter: 'e["relation"] == "applied_in" and e["target"] == "competition:march-mania-2026"'
+  project: 'e["source"]'
+  expected:
+    - "concept:calibration"
+    - "concept:xgboost-ensembles"
+    - "strategy:kaggle-competition-playbook"
+    - "strategy:march-mania-v6-ensemble"
+
+- name: "slug-pattern-improves-on"
+  kind: edge-list
+  filter: 'e["relation"] == "improves_on" and e.get("provenance",{}).get("src_section") == "slug_pattern"'
+  project: 'e["source"]'
+  expected:
+    - "concept:feature-selection-advanced"
+    - "concept:pseudo-labeling-cv"
+    - "concept:target-encoding-advanced"
+
+- name: "paper-count-at-least-17"
+  kind: lookup
+  filter: 'True'
+  project: 'sum(1 for n in nodes.values() if n["type"] == "paper") >= 17'
+  expected: true
+
+- name: "all-arxiv-papers-from-imbalanced-techniques"
+  kind: node-list
+  filter: 'n["type"] == "paper" and n.get("arxiv_id") in {"2412.07437", "2410.18144", "1908.01672"}'
+  project: 'n["arxiv_id"]'
+  expected:
+    - "1908.01672"
+    - "2410.18144"
+    - "2412.07437"
+
+- name: "node-types-with-instances"
+  kind: lookup
+  filter: 'True'
+  project: 'sorted({n["type"] for n in nodes.values()})'
+  expected:
+    - "api_service"
+    - "comparison"
+    - "competition"
+    - "concept"
+    - "dataset"
+    - "feature"
+    - "library"
+    - "metric"
+    - "mistake"
+    - "model"
+    - "organization"
+    - "paper"
+    - "pattern"
+    - "person"
+    - "source"
+    - "strategy"
+    - "submission"
+    - "synthesis"
+    - "task_type"
+    - "technique"
+    - "tool"

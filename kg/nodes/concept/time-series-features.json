@@ -1,0 +1,31 @@
+{
+  "id": "concept:time-series-features",
+  "type": "concept",
+  "title": "Time Series Feature Engineering — Lags, Rolling Stats, Fourier",
+  "slug": "time-series-features",
+  "aliases": [],
+  "tags": [
+    "time-series",
+    "feature-engineering",
+    "lags",
+    "rolling-stats",
+    "fourier",
+    "forecasting",
+    "kaggle"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/time-series-features.md",
+  "summary": "Feature engineering specific to time series tabular data. Rolling statistics, lag features, and cyclical encodings are the distinguishing features of top-2 solutions in multiple retail forecasting competitions (per arXiv analysis of Kaggle forecasting competitions). This is the single highest-leverage area in time series competitions.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/time-series-features.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

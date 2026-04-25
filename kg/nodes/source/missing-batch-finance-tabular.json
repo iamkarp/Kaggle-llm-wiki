@@ -1,0 +1,22 @@
+{
+  "id": "source:missing-batch-finance-tabular",
+  "type": "source",
+  "title": "Kaggle Solutions — Missing Batch — Finance & Tabular Classics",
+  "slug": "missing-batch-finance-tabular",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/missing-batch-finance-tabular.md",
+  "raw_path": "raw/kaggle/solutions/missing-batch-finance-tabular.md",
+  "sha256": "67d80dfe047b78afd38ae9fc53cd646e1df111b740ec237b50f971ab26c1bd0b",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:ensembling-strategies",
+    "concept:feature-engineering-tabular",
+    "concept:financial-competition-patterns",
+    "concept:time-series-features"
+  ],
+  "year": 2026,
+  "size_bytes": 17572,
+  "line_count": 335
+}

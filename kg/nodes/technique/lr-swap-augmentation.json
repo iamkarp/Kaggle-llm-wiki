@@ -1,0 +1,28 @@
+{
+  "id": "technique:lr-swap-augmentation",
+  "type": "technique",
+  "title": "Left-Right Swap Augmentation",
+  "slug": "lr-swap-augmentation",
+  "aliases": [],
+  "tags": [
+    "augmentation",
+    "har",
+    "wearable",
+    "symmetry"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/lr-swap-augmentation.md",
+  "summary": "Data augmentation for wearable sensor data that exploits bilateral body symmetry. For each training sample from a right-side sensor, create a mirror sample as if it came from the left side (and vice versa).",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/lr-swap-augmentation.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

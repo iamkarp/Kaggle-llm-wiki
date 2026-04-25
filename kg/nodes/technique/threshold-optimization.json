@@ -1,0 +1,32 @@
+{
+  "id": "technique:threshold-optimization",
+  "type": "technique",
+  "title": "Per-Class Threshold Optimization",
+  "slug": "threshold-optimization",
+  "aliases": [],
+  "tags": [
+    "post-processing",
+    "macro-f1",
+    "classification"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/threshold-optimization.md",
+  "summary": "Adjust per-class decision boundaries on out-of-fold (OOF) predictions to maximize the target metric. Essential when the metric is macro F1, which weights all classes equally regardless of frequency.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/threshold-optimization.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "when_to_use": [
+    "Always when the metric is macro F1 (or any class-weighted metric)",
+    "Especially impactful with class imbalance (e.g., null class at 40%+)",
+    "Optimize on OOF predictions, apply to test — never optimize on test"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/organization.schema.json",
+  "title": "Organization",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "organization"},
+    "name": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "org_type": {"type": "string", "enum": ["platform", "lab", "company", "team", "university", "nonprofit"]},
+    "members": {"type": "array", "items": {"type": "string"}, "description": "Person ids"}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pattern:cross-subject-generalization",
+  "type": "pattern",
+  "title": "Cross-Subject Generalization",
+  "slug": "cross-subject-generalization",
+  "aliases": [],
+  "tags": [
+    "generalization",
+    "domain-shift",
+    "har",
+    "validation"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/patterns/cross-subject-generalization.md",
+  "summary": "When training and test data come from different individuals, models must learn subject-invariant representations. This is a form of domain shift that breaks many standard approaches.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/patterns/cross-subject-generalization.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

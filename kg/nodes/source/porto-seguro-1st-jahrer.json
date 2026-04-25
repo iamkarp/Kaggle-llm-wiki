@@ -1,0 +1,22 @@
+{
+  "id": "source:porto-seguro-1st-jahrer",
+  "type": "source",
+  "title": "Porto Seguro Safe Driver Prediction — 1st Place Solution",
+  "slug": "porto-seguro-1st-jahrer",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/porto-seguro-1st-jahrer.md",
+  "raw_path": "raw/kaggle/solutions/porto-seguro-1st-jahrer.md",
+  "sha256": "3b7e94928cef802254cb287f6aeaf016f814a2f84344ccd9a6ca215d9cd8b508",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:deep-learning-tabular",
+    "concept:denoising-autoencoders",
+    "concept:post-processing",
+    "concept:stacking-deep"
+  ],
+  "year": 2026,
+  "size_bytes": 4827,
+  "line_count": 106
+}

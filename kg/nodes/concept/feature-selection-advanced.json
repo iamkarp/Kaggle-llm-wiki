@@ -1,0 +1,31 @@
+{
+  "id": "concept:feature-selection-advanced",
+  "type": "concept",
+  "title": "Advanced Feature Selection Techniques",
+  "slug": "feature-selection-advanced",
+  "aliases": [],
+  "tags": [
+    "feature-selection",
+    "null-importance",
+    "boruta",
+    "lofo",
+    "adversarial-validation",
+    "shap",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/feature-selection-advanced.md",
+  "summary": "A suite of competition-validated feature selection techniques, from fast correlation pruning to computationally intensive null importance and Boruta-SHAP. Used in sequence as a pipeline, not as alternatives.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/feature-selection-advanced.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "source:autopilot-vqa-claude",
+  "type": "source",
+  "title": "CLAUDE.md",
+  "slug": "autopilot-vqa-claude",
+  "status": "active",
+  "wiki_path": "raw/kaggle/autopilot-vqa-claude.md",
+  "raw_path": "raw/kaggle/autopilot-vqa-claude.md",
+  "sha256": "3ad9cbb64648387a649d57a5e744310980b3f8149fca2f7fbcf621333e3ee750",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "competition:autopilot-vqa-2026",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "year": 2026,
+  "size_bytes": 2776,
+  "line_count": 52
+}

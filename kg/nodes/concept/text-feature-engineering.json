@@ -1,0 +1,32 @@
+{
+  "id": "concept:text-feature-engineering",
+  "type": "concept",
+  "title": "Text Feature Engineering — Embeddings vs TF-IDF vs Regex Extraction",
+  "slug": "text-feature-engineering",
+  "aliases": [],
+  "tags": [
+    "nlp",
+    "text",
+    "embeddings",
+    "tfidf",
+    "regex",
+    "feature-engineering",
+    "tabular",
+    "llm"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/text-feature-engineering.md",
+  "summary": "When a tabular dataset contains free-text columns, you need to convert them to numeric features that tree models or linear models can consume. Three strategies, roughly in order of increasing precision but also increasing effort.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/text-feature-engineering.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

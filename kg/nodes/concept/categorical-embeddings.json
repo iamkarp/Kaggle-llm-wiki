@@ -1,0 +1,33 @@
+{
+  "id": "concept:categorical-embeddings",
+  "type": "concept",
+  "title": "Categorical Embeddings — Topic Models on Interaction Sequences",
+  "slug": "categorical-embeddings",
+  "aliases": [],
+  "tags": [
+    "categorical",
+    "embeddings",
+    "lda",
+    "nmf",
+    "pca",
+    "topic-models",
+    "interaction-sequences",
+    "fraud",
+    "high-cardinality"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/categorical-embeddings.md",
+  "summary": "Standard handling of high-cardinality categoricals (target encoding, one-hot, label encoding) treats each category value as atomic. Categorical embedding via topic models treats **sequences of interactions** between entities as documents, then runs LDA/NMF/SVD to extract dense embeddings that capture behavioral patterns.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/categorical-embeddings.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

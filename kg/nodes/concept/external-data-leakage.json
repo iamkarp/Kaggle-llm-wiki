@@ -1,0 +1,31 @@
+{
+  "id": "concept:external-data-leakage",
+  "type": "concept",
+  "title": "External Data Usage & Leakage Detection",
+  "slug": "external-data-leakage",
+  "aliases": [],
+  "tags": [
+    "leakage",
+    "external-data",
+    "adversarial-validation",
+    "id-leakage",
+    "metadata",
+    "tabular",
+    "kaggle"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/external-data-leakage.md",
+  "summary": "A systematic checklist and toolkit for finding and preventing data leakage in Kaggle competitions — both from external data inclusion and from the training pipeline itself.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/external-data-leakage.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

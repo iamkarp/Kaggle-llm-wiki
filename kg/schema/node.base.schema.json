@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/node.base.schema.json",
+  "title": "BaseNode",
+  "description": "Universal attributes every KG node must have. Per-type schemas $ref this file and add their own type-specific properties.",
+  "type": "object",
+  "required": ["id", "type", "title", "slug", "status", "wiki_path"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z_]+:[a-z0-9-]+$",
+      "description": "Stable canonical id, '<type>:<slug>'"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "competition", "submission", "technique", "concept", "pattern",
+        "strategy", "mistake", "comparison", "synthesis", "tool",
+        "library", "model", "person", "organization", "api_service",
+        "dataset", "metric", "task_type", "feature", "paper", "source"
+      ]
+    },
+    "title": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}, "default": []},
+    "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "tags": {"type": "array", "items": {"type": "string"}, "default": []},
+    "status": {"type": "string", "enum": ["draft", "active", "stale", "deprecated", "archived"]},
+    "created": {"type": "string", "format": "date"},
+    "updated": {"type": "string", "format": "date"},
+    "summary": {"type": "string"},
+    "wiki_path": {"type": "string", "description": "Relative path to markdown surface, e.g. wiki/competitions/march-mania-2026.md"},
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id"],
+        "properties": {
+          "source_id": {"type": "string", "description": "id of a Source node, e.g. 'source:kaggle-v6-doc'"},
+          "locator": {"type": "string", "description": "section/anchor/line range within the source"},
+          "quote": {"type": "string"}
+        }
+      },
+      "default": []
+    },
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1, "default": 1.0},
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "ingested_from": {"type": "array", "items": {"type": "string"}},
+        "method": {"type": "string", "enum": ["manual", "parser", "regex", "llm-extract"]},
+        "extractor_version": {"type": "string"}
+      }
+    },
+    "authors": {"type": "array", "items": {"type": "string"}, "default": []},
+    "version": {"type": "integer", "minimum": 1, "default": 1}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "feature:hospital-target-encoding",
+  "type": "feature",
+  "title": "Hospital target encoding",
+  "slug": "hospital-target-encoding",
+  "aliases": [],
+  "tags": [],
+  "status": "draft",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "summary": "real overlap (124 shared hospitals) makes this a legitimate feature, not leakage.",
+  "source_refs": [],
+  "confidence": 0.7,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ]
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-24",
+  "used_in": [],
+  "leakage_risk": "none"
+}

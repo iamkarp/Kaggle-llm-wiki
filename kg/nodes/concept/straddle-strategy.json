@@ -1,0 +1,29 @@
+{
+  "id": "concept:straddle-strategy",
+  "type": "concept",
+  "title": "Straddle Strategy",
+  "slug": "straddle-strategy",
+  "aliases": [],
+  "tags": [
+    "trading",
+    "forex",
+    "options",
+    "straddle",
+    "nfp"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/concepts/straddle-strategy.md",
+  "summary": "A straddle strategy places simultaneous long and short orders around a known volatility event (e.g., NFP release), profiting from large directional moves regardless of direction. In forex, this is implemented with pending buy-stop and sell-stop orders bracketing the current price.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/straddle-strategy.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "technique:beam-search",
+  "type": "technique",
+  "title": "Beam Search for Combinatorial Optimization",
+  "slug": "beam-search",
+  "aliases": [],
+  "tags": [
+    "search",
+    "optimization",
+    "heuristic",
+    "combinatorial"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/beam-search.md",
+  "summary": "Maintain a fixed-width \"beam\" of the W best partial solutions. At each step, expand all candidates, score them, and keep the top W. Repeat until a solution is found.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/beam-search.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16",
+  "when_to_use": [
+    "The branching factor is moderate (10–100 actions per state)",
+    "You have a reasonable heuristic to score states",
+    "Optimal solutions aren't required (beam search is incomplete — it can miss solutions that a full search would find)",
+    "You need solutions fast: beam search is linear in depth, linear in W × branching factor per step"
+  ]
+}

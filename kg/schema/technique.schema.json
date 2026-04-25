@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/technique.schema.json",
+  "title": "Technique",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "technique"},
+    "family": {"type": "string", "examples": ["gradient-boosting", "attention", "augmentation", "ensembling", "calibration", "search"]},
+    "paper_refs": {"type": "array", "items": {"type": "string"}, "description": "Paper ids"},
+    "first_year": {"type": "integer"},
+    "inputs": {"type": "array", "items": {"type": "string"}, "description": "What it consumes (data shapes / domains)"},
+    "outputs": {"type": "array", "items": {"type": "string"}},
+    "compute_profile": {
+      "type": "object",
+      "properties": {
+        "cpu": {"type": "boolean"},
+        "gpu": {"type": "boolean"},
+        "tpu": {"type": "boolean"},
+        "ram_gb": {"type": "number"},
+        "latency_class": {"type": "string", "enum": ["realtime", "batch", "offline"]}
+      }
+    },
+    "typical_hyperparams": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "default": {},
+          "range": {},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "strengths": {"type": "array", "items": {"type": "string"}},
+    "weaknesses": {"type": "array", "items": {"type": "string"}},
+    "when_to_use": {"type": "array", "items": {"type": "string"}},
+    "when_not_to_use": {"type": "array", "items": {"type": "string"}},
+    "implementations": {"type": "array", "items": {"type": "string"}, "description": "Library ids"},
+    "related_techniques": {"type": "array", "items": {"type": "string"}, "description": "Technique ids"},
+    "kaggle_track_record": {"type": "string"}
+  }
+}

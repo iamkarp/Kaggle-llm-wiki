@@ -1,0 +1,31 @@
+{
+  "id": "concept:multi-target-learning",
+  "type": "concept",
+  "title": "Multi-Target & Auxiliary Learning",
+  "slug": "multi-target-learning",
+  "aliases": [],
+  "tags": [
+    "multi-target",
+    "auxiliary-learning",
+    "distillation",
+    "ordinal",
+    "moa",
+    "tabular",
+    "nlp"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/multi-target-learning.md",
+  "summary": "A training paradigm where one model simultaneously predicts multiple targets — some scored, some auxiliary. The auxiliary signal regularizes the shared encoder and forces it to generalize better.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/multi-target-learning.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "concept:denoising-autoencoders",
+  "type": "concept",
+  "title": "Denoising Autoencoders — Tabular Representation Learning",
+  "slug": "denoising-autoencoders",
+  "aliases": [],
+  "tags": [
+    "dae",
+    "autoencoder",
+    "representation-learning",
+    "swap-noise",
+    "rankgauss",
+    "neural-network",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/denoising-autoencoders.md",
+  "summary": "A denoising autoencoder (DAE) learns a compressed representation of input data by training a neural network to reconstruct clean inputs from corrupted versions. On tabular data, the learned bottleneck representation captures non-linear feature interactions that tree models miss — especially useful when features are noisy, correlated, or have many missing values.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/denoising-autoencoders.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

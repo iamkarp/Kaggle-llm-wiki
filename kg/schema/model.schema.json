@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/model.schema.json",
+  "title": "Model",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "model"},
+    "architecture_family": {"type": "string", "examples": ["transformer", "vit", "gbm", "cnn", "rnn", "patchtst", "diffusion"]},
+    "paper": {"type": "string", "description": "Paper id"},
+    "param_count": {"type": "integer"},
+    "pretrained_on": {"type": "array", "items": {"type": "string"}, "description": "Dataset ids"},
+    "checkpoint_url": {"type": "string", "format": "uri"},
+    "license": {"type": "string"},
+    "modality": {"type": "string", "enum": ["text", "image", "video", "audio", "timeseries", "tabular", "multimodal", "graph"]},
+    "context_window": {"type": "integer"},
+    "strengths": {"type": "array", "items": {"type": "string"}},
+    "weaknesses": {"type": "array", "items": {"type": "string"}},
+    "fine_tunable": {"type": "boolean"},
+    "typical_hardware": {"type": "string"},
+    "latency_class": {"type": "string", "enum": ["realtime", "batch", "offline"]}
+  }
+}

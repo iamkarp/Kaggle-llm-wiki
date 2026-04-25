@@ -1,0 +1,30 @@
+{
+  "id": "tool:machine-learning-advisor",
+  "type": "tool",
+  "title": "MachineLearningAdvisor",
+  "slug": "machine-learning-advisor",
+  "aliases": [],
+  "tags": [
+    "system",
+    "shiny",
+    "rag",
+    "chromadb",
+    "hybrid-retrieval",
+    "embeddings"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/entities/machine-learning-advisor.md",
+  "summary": "A local + deployed web app at `/Users/macbook/Documents/MachineLearningAdvisor`, published to shinyapps.io (karpeles account). Built 2026-04-16 as an extension of Karpathy's LLM wiki pattern, adding a RAG layer to overcome the scalability limits of pure index-based navigation at ~100+ documents.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/machine-learning-advisor.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

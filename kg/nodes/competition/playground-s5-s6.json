@@ -1,0 +1,31 @@
+{
+  "id": "competition:playground-s5-s6",
+  "type": "competition",
+  "title": "Kaggle Playground Series S5 & S6 Winning Patterns (2025-2026)",
+  "slug": "playground-s5-s6",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "playground",
+    "seed-averaging",
+    "gpu-hill-climbing",
+    "smote-leakage",
+    "llm-augmentation",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/playground-s5-s6.md",
+  "summary": "GPU hill climbing (S5E5), 100-seed averaging (+0.003, S5E6), and LLM-augmented tabular features (S5E6 S6E3) are the defining patterns of 2025-2026 Playground competitions. SMOTE before CV inflated a competitor's AUC by +0.16 in S5E11 — the most documented recent leakage incident. S6E2 demonstrated the CV-LB breakdown threshold in practice.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/playground-s5-s6.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

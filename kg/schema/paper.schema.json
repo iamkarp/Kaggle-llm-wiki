@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/paper.schema.json",
+  "title": "Paper",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "paper"},
+    "authors": {"type": "array", "items": {"type": "string"}, "description": "Person ids"},
+    "year": {"type": "integer"},
+    "venue": {"type": "string", "examples": ["NeurIPS", "ICML", "ICLR", "arXiv", "KDD"]},
+    "arxiv_id": {"type": "string"},
+    "doi": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "introduces": {"type": "array", "items": {"type": "string"}, "description": "Technique or Model ids"}
+  }
+}

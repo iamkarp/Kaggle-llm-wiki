@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/comparison.schema.json",
+  "title": "Comparison",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "comparison"},
+    "subjects": {"type": "array", "items": {"type": "string"}, "minItems": 2, "description": "Node ids being compared"},
+    "dimensions": {"type": "array", "items": {"type": "string"}, "examples": ["accuracy", "training-time", "inference-time", "memory", "calibration"]},
+    "verdict_by_dimension": {"type": "object", "description": "dimension → winning subject id"},
+    "overall_verdict": {"type": "string"},
+    "context_caveats": {"type": "array", "items": {"type": "string"}},
+    "benchmarked_on": {"type": "string", "description": "Dataset or Competition id"}
+  }
+}

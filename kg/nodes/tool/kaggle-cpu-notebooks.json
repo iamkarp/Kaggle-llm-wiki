@@ -1,0 +1,29 @@
+{
+  "id": "tool:kaggle-cpu-notebooks",
+  "type": "tool",
+  "title": "Running Deep Learning on Kaggle CPU",
+  "slug": "kaggle-cpu-notebooks",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "cpu",
+    "gpu",
+    "pytorch",
+    "runtime"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/tools/kaggle-cpu-notebooks.md",
+  "summary": "Kaggle's P100 GPU has CUDA kernel incompatibility with the current PyTorch version in the Docker image. This causes runtime errors for many DL operations. Until Kaggle updates the image, all deep learning must run on CPU.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/tools/kaggle-cpu-notebooks.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

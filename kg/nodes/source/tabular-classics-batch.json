@@ -1,0 +1,30 @@
+{
+  "id": "source:tabular-classics-batch",
+  "type": "source",
+  "title": "Kaggle Past Solutions — Tabular Classics",
+  "slug": "tabular-classics-batch",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/tabular-classics-batch.md",
+  "raw_path": "raw/kaggle/solutions/tabular-classics-batch.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/tabular-classics-batch.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/tabular-classics-batch.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 6838,
+  "line_count": 159
+}

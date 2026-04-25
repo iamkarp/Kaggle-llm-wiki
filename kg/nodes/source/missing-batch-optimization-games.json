@@ -1,0 +1,20 @@
+{
+  "id": "source:missing-batch-optimization-games",
+  "type": "source",
+  "title": "Kaggle Solutions — Missing Batch — Optimization, Santa & Game AI",
+  "slug": "missing-batch-optimization-games",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/missing-batch-optimization-games.md",
+  "raw_path": "raw/kaggle/solutions/missing-batch-optimization-games.md",
+  "sha256": "90be8da7b000a85a2192ade8a8584c1a73f669bc671686255b1a241db66e667d",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:combinatorial-optimization",
+    "concept:reinforcement-learning-games"
+  ],
+  "year": 2026,
+  "size_bytes": 10939,
+  "line_count": 198
+}

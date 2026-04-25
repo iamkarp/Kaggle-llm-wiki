@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/library.schema.json",
+  "title": "Library",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "library"},
+    "language": {"type": "string", "examples": ["python", "rust", "c++", "r", "julia"]},
+    "pypi_name": {"type": "string"},
+    "cargo_name": {"type": "string"},
+    "repo_url": {"type": "string", "format": "uri"},
+    "license": {"type": "string"},
+    "current_version_used": {"type": "string"},
+    "minimum_version": {"type": "string"},
+    "gpu_support": {"type": "boolean"},
+    "replaces": {"type": "string", "description": "Library id"},
+    "wraps": {"type": "string", "description": "Library id"},
+    "key_apis": {"type": "array", "items": {"type": "string"}}
+  }
+}

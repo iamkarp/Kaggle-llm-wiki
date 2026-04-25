@@ -1,0 +1,63 @@
+{
+  "id": "competition:wear-hasca-2026",
+  "type": "competition",
+  "title": "3rd WEAR Dataset Challenge @ HASCA 2026",
+  "slug": "wear-hasca-2026",
+  "aliases": [],
+  "tags": [
+    "har",
+    "time-series",
+    "wearable",
+    "multimodal",
+    "macro-f1"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/wear-hasca-2026.md",
+  "summary": "**Platform:** Kaggle | **Metric:** Macro F1-score | **Result:** #1 (0.60855)",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/wear-hasca-2026.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-16",
+  "platform": "kaggle",
+  "best_lb_score": 1,
+  "what_worked": [
+    "techniques/patchtst scaled up: d_model=96, n_heads=4, n_layers=3, d_ff=192, dropout=0.15",
+    "techniques/sensor-embedding: nn.Embedding(4, 16) projected to d_model",
+    "techniques/lr-swap-augmentation: Negate x-axis, swap left↔right sensor IDs",
+    "techniques/test-time-augmentation: Average predictions with L-R flipped input",
+    "techniques/threshold-optimization: Per-class bias on OOF predictions",
+    "Linear warmup (3 epochs) + cosine decay, 40 epochs, patience 10",
+    "4-fold grouped CV, batch 256, AdamW lr=3e-4, label smoothing 0.1",
+    "Pure inertial — NO video features (they hurt generalization)",
+    "Runtime: 345 min on CPU (1 seed, 70-88 min/fold)",
+    "OOF: 0.5232 → 0.5310 adjusted, LB: 0.60855",
+    "239,891 parameters",
+    "techniques/patchtst with d_model=64, n_heads=4, n_layers=3, patch_len=10",
+    "techniques/sensor-embedding: nn.Embedding(4, 16) concatenated to patch embeddings",
+    "techniques/lr-swap-augmentation: Negate x-axis, swap left↔right sensor IDs",
+    "techniques/test-time-augmentation: Average predictions with L-R flipped input",
+    "techniques/threshold-optimization: Per-class bias on OOF predictions",
+    "4-fold grouped CV by subject groups, 30 epochs, batch 256, AdamW lr=3e-4",
+    "Label smoothing 0.1, additional augmentations: jitter, scaling, rotation, channel dropout",
+    "Runtime: 148 min on CPU",
+    "OOF: 0.5204, LB: 0.58575 (model generalizes better than OOF suggests)"
+  ],
+  "what_didnt_work": [
+    "V5: LGB+XGB+Cat + VideoMAE PCA → OOF 0.6261, LB 0.22323",
+    "V6: LGB only → OOF 0.5922, LB 0.18589",
+    "V13: LGB+XGB + VideoMAE RP → OOF 0.5901, LB 0.24321",
+    "V14: GBM+PatchTST 50/50 blend → OOF 0.6348, LB 0.50182",
+    "V15: PatchTST + VideoMAE token → OOF 0.6087, LB 0.13211",
+    "The model attended to subject-specific video patterns, collapsing to 61% null on test",
+    "This is WORSE than GBM alone — video features are the single biggest trap in this competition"
+  ],
+  "task_type": "task_type:har"
+}

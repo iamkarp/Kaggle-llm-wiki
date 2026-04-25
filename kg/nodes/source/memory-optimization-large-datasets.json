@@ -1,0 +1,30 @@
+{
+  "id": "source:memory-optimization-large-datasets",
+  "type": "source",
+  "title": "Memory Optimization and Large Dataset Handling in Kaggle",
+  "slug": "memory-optimization-large-datasets",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/memory-optimization-large-datasets.md",
+  "raw_path": "raw/kaggle/memory-optimization-large-datasets.md",
+  "summary": "Auto-ingested from raw/kaggle/memory-optimization-large-datasets.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/memory-optimization-large-datasets.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 9819,
+  "line_count": 270
+}

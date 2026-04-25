@@ -1,0 +1,20 @@
+{
+  "id": "source:missing-batch-timeseries-signals",
+  "type": "source",
+  "title": "Kaggle Solutions — Missing Batch — Time-Series, Signals & EEG/Sensor",
+  "slug": "missing-batch-timeseries-signals",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/missing-batch-timeseries-signals.md",
+  "raw_path": "raw/kaggle/solutions/missing-batch-timeseries-signals.md",
+  "sha256": "4c03f7b4a2bc24bd5def395744795938cbe7c97275a682cb3f9013b0212f645d",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:financial-competition-patterns",
+    "concept:time-series-features"
+  ],
+  "year": 2026,
+  "size_bytes": 10138,
+  "line_count": 213
+}

@@ -1,0 +1,29 @@
+{
+  "id": "model:qwen-vl",
+  "type": "model",
+  "title": "Qwen-VL",
+  "slug": "qwen-vl",
+  "aliases": [],
+  "tags": [
+    "vlm",
+    "vision",
+    "qwen",
+    "multimodal",
+    "tool"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/entities/qwen-vl.md",
+  "summary": "Qwen-VL is a vision-language model from Alibaba capable of understanding images and generating text descriptions. Used in Jason's work as the primary visual understanding component in VQA pipelines.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/qwen-vl.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

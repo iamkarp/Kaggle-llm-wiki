@@ -1,0 +1,24 @@
+{
+  "id": "task_type:har",
+  "type": "task_type",
+  "title": "Human Activity Recognition",
+  "slug": "har",
+  "name": "human_activity_recognition",
+  "status": "active",
+  "wiki_path": "kg/canonical/task_type/har",
+  "summary": "Classify activities from sensor data, often cross-subject.",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

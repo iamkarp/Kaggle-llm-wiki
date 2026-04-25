@@ -1,0 +1,22 @@
+{
+  "id": "source:home-credit-1st-tunguz",
+  "type": "source",
+  "title": "Home Credit Default Risk — 1st Place Solution",
+  "slug": "home-credit-1st-tunguz",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/home-credit-1st-tunguz.md",
+  "raw_path": "raw/kaggle/solutions/home-credit-1st-tunguz.md",
+  "sha256": "0c7ca06747eb3ad3e277264250543597c1210c4c0d0b58f509ab42ee5b827323",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:denoising-autoencoders",
+    "concept:feature-selection",
+    "concept:nearest-neighbor-features",
+    "concept:stacking-deep"
+  ],
+  "year": 2026,
+  "size_bytes": 4698,
+  "line_count": 104
+}

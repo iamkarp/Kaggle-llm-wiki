@@ -1,0 +1,37 @@
+{
+  "id": "competition:santa-2024-pancake",
+  "type": "competition",
+  "title": "Santa 2024 — Pancake Sorting",
+  "slug": "santa-2024-pancake",
+  "aliases": [],
+  "tags": [
+    "combinatorial-optimization",
+    "beam-search",
+    "permutation",
+    "pancake-sorting"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/competitions/santa-2024-pancake.md",
+  "summary": "**Platform:** Kaggle  \n**Metric:** Total prefix reversal moves across all test cases (lower is better)  \n**Result:** 89,748 total moves (best local), 89,831 submitted. Top teams: 89,573 (4 tied).  \n**Problem:** Given 2,405 permutations of sizes n=5 to n=100, sort each to `[0,1,...,n-1]` using prefix reversals Rk (reverse the first k elements). Minimize total moves. UNSOLVED cases cost 100,000 each.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/santa-2024-pancake.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16",
+  "what_worked": [
+    "Beam widths: 300–2000 depending on n",
+    "Stochastic: uses seeded random noise for tie-breaking",
+    "Run with many seeds (10–40 per case) to find diverse solutions",
+    "Running 40+ seeds per case across multiple solver scripts",
+    "Reconstructing any improvement later by replaying the exact seed",
+    "Partitioning seed ranges across concurrent solvers (0–460M, 700M, 800M, 900M, 1B+, 2B, 3B)"
+  ],
+  "task_type": "task_type:combinatorial-optimization"
+}

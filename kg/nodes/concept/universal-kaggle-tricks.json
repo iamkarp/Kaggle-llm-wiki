@@ -1,0 +1,31 @@
+{
+  "id": "concept:universal-kaggle-tricks",
+  "type": "concept",
+  "title": "Universal Kaggle Tricks — Cross-Competition Validated Techniques",
+  "slug": "universal-kaggle-tricks",
+  "aliases": [],
+  "tags": [
+    "kaggle",
+    "universal-tricks",
+    "ensemble",
+    "seed-averaging",
+    "groupby",
+    "pseudo-labeling",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/universal-kaggle-tricks.md",
+  "summary": "A priority matrix of competition techniques ranked by impact, effort, and applicable competition types. These are techniques that appear across multiple winning solutions and are validated across dozens of competitions.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/universal-kaggle-tricks.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

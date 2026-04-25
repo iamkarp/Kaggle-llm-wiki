@@ -1,0 +1,25 @@
+{
+  "id": "feature:tournament-experience-as-a-feature",
+  "type": "feature",
+  "title": "Tournament Experience as a feature",
+  "slug": "tournament-experience-as-a-feature",
+  "aliases": [],
+  "tags": [],
+  "status": "draft",
+  "wiki_path": "wiki/competitions/march-mania-2026.md",
+  "summary": "(prior tournament appearances)",
+  "source_refs": [],
+  "confidence": 0.7,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/march-mania-2026.md"
+    ]
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-24",
+  "used_in": [],
+  "leakage_risk": "none"
+}

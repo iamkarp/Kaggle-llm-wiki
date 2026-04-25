@@ -1,0 +1,29 @@
+{
+  "id": "concept:xgboost-ensembles",
+  "type": "concept",
+  "title": "XGBoost Ensembles — Weighted Averaging of Gradient Boosted Trees",
+  "slug": "xgboost-ensembles",
+  "aliases": [],
+  "tags": [
+    "xgboost",
+    "ensemble",
+    "gradient-boosting",
+    "hyperparameters",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/xgboost-ensembles.md",
+  "summary": "XGBoost (eXtreme Gradient Boosting) is a gradient-boosted decision tree library. Ensembling multiple XGBoost models with different hyperparameters (especially `max_depth`) reduces variance while preserving the expressive power of deep trees.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/xgboost-ensembles.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "concept:target-encoding-advanced",
+  "type": "concept",
+  "title": "Advanced Target Encoding Techniques",
+  "slug": "target-encoding-advanced",
+  "aliases": [],
+  "tags": [
+    "target-encoding",
+    "categorical",
+    "glmm",
+    "james-stein",
+    "catboost",
+    "entity-embeddings",
+    "woe",
+    "tabular"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/target-encoding-advanced.md",
+  "summary": "A collection of advanced categorical encoding techniques that go beyond plain mean target encoding. Critical for tabular competitions with high-cardinality categorical features.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/target-encoding-advanced.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

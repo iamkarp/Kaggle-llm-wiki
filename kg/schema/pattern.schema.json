@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/pattern.schema.json",
+  "title": "Pattern",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "pattern"},
+    "problem_class": {"type": "string", "description": "TaskType id"},
+    "trigger_conditions": {"type": "array", "items": {"type": "string"}},
+    "recipe_steps": {"type": "array", "items": {"type": "string"}, "description": "Ordered steps"},
+    "anti_patterns": {"type": "array", "items": {"type": "string"}, "description": "Mistake ids"},
+    "success_cases": {"type": "array", "items": {"type": "string"}, "description": "Competition ids"},
+    "variants": {"type": "array", "items": {"type": "string"}, "description": "Pattern ids"},
+    "maturity": {"type": "string", "enum": ["experimental", "proven", "contested"]}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "concept:knowledge-distillation",
+  "type": "concept",
+  "title": "Knowledge Distillation — LGBM→NN Soft Labels, Cosine Schedules, Cross-Model Transfer",
+  "slug": "knowledge-distillation",
+  "aliases": [],
+  "tags": [
+    "knowledge-distillation",
+    "soft-labels",
+    "lgbm",
+    "transformer",
+    "cosine-schedule",
+    "nested-cv",
+    "rapids",
+    "cudf"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/knowledge-distillation.md",
+  "summary": "Knowledge distillation transfers the \"knowledge\" of one model (the teacher) to another (the student) by training the student on the teacher's predicted probabilities (soft labels) rather than only the ground-truth binary labels. Soft labels carry inter-class relationship information that binary targets discard.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/knowledge-distillation.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

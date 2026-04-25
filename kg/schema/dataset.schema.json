@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/dataset.schema.json",
+  "title": "Dataset",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "dataset"},
+    "source_competition": {"type": "string", "description": "Competition id"},
+    "modality": {"type": "string", "enum": ["tabular", "timeseries", "image", "text", "audio", "video", "multimodal", "graph", "geospatial"]},
+    "size_rows": {"type": "integer"},
+    "size_bytes": {"type": "integer"},
+    "features_count": {"type": "integer"},
+    "target_column": {"type": "string"},
+    "license": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "known_leakage": {"type": "string"},
+    "time_range": {"type": "object", "properties": {"start": {"type": "string"}, "end": {"type": "string"}}},
+    "subjects_or_entities": {"type": "string", "description": "What each row represents (e.g. 'NBA team', 'patient', 'subject')"},
+    "split_protocol": {"type": "string", "examples": ["random-kfold", "group-kfold-by-subject", "time-series-cv", "leave-one-subject-out", "stratified-kfold"]}
+  }
+}

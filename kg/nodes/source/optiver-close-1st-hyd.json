@@ -1,0 +1,20 @@
+{
+  "id": "source:optiver-close-1st-hyd",
+  "type": "source",
+  "title": "Optiver Trading at the Close — 1st Place Solution",
+  "slug": "optiver-close-1st-hyd",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/optiver-close-1st-hyd.md",
+  "raw_path": "raw/kaggle/solutions/optiver-close-1st-hyd.md",
+  "sha256": "9d0140be02102219c2c60fca6de847f72c053823cb81204c96216abc2d92ed76",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:ensembling-strategies",
+    "concept:online-learning"
+  ],
+  "year": 2024,
+  "size_bytes": 5456,
+  "line_count": 125
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pattern:oof-vs-lb-divergence",
+  "type": "pattern",
+  "title": "OOF vs LB Divergence",
+  "slug": "oof-vs-lb-divergence",
+  "aliases": [],
+  "tags": [
+    "validation",
+    "leakage",
+    "generalization",
+    "diagnostic"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/patterns/oof-vs-lb-divergence.md",
+  "summary": "When out-of-fold (OOF) cross-validation scores don't predict public leaderboard scores, something is fundamentally wrong with either the validation strategy or the model's generalization.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/patterns/oof-vs-lb-divergence.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

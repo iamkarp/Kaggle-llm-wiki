@@ -1,0 +1,19 @@
+{
+  "id": "source:missing-batch-nlp-reasoning",
+  "type": "source",
+  "title": "Kaggle Solutions — Missing Batch — NLP, Reasoning & AI Challenges",
+  "slug": "missing-batch-nlp-reasoning",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/missing-batch-nlp-reasoning.md",
+  "raw_path": "raw/kaggle/solutions/missing-batch-nlp-reasoning.md",
+  "sha256": "ebacb014a2f55bc494d28afe730db9d5cfdbc7ab51b10c3fb0d59bd53c89d36f",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:llm-fine-tuning-kaggle"
+  ],
+  "year": 2026,
+  "size_bytes": 15274,
+  "line_count": 256
+}

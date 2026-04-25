@@ -1,0 +1,21 @@
+{
+  "id": "submission:horse-health-prediction--v2-blend",
+  "type": "submission",
+  "title": "Horse Health Prediction (Kaggle Playground) — v2 blend",
+  "slug": "horse-health-prediction--v2-blend",
+  "status": "active",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "competition_id": "competition:horse-health-prediction",
+  "version_label": "v2 blend",
+  "notes": "Current best, submitted",
+  "summary": "Submission v2 blend for Horse Health Prediction (Kaggle Playground)",
+  "provenance": {
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

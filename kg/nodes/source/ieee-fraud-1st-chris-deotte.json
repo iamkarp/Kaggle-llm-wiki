@@ -1,0 +1,19 @@
+{
+  "id": "source:ieee-fraud-1st-chris-deotte",
+  "type": "source",
+  "title": "IEEE-CIS Fraud Detection — 1st Place Solution",
+  "slug": "ieee-fraud-1st-chris-deotte",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/ieee-fraud-1st-chris-deotte.md",
+  "raw_path": "raw/kaggle/solutions/ieee-fraud-1st-chris-deotte.md",
+  "sha256": "cc8eaeecb7cb5cdcc97aeabcb7c5fb531279f7e2447d2e6d02fe2dda12992f0d",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:feature-selection"
+  ],
+  "year": 2026,
+  "size_bytes": 5573,
+  "line_count": 108
+}

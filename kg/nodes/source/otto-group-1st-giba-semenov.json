@@ -1,0 +1,19 @@
+{
+  "id": "source:otto-group-1st-giba-semenov",
+  "type": "source",
+  "title": "Otto Group Product Classification — 1st Place Solution",
+  "slug": "otto-group-1st-giba-semenov",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/otto-group-1st-giba-semenov.md",
+  "raw_path": "raw/kaggle/solutions/otto-group-1st-giba-semenov.md",
+  "sha256": "9fd32b472678e89d948245ace53a6fe37e4f0c91165a1054ec47bfdb263bdb8b",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:stacking-deep"
+  ],
+  "year": 2015,
+  "size_bytes": 6907,
+  "line_count": 150
+}

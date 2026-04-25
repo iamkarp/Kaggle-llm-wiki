@@ -1,0 +1,36 @@
+{
+  "id": "concept:llm-fine-tuning-kaggle",
+  "type": "concept",
+  "title": "LLM & Transformer Fine-Tuning for Kaggle NLP",
+  "slug": "llm-fine-tuning-kaggle",
+  "aliases": [],
+  "tags": [
+    "nlp",
+    "llm",
+    "deberta",
+    "transformer",
+    "fine-tuning",
+    "lora",
+    "awp",
+    "llrd",
+    "distillation",
+    "kaggle",
+    "2024",
+    "2025"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/llm-fine-tuning-kaggle.md",
+  "summary": "Techniques for fine-tuning large language models and transformers in Kaggle competitions. In 2022–2023, DeBERTa-v3-large was the dominant backbone; in 2024, decoder-only LLMs (Llama 3, Gemma 2, Qwen 2) began winning generation/preference tasks. This page covers the tricks that separate top-10 from top-100 in NLP competitions.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/llm-fine-tuning-kaggle.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

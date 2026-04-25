@@ -1,0 +1,38 @@
+{
+  "id": "concept:stacking-deep",
+  "type": "concept",
+  "title": "Deep Stacking — Multi-Level Stacking Architectures",
+  "slug": "stacking-deep",
+  "aliases": [],
+  "tags": [
+    "stacking",
+    "multi-level",
+    "ensemble",
+    "oof",
+    "meta-learner",
+    "blending",
+    "tabular",
+    "kaggle",
+    "deepinsight",
+    "tabnet",
+    "auxiliary-targets",
+    "geometric-mean",
+    "otto",
+    "tsne"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/stacking-deep.md",
+  "summary": "Deep stacking extends the standard 2-level stacking architecture (base models → meta-learner) to 3+ levels. Each level trains on the OOF predictions of the previous level. The Home Credit 1st-place solution (Tunguz team) used a 3-level architecture with 90+ base models. At each level, diversity and OOF correctness are paramount.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/stacking-deep.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

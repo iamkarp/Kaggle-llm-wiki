@@ -1,0 +1,33 @@
+{
+  "id": "concept:segmentation-architectures",
+  "type": "concept",
+  "title": "Segmentation Architectures",
+  "slug": "segmentation-architectures",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "segmentation",
+    "unet",
+    "scse",
+    "fpa",
+    "nnunet",
+    "coarse-to-fine",
+    "decoder",
+    "attention"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/segmentation-architectures.md",
+  "summary": "Medical and competition segmentation relies heavily on U-Net variants. This page covers the standard U-Net decoder enhancements, nnU-Net's auto-configuration approach, and coarse-to-fine pipelines for 3D medical imaging.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/segmentation-architectures.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

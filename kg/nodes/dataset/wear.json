@@ -1,0 +1,28 @@
+{
+  "id": "dataset:wear",
+  "type": "dataset",
+  "title": "WEAR — Wearable Activity Recognition",
+  "slug": "wear",
+  "name": "WEAR",
+  "modality": "timeseries",
+  "subjects_or_entities": "subject (cross-subject HAR)",
+  "split_protocol": "leave-one-subject-out / group-kfold-by-subject",
+  "summary": "Wearable inertial sensor dataset for cross-subject activity recognition.",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "wiki/competitions/wear-hasca-2026.md",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/wear-hasca-2026.md"
+    ]
+  },
+  "created": "2026-04-15",
+  "updated": "2026-04-24",
+  "source_competition": "competition:wear-hasca-2026"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:kaggle-meta-2024-2026-links",
+  "type": "source",
+  "title": "Kaggle 2024-2026 — Curated Reference Links",
+  "slug": "kaggle-meta-2024-2026-links",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/kaggle-meta-2024-2026-links.md",
+  "raw_path": "raw/kaggle/kaggle-meta-2024-2026-links.md",
+  "summary": "Auto-ingested from raw/kaggle/kaggle-meta-2024-2026-links.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/kaggle-meta-2024-2026-links.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 6937,
+  "line_count": 89
+}

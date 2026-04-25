@@ -1,0 +1,21 @@
+{
+  "id": "source:moa-1st-mark-peng",
+  "type": "source",
+  "title": "Mechanisms of Action (MoA) Prediction — 1st Place Solution",
+  "slug": "moa-1st-mark-peng",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/moa-1st-mark-peng.md",
+  "raw_path": "raw/kaggle/solutions/moa-1st-mark-peng.md",
+  "sha256": "3b70bf706d99a648d3797859bed485f45d081a61895f6beb5412b614b2c1fc6f",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:deep-learning-tabular",
+    "concept:ensembling-strategies",
+    "concept:stacking-deep"
+  ],
+  "year": 2020,
+  "size_bytes": 6891,
+  "line_count": 164
+}

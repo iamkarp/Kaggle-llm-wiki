@@ -1,0 +1,29 @@
+{
+  "id": "model:claude-sonnet",
+  "type": "model",
+  "title": "Claude Sonnet",
+  "slug": "claude-sonnet",
+  "aliases": [],
+  "tags": [
+    "llm",
+    "claude",
+    "anthropic",
+    "json-extraction",
+    "tool"
+  ],
+  "status": "draft",
+  "wiki_path": "wiki/entities/claude-sonnet.md",
+  "summary": "Claude Sonnet is Anthropic's mid-tier LLM, balancing capability with speed and cost. Used in Jason's work primarily for structured data extraction tasks where instruction-following precision matters more than raw generation quality.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/entities/claude-sonnet.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16"
+}

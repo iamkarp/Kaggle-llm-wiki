@@ -1,0 +1,31 @@
+{
+  "id": "concept:memory-optimization",
+  "type": "concept",
+  "title": "Memory Optimization & Large Dataset Handling",
+  "slug": "memory-optimization",
+  "aliases": [],
+  "tags": [
+    "memory-optimization",
+    "polars",
+    "cudf",
+    "parquet",
+    "pandas",
+    "rapids",
+    "performance"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/memory-optimization.md",
+  "summary": "A toolkit of techniques for handling large Kaggle datasets that would otherwise cause OOM errors or slow notebooks. Enables Chris Deotte's approach of generating and testing 10,000+ features by making each iteration fast.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/memory-optimization.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

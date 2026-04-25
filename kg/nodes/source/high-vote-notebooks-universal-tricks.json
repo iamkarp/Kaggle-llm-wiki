@@ -1,0 +1,30 @@
+{
+  "id": "source:high-vote-notebooks-universal-tricks",
+  "type": "source",
+  "title": "High-Vote Kaggle Notebooks: Universal Tricks & Validated Community Wisdom",
+  "slug": "high-vote-notebooks-universal-tricks",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/high-vote-notebooks-universal-tricks.md",
+  "raw_path": "raw/kaggle/high-vote-notebooks-universal-tricks.md",
+  "summary": "Auto-ingested from raw/kaggle/high-vote-notebooks-universal-tricks.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/high-vote-notebooks-universal-tricks.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 7822,
+  "line_count": 124
+}

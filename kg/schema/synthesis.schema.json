@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/synthesis.schema.json",
+  "title": "Synthesis",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "synthesis"},
+    "topic": {"type": "string"},
+    "corpus": {"type": "array", "items": {"type": "string"}, "description": "Source or other Node ids"},
+    "claims": {"type": "array", "items": {"type": "string"}},
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_a": {"type": "string"},
+          "claim_b": {"type": "string"},
+          "resolution": {"type": "string"}
+        }
+      }
+    },
+    "open_questions": {"type": "array", "items": {"type": "string"}}
+  }
+}

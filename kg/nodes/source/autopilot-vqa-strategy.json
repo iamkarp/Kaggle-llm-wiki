@@ -1,0 +1,20 @@
+{
+  "id": "source:autopilot-vqa-strategy",
+  "type": "source",
+  "title": "AUTOPILOT VQA — Winning Strategy",
+  "slug": "autopilot-vqa-strategy",
+  "status": "active",
+  "wiki_path": "raw/kaggle/autopilot-vqa-strategy.md",
+  "raw_path": "raw/kaggle/autopilot-vqa-strategy.md",
+  "sha256": "ef249150cbb0afc06298e09fb9bb64a3951a0f7580f0319109cc30d87e071405",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "competition:autopilot-vqa-2026",
+    "strategy:autopilot-vqa-pipeline"
+  ],
+  "year": 2026,
+  "size_bytes": 6258,
+  "line_count": 196
+}

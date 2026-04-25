@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kg/schema/task_type.schema.json",
+  "title": "TaskType",
+  "allOf": [{"$ref": "node.base.schema.json"}],
+  "properties": {
+    "type": {"const": "task_type"},
+    "name": {"type": "string"},
+    "formal_def": {"type": "string"},
+    "canonical_metrics": {"type": "array", "items": {"type": "string"}, "description": "Metric ids"},
+    "canonical_models": {"type": "array", "items": {"type": "string"}, "description": "Model ids"},
+    "canonical_patterns": {"type": "array", "items": {"type": "string"}, "description": "Pattern ids"}
+  }
+}

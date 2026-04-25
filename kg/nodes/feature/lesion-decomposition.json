@@ -1,0 +1,25 @@
+{
+  "id": "feature:lesion-decomposition",
+  "type": "feature",
+  "title": "Lesion decomposition",
+  "slug": "lesion-decomposition",
+  "aliases": [],
+  "tags": [],
+  "status": "draft",
+  "wiki_path": "wiki/competitions/horse-health-prediction.md",
+  "summary": "trees pick up `lesion_1_site` as informative (the raw 4–5 digit code is effectively a high-cardinality categorical that trees struggle to split meaningfully).",
+  "source_refs": [],
+  "confidence": 0.7,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "wiki/competitions/horse-health-prediction.md"
+    ]
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-24",
+  "used_in": [],
+  "leakage_risk": "none"
+}

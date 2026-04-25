@@ -1,0 +1,19 @@
+{
+  "id": "source:m5-forecasting-1st-yeonjun",
+  "type": "source",
+  "title": "M5 Forecasting — 1st Place Solution",
+  "slug": "m5-forecasting-1st-yeonjun",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/m5-forecasting-1st-yeonjun.md",
+  "raw_path": "raw/kaggle/solutions/m5-forecasting-1st-yeonjun.md",
+  "sha256": "c745f5c4384f073b0cbc4f149c936542230b32c3ef6738abe9a0c4b54f1d9b41",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:time-series-features"
+  ],
+  "year": 2026,
+  "size_bytes": 5031,
+  "line_count": 118
+}

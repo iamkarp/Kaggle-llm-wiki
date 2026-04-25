@@ -1,0 +1,24 @@
+{
+  "id": "task_type:combinatorial-optimization",
+  "type": "task_type",
+  "title": "Combinatorial Optimization",
+  "slug": "combinatorial-optimization",
+  "name": "combinatorial_optimization",
+  "status": "active",
+  "wiki_path": "kg/canonical/task_type/combinatorial-optimization",
+  "summary": "Find a discrete sequence or arrangement that minimises an objective.",
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "aliases": [],
+  "tags": [],
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "method": "manual",
+    "extractor_version": "0.3.0",
+    "ingested_from": [
+      "kg/canonical/"
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,25 @@
+{
+  "id": "source:v6-ensemble-documentation",
+  "type": "source",
+  "title": "March Mania 2026: v6 Ensemble Model (0.02210 LB)",
+  "slug": "v6-ensemble-documentation",
+  "status": "active",
+  "wiki_path": "raw/kaggle/v6-ensemble-documentation.md",
+  "raw_path": "raw/kaggle/v6-ensemble-documentation.md",
+  "sha256": "4a28e02006e0ae71e4d0541b379c42f4f84ba132d1faa2d662ddb872e80447d2",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "competition:march-mania-2026",
+    "concept:calibration",
+    "concept:ensembling-strategies",
+    "concept:feature-engineering-tabular",
+    "concept:xgboost-ensembles",
+    "library:lightgbm-catboost",
+    "strategy:march-mania-v6-ensemble"
+  ],
+  "year": 2026,
+  "size_bytes": 2431,
+  "line_count": 58
+}

@@ -1,0 +1,33 @@
+{
+  "id": "technique:sensor-embedding",
+  "type": "technique",
+  "title": "Sensor Location Embedding",
+  "slug": "sensor-embedding",
+  "aliases": [],
+  "tags": [
+    "har",
+    "embedding",
+    "wearable",
+    "categorical"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/techniques/sensor-embedding.md",
+  "summary": "A learnable embedding that encodes which sensor/body location a data window comes from. Critical for HAR when training with multiple sensor positions but testing with a single unknown position per sample.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/techniques/sensor-embedding.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "when_to_use": [
+    "Multi-sensor HAR where sensor identity varies between train/test",
+    "Any problem where a categorical context variable (device type, user group, sensor ID) should modulate how the model interprets the time series",
+    "Analogous to segment embeddings in BERT or modality tokens in multimodal models"
+  ]
+}

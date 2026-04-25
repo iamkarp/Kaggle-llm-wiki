@@ -1,0 +1,30 @@
+{
+  "id": "source:nfp-backtest-results-tighter",
+  "type": "source",
+  "title": "Nfp Backtest Results Tighter",
+  "slug": "nfp-backtest-results-tighter",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/trading/nfp-backtest-results-tighter.txt",
+  "raw_path": "raw/trading/nfp-backtest-results-tighter.txt",
+  "summary": "Auto-ingested from raw/trading/nfp-backtest-results-tighter.txt.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/trading/nfp-backtest-results-tighter.txt"
+    ]
+  },
+  "origin": "doc",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 1281,
+  "line_count": 18
+}

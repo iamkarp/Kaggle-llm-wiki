@@ -1,0 +1,30 @@
+{
+  "id": "mistake:videomae-cross-subject",
+  "type": "mistake",
+  "title": "Mistake: VideoMAE Features Destroy Cross-Subject Generalization",
+  "slug": "videomae-cross-subject",
+  "aliases": [],
+  "tags": [
+    "videomae",
+    "video",
+    "cross-subject",
+    "generalization",
+    "multimodal"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/mistakes/videomae-cross-subject.md",
+  "summary": "**What happened:** Integrated pretrained VideoMAE features (768-dim) into PatchTST as an additional token in self-attention. OOF improved dramatically (0.5204 → 0.6087) but LB collapsed (0.5858 → 0.1321).",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/mistakes/videomae-cross-subject.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-16",
+  "updated": "2026-04-16",
+  "what_happened": "Integrated pretrained VideoMAE features (768-dim) into PatchTST as an additional token in self-attention. OOF improved dramatically (0.5204 → 0.6087) but LB collapsed (0.5858 → 0.1321)."
+}

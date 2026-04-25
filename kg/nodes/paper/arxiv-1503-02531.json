@@ -1,0 +1,34 @@
+{
+  "id": "paper:arxiv-1503-02531",
+  "type": "paper",
+  "title": "arXiv:1503.02531",
+  "slug": "arxiv-1503-02531",
+  "aliases": [
+    "1503.02531",
+    "arXiv:1503.02531"
+  ],
+  "tags": [
+    "paper",
+    "arxiv"
+  ],
+  "status": "active",
+  "wiki_path": "kg/canonical/paper/arxiv-1503-02531",
+  "summary": "arXiv paper 1503.02531 (auto-extracted from raw sources).",
+  "source_refs": [],
+  "confidence": 0.9,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/multi-target-auxiliary-learning.md"
+    ]
+  },
+  "version": 1,
+  "year": 2015,
+  "venue": "arXiv",
+  "arxiv_id": "1503.02531",
+  "url": "https://arxiv.org/abs/1503.02531",
+  "authors": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24"
+}

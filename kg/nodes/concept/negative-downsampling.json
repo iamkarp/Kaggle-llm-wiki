@@ -1,0 +1,31 @@
+{
+  "id": "concept:negative-downsampling",
+  "type": "concept",
+  "title": "Negative Downsampling — Training on Imbalanced Data at Scale",
+  "slug": "negative-downsampling",
+  "aliases": [],
+  "tags": [
+    "downsampling",
+    "imbalanced",
+    "fraud",
+    "calibration",
+    "bagging",
+    "class-imbalance",
+    "large-scale"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/negative-downsampling.md",
+  "summary": "Negative downsampling discards a large fraction of the majority-class (negative) training examples, making training feasible on extremely imbalanced large datasets. After training on the downsampled data, predicted probabilities must be **recalibrated** to reflect the true class distribution.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/negative-downsampling.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

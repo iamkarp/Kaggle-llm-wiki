@@ -1,0 +1,26 @@
+{
+  "id": "synthesis:overview",
+  "type": "synthesis",
+  "title": "Knowledge Base Overview",
+  "slug": "overview",
+  "aliases": [],
+  "tags": [
+    "meta",
+    "overview"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/overview.md",
+  "summary": "This is Jason's ML and Kaggle knowledge base, maintained by LLM sessions following the schema in `CLAUDE.md`. It captures:\n- Active and historical Kaggle competition strategies\n- ML techniques and what worked/didn't\n- Live trading strategies and backtest results\n- Tool and framework notes\n- Cross-cutting analyses and insights",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/overview.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

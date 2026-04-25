@@ -1,0 +1,19 @@
+{
+  "id": "source:icr-age-conditions-1st-room722",
+  "type": "source",
+  "title": "ICR — Identifying Age-Related Conditions — 1st Place Solution",
+  "slug": "icr-age-conditions-1st-room722",
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/icr-age-conditions-1st-room722.md",
+  "raw_path": "raw/kaggle/solutions/icr-age-conditions-1st-room722.md",
+  "sha256": "fe6ce0c576b06554975eaa86a393ba36463ed48c27d751f7e6e9dbc590e9a576",
+  "ingested_at": "2026-04-24",
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [
+    "concept:deep-learning-tabular"
+  ],
+  "year": 2023,
+  "size_bytes": 7851,
+  "line_count": 166
+}

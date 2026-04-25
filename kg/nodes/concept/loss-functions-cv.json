@@ -1,0 +1,32 @@
+{
+  "id": "concept:loss-functions-cv",
+  "type": "concept",
+  "title": "Loss Functions for CV",
+  "slug": "loss-functions-cv",
+  "aliases": [],
+  "tags": [
+    "cv",
+    "loss-functions",
+    "focal-loss",
+    "lovasz",
+    "dice",
+    "tversky",
+    "skeleton-recall",
+    "bce"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/loss-functions-cv.md",
+  "summary": "CV competitions use specialized loss functions tuned to their metrics and class imbalance characteristics. This page covers the main loss families and when to use each.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/loss-functions-cv.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-14",
+  "updated": "2026-04-14"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "source:srk-batch-11",
+  "type": "source",
+  "title": "Kaggle Past Solutions — SRK Batch 11",
+  "slug": "srk-batch-11",
+  "aliases": [],
+  "tags": [],
+  "status": "active",
+  "wiki_path": "raw/kaggle/solutions/srk-batch-11.md",
+  "raw_path": "raw/kaggle/solutions/srk-batch-11.md",
+  "summary": "Auto-ingested from raw/kaggle/solutions/srk-batch-11.md.",
+  "source_refs": [],
+  "confidence": 0.85,
+  "version": 1,
+  "provenance": {
+    "method": "regex",
+    "extractor_version": "0.4.0",
+    "ingested_from": [
+      "raw/kaggle/solutions/srk-batch-11.md"
+    ]
+  },
+  "origin": "kaggle-writeup",
+  "license_status": "internal",
+  "extracted_nodes": [],
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "year": 2026,
+  "size_bytes": 43546,
+  "line_count": 439
+}

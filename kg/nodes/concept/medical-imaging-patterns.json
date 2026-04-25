@@ -1,0 +1,33 @@
+{
+  "id": "concept:medical-imaging-patterns",
+  "type": "concept",
+  "title": "Medical Imaging & Bioinformatics Competition Patterns",
+  "slug": "medical-imaging-patterns",
+  "aliases": [],
+  "tags": [
+    "medical-imaging",
+    "cv",
+    "unet",
+    "rsna",
+    "isic",
+    "2.5d",
+    "foundation-model",
+    "pathology",
+    "bioinformatics"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/concepts/medical-imaging-patterns.md",
+  "summary": "Patterns and architectures extracted from ISIC (skin lesion), RSNA (radiology), UBC-OCEAN (pathology), BirdCLEF (audio), and BELKA (drug discovery) competitions.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/concepts/medical-imaging-patterns.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15"
+}

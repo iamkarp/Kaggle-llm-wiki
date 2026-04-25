@@ -1,0 +1,58 @@
+{
+  "id": "mistake:gbm-for-cross-subject-har",
+  "type": "mistake",
+  "title": "Mistake: GBM for Cross-Subject HAR",
+  "slug": "gbm-for-cross-subject-har",
+  "aliases": [],
+  "tags": [
+    "gbm",
+    "har",
+    "generalization",
+    "cross-subject"
+  ],
+  "status": "active",
+  "wiki_path": "wiki/mistakes/gbm-for-cross-subject-har.md",
+  "summary": "**What happened:** Trained LightGBM + XGBoost on 103 handcrafted time/frequency domain features from accelerometer data. OOF F1 was 0.59. LB F1 was 0.24.",
+  "source_refs": [],
+  "confidence": 1.0,
+  "provenance": {
+    "ingested_from": [
+      "wiki/mistakes/gbm-for-cross-subject-har.md"
+    ],
+    "method": "parser",
+    "extractor_version": "0.3.0"
+  },
+  "version": 1,
+  "created": "2026-04-15",
+  "updated": "2026-04-15",
+  "what_happened": "Trained LightGBM + XGBoost on 103 handcrafted time/frequency domain features from accelerometer data. OOF F1 was 0.59. LB F1 was 0.24.",
+  "why_wrong": "Statistical features (mean, std, FFT magnitudes, zero-crossing rate) capture how a specific person moves, not what activity is being performed. Each person has a unique movement signature — stride frequency, acceleration amplitude, motion smoothness. GBM memorizes these training-subject patterns and fails on unseen subjects.",
+  "general_rule": "For cross-subject/cross-domain problems, prefer end-to-end learned features over handcrafted statistical features. GBM + handcrafted features is the default Kaggle approach for tabular data, but time series with domain shift is not truly tabular.",
+  "evidence_rows": [
+    {
+      "version": "V6",
+      "features": "103 inertial",
+      "oof_f1": 0.5922,
+      "lb_f1": 0.18589
+    },
+    {
+      "version": "V13",
+      "features": "103 inertial + 50 VideoMAE RP",
+      "oof_f1": 0.5901,
+      "lb_f1": 0.24321
+    },
+    {
+      "version": "V14",
+      "features": "GBM + PatchTST 50/50 blend",
+      "oof_f1": 0.6348,
+      "lb_f1": 0.50182
+    },
+    {
+      "version": "V10",
+      "features": "PatchTST (learned features)",
+      "oof_f1": 0.5204,
+      "lb_f1": 0.58575
+    }
+  ],
+  "detection_heuristic": "If your GBM OOF is much higher than your neural net OOF, but the neural net scores higher on LB — your handcrafted features are overfitting to the training distribution."
+}
